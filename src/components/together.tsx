@@ -1,0 +1,62 @@
+import { IconStar } from "./icons";
+import { BOTTOMLESS_LUNCH } from "@/lib/config";
+
+const reviews = [
+  {
+    quote: "Exactly what Avalon needed. The wine list is a treat.",
+    author: "A LOCAL",
+  },
+  {
+    quote: "Bottomless lunch was the best Saturday I've had in months.",
+    author: "A REGULAR",
+  },
+  {
+    quote: "Service is warm, the room is gorgeous, the kitchen is on point.",
+    author: "A FRIEND",
+  },
+];
+
+function Stars() {
+  return (
+    <div className="stars" aria-label="5 star rating">
+      {[0, 1, 2, 3, 4].map((i) => (
+        <IconStar key={i} size={13} />
+      ))}
+    </div>
+  );
+}
+
+export function Together() {
+  return (
+    <section className="together">
+      <div className="container">
+        <div className="together-grid">
+          <div className="promo">
+            <div className="promo-bg-placeholder" />
+            <div className="promo-content">
+              <span className="eyebrow">The Long Lunch</span>
+              <h3>Bottomless Lunch.<br />{BOTTOMLESS_LUNCH.price} per person.</h3>
+              <p className="promo-desc">
+                {BOTTOMLESS_LUNCH.description}
+              </p>
+              <a href="/bottomless-lunch" className="btn">Find Out More</a>
+            </div>
+          </div>
+          <div className="reviews-block">
+            <span className="eyebrow">From The Locals</span>
+            <h2>A proper Avalon room.</h2>
+            <div className="review-row">
+              {reviews.map((r) => (
+                <div key={r.author} className="review-card">
+                  <Stars />
+                  <p className="quote">&ldquo;{r.quote}&rdquo;</p>
+                  <div className="author">{r.author}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
