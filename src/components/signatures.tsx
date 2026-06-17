@@ -1,19 +1,19 @@
 const items = [
   {
-    name: "Wine",
-    desc: "Coastal-leaning list. Mostly Australian. Mostly excellent.",
+    name: "Booze",
+    desc: "Wines by region. Cocktails with a southern slant. Spritz hours that count.",
   },
   {
-    name: "Cocktails",
-    desc: "Classics done properly. House specials worth ordering.",
+    name: "Food",
+    desc: "Plates from the Med, sea-side flavours, seasonal produce.",
   },
   {
-    name: "Kitchen",
-    desc: "Sharing plates, sea-side flavours, seasonal produce.",
+    name: "Bottomless",
+    desc: "Two hours of unlimited beers, bubbles, vino, spritz & margaritas.",
   },
   {
-    name: "Sundays",
-    desc: "Bottomless lunch every weekend. Two hours, your pace.",
+    name: "Happenings",
+    desc: "Happy hours, family dinners, lamb shoulders and Sunday roasts.",
   },
 ];
 

@@ -4,15 +4,15 @@ export function About() {
       <div className="container">
         <div className="about-grid">
           <div className="about-copy">
-            <span className="eyebrow">More Than A Bar</span>
-            <h2>A neighbourhood spot, built for the Beaches.</h2>
+            <span className="eyebrow">The Room</span>
+            <h2>A neighbourhood spot, with a very-much-Euro feeling.</h2>
             <p>
-              Bar Elvina is for the long afternoon and the slow evening. A coastal kitchen,
-              an honest wine list, and a room you&apos;ll want to settle into.
+              Elvina sits on the level above Avalon Beach, looking out toward
+              the headland. Inside, an honest list of wine, plates pulled from the
+              Mediterranean, and a warmth that makes the afternoon disappear.
             </p>
             <p>
-              Born from a love of Avalon and the way the Northern Beaches actually live.
-              Locals welcome. Friends welcome. Long sittings encouraged.
+              Friends welcome. Long sittings encouraged. Bare feet not discouraged.
             </p>
             <a href="/about" className="link-tan">Our story.</a>
           </div>

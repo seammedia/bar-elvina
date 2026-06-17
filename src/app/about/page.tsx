@@ -5,9 +5,9 @@ import { PageHeader } from "@/components/page-header";
 import { IconPin, IconStar, Arrow } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "About — Bar Elvina",
+  title: "About — Elvina",
   description:
-    "A neighbourhood bar and kitchen on Avalon Beach. The room, the people, the way we like to spend an afternoon.",
+    "A neighbourhood bar and kitchen on Avalon Beach. Coastal-European in feel.",
 };
 
 const values = [
@@ -37,8 +37,8 @@ export default function AboutPage() {
       <Nav />
       <PageHeader
         eyebrow="Our Story"
-        title="Long lunches. Low evenings."
-        description="Bar Elvina opened on Avalon Beach in 2026 with a simple idea: a neighbourhood bar that sits between holiday and home."
+        title="Inviting. Breezy. Intriguing."
+        description="Inspiring in a subtle and refined way. Informed by a coastal {very much Euro} feeling."
       />
 
       <section className="section-pad-sm">
@@ -46,11 +46,11 @@ export default function AboutPage() {
           <div className="about-grid">
             <div className="about-copy">
               <span className="eyebrow">Why we&apos;re here</span>
-              <h2>A bar that feels like the Beaches.</h2>
+              <h2>A bar that feels like the coast.</h2>
               <p>
-                Bar Elvina is a neighbourhood bar and kitchen on Avalon Beach.
-                A coastal-leaning wine list, cocktails that get ordered twice,
-                and a kitchen that leans on whatever&apos;s in season.
+                Elvina sits on the level above Avalon Beach, looking out toward
+                the headland. Inside, an honest wine list, plates pulled from the
+                Mediterranean, and a warmth that makes the afternoon disappear.
               </p>
               <p>
                 The room is warm. The afternoons are long. The wine is always cold.
@@ -69,7 +69,7 @@ export default function AboutPage() {
 
       <section className="signatures" style={{ background: "var(--paper)" }}>
         <div className="container">
-          <span className="eyebrow">What we stand for</span>
+          <span className="eyebrow">What We Stand For</span>
           <h2>Three things, on the wall.</h2>
           <div className="values-grid">
             {values.map((v) => (
@@ -87,7 +87,7 @@ export default function AboutPage() {
         <div className="container">
           <h2>Pull up a chair on Avalon.</h2>
           <p>
-            Avalon Beach, two blocks from the sand. Bookings open most nights,
+            Level One, 50 Old Barrenjoey Rd. Bookings open most nights,
             walk-ins always welcome at the bar.
           </p>
           <div className="cta-strip-actions">

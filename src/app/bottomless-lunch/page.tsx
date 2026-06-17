@@ -6,17 +6,17 @@ import { Arrow } from "@/components/icons";
 import { BOTTOMLESS_LUNCH } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "Bottomless Lunch — Bar Elvina",
+  title: "Bottomless Menu — Elvina",
   description:
-    "Two hours of bottomless wine, beer and cocktails with a sharing menu. Every Saturday and Sunday at Bar Elvina, Avalon Beach.",
+    "Two hours of unlimited beers, bubbles, vino, spritz's and margaritas. $99 per person. Daily when open.",
 };
 
 const includes = [
   "House sparkling, white, rosé, red",
-  "Tap beer + cider",
+  "Tap beers + cider",
   "Aperol Spritz + Elvina Spritz",
-  "Shared snacks while you settle in",
-  "Three-course sharing menu",
+  "Margaritas to keep it interesting",
+  "Snacks while you settle in",
   "Two-hour sitting, your pace",
 ];
 
@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: "Minimum group size?",
-    a: "Two people. We seat groups up to 12 at the bench. Larger groups get the private table on request.",
+    a: "Two people. We seat groups up to 12 at the bench. Larger groups get the private dining room on request.",
   },
   {
     q: "Whole-table only?",
@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     q: "Dietaries?",
-    a: "Always. Flag GF, vegetarian, vegan, or allergies on booking and we'll build the sharing menu around you.",
+    a: "Always. Flag GF, vegetarian, vegan, or allergies on booking and we'll build the snacks around you.",
   },
 ];
 
@@ -44,9 +44,9 @@ export default function BottomlessLunchPage() {
     <>
       <Nav />
       <PageHeader
-        eyebrow="The Long Lunch"
-        title="Bottomless Lunch."
-        description={`${BOTTOMLESS_LUNCH.price} per person. ${BOTTOMLESS_LUNCH.duration} of free-flowing drinks alongside a sharing menu. ${BOTTOMLESS_LUNCH.days}.`}
+        eyebrow="The Bottomless Menu"
+        title="Two hours. {BOTTOMLESS_LUNCH.price} per person."
+        description={`${BOTTOMLESS_LUNCH.duration} of unlimited beers, bubbles, vino (white/rosé/red), spritz's and margaritas. ${BOTTOMLESS_LUNCH.days}.`}
       />
 
       <section className="section-pad-sm">
@@ -54,10 +54,10 @@ export default function BottomlessLunchPage() {
           <div className="about-grid">
             <div className="about-copy">
               <span className="eyebrow">What&apos;s included</span>
-              <h2>Drink well. Eat well. Take your time.</h2>
+              <h2>Drink well. Settle in. Take your time.</h2>
               <p>
-                Two hours of wine, beer, cocktails, and a sharing menu from the kitchen.
-                Saturdays and Sundays, your weekend lunch is sorted.
+                Two hours of unlimited wine, beer, cocktails. {BOTTOMLESS_LUNCH.price} per
+                person. Available every day we&apos;re open.
               </p>
               <ul className="bottomless-includes">
                 {includes.map((i) => (
@@ -65,12 +65,12 @@ export default function BottomlessLunchPage() {
                 ))}
               </ul>
               <a href="/contact" className="btn btn-tan" style={{ marginTop: 8 }}>
-                Book the Long Lunch <Arrow />
+                Book Now <Arrow />
               </a>
             </div>
             <div className="about-photo">
               <div className="about-photo-placeholder">
-                <span className="placeholder-label">THE LONG LUNCH</span>
+                <span className="placeholder-label">THE BOTTOMLESS</span>
               </div>
             </div>
           </div>
@@ -94,10 +94,10 @@ export default function BottomlessLunchPage() {
 
       <section className="cta-strip">
         <div className="container">
-          <h2>{BOTTOMLESS_LUNCH.days}.</h2>
+          <h2>Lock it in.</h2>
           <p>
-            Tables go quickly through summer. Lock in your sitting and we&apos;ll
-            do the rest. {BOTTOMLESS_LUNCH.price} per person, {BOTTOMLESS_LUNCH.duration}.
+            Tables go quickly through summer. {BOTTOMLESS_LUNCH.price} per person,
+            {" "}{BOTTOMLESS_LUNCH.duration}, all the good stuff included.
           </p>
           <div className="cta-strip-actions">
             <a href="/contact" className="btn btn-tan">Book Now <Arrow /></a>

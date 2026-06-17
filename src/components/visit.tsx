@@ -1,4 +1,4 @@
-import { IconPin, IconClock, IconMail } from "./icons";
+import { IconPin, IconClock, IconMail, IconPhone } from "./icons";
 
 export function Visit() {
   return (
@@ -11,21 +11,32 @@ export function Visit() {
             <div className="visit-rows">
               <div className="visit-row">
                 <span className="icon"><IconPin /></span>
-                <div className="text">Avalon Beach,<br />NSW 2107</div>
+                <div className="text">
+                  Level One,<br />
+                  50 Old Barrenjoey Rd,<br />
+                  Avalon Beach NSW 2107
+                </div>
               </div>
               <div className="visit-row">
                 <span className="icon"><IconClock /></span>
                 <div className="text">
+                  <div className="hour-line"><span>Wed-Thu</span><span>5pm - 10pm</span></div>
+                  <div className="hour-line"><span>Fri</span><span>4pm - late</span></div>
+                  <div className="hour-line"><span>Sat</span><span>12pm - late</span></div>
+                  <div className="hour-line"><span>Sun</span><span>12pm - late</span></div>
                   <div className="hour-line"><span>Mon-Tue</span><span>Closed</span></div>
-                  <div className="hour-line"><span>Wed-Thu</span><span>5:00pm - late</span></div>
-                  <div className="hour-line"><span>Fri-Sat</span><span>12:00pm - late</span></div>
-                  <div className="hour-line"><span>Sun</span><span>12:00pm - 6:00pm</span></div>
+                </div>
+              </div>
+              <div className="visit-row">
+                <span className="icon"><IconPhone /></span>
+                <div className="text">
+                  <a href="tel:+61289262340">02 8926 2340</a>
                 </div>
               </div>
               <div className="visit-row">
                 <span className="icon"><IconMail /></span>
                 <div className="text">
-                  <a href="mailto:lucas@barelvina.com.au">lucas@barelvina.com.au</a>
+                  <a href="mailto:info@barelvina.com.au">info@barelvina.com.au</a>
                 </div>
               </div>
             </div>
@@ -33,8 +44,8 @@ export function Visit() {
           </div>
           <div className="visit-map">
             <iframe
-              title="Bar Elvina location map"
-              src="https://www.google.com/maps?q=Avalon+Beach+NSW+2107&output=embed"
+              title="Elvina location map"
+              src="https://www.google.com/maps?q=50+Old+Barrenjoey+Rd,Avalon+Beach+NSW+2107&output=embed"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />

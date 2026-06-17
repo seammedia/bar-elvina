@@ -5,15 +5,16 @@ export function Hero() {
       <div className="hero-inner">
         <div className="container">
           <div className="hero-content">
-            <span className="eyebrow hero-eyebrow">Avalon Beach · Northern Beaches</span>
-            <h1>Long lunches. Low evenings.</h1>
+            <span className="eyebrow hero-eyebrow">Avalon Beach</span>
+            <h1>Inviting.<br />Breezy.<br />Intriguing.</h1>
             <p>
-              A neighbourhood bar and kitchen on Avalon Beach. A coastal wine list,
-              proper cocktails, and a kitchen built around what&apos;s in season.
+              A coastal-European bar and kitchen on the Northern Beaches.
+              Sun-drunk afternoons, slow evenings, and a list that knows
+              the long way home.
             </p>
             <div className="hero-ctas">
-              <a href="/bottomless-lunch" className="btn btn-tan">Bottomless Lunch</a>
-              <a href="/contact" className="btn btn-outline-light">Book a Table</a>
+              <a href="/contact" className="btn btn-tan">Book a Table</a>
+              <a href="/bottomless-lunch" className="btn btn-outline-light">Bottomless Menu</a>
             </div>
           </div>
         </div>

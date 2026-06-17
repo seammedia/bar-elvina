@@ -7,7 +7,7 @@ const reviews = [
     author: "A LOCAL",
   },
   {
-    quote: "Bottomless lunch was the best Saturday I've had in months.",
+    quote: "Bottomless menu was the best Saturday I've had in months.",
     author: "A REGULAR",
   },
   {
@@ -34,8 +34,8 @@ export function Together() {
           <div className="promo">
             <div className="promo-bg-placeholder" />
             <div className="promo-content">
-              <span className="eyebrow">The Long Lunch</span>
-              <h3>Bottomless Lunch.<br />{BOTTOMLESS_LUNCH.price} per person.</h3>
+              <span className="eyebrow">The Bottomless Menu</span>
+              <h3>Two hours.<br />{BOTTOMLESS_LUNCH.price} pp.</h3>
               <p className="promo-desc">
                 {BOTTOMLESS_LUNCH.description}
               </p>

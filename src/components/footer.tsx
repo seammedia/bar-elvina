@@ -7,11 +7,11 @@ export function Footer() {
         <div className="foot-inner">
           <div className="foot-brand-block">
             <a href="#" className="nav-brand">
-              <span className="nav-brand-name">BAR ELVINA</span>
+              <img src="/logos/elvina-mermaid-white.svg" alt="Elvina" className="nav-logo" />
             </a>
             <p>
-              A neighbourhood bar and kitchen on Avalon Beach.
-              Long lunches, low evenings.
+              A coastal-European bar and kitchen on Avalon Beach.
+              Inviting. Breezy. Intriguing.
             </p>
             <div className="foot-social">
               <a
@@ -28,32 +28,34 @@ export function Footer() {
             <h4>Navigation</h4>
             <ul>
               <li><a href="/menu">Menu</a></li>
-              <li><a href="/bottomless-lunch">Bottomless Lunch</a></li>
+              <li><a href="/happenings">Happenings</a></li>
+              <li><a href="/bottomless-lunch">Bottomless</a></li>
               <li><a href="/about">About</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><a href="/contact">Visit</a></li>
             </ul>
           </div>
           <div className="foot-col">
             <h4>Hours</h4>
             <div className="lines">
+              <div className="hour-line"><span>Wed-Thu</span><span>5pm - 10pm</span></div>
+              <div className="hour-line"><span>Fri</span><span>4pm - late</span></div>
+              <div className="hour-line"><span>Sat-Sun</span><span>12pm - late</span></div>
               <div className="hour-line"><span>Mon-Tue</span><span>Closed</span></div>
-              <div className="hour-line"><span>Wed-Thu</span><span>5pm - late</span></div>
-              <div className="hour-line"><span>Fri-Sat</span><span>12pm - late</span></div>
-              <div className="hour-line"><span>Sun</span><span>12pm - 6pm</span></div>
             </div>
           </div>
           <div className="foot-col">
-            <h4>Contact</h4>
+            <h4>Visit</h4>
             <div className="lines">
-              <div className="line">Avalon Beach,<br />NSW 2107</div>
-              <div className="line"><a href="mailto:lucas@barelvina.com.au">lucas@barelvina.com.au</a></div>
+              <div className="line">Level One,<br />50 Old Barrenjoey Rd,<br />Avalon Beach 2107</div>
+              <div className="line"><a href="tel:+61289262340">02 8926 2340</a></div>
+              <div className="line"><a href="mailto:info@barelvina.com.au">info@barelvina.com.au</a></div>
             </div>
           </div>
           <div />
         </div>
         <div className="foot-bottom">
-          <div>© 2026 Bar Elvina. All rights reserved.</div>
-          <div>Avalon Beach, Sydney</div>
+          <div>© 2026 Elvina. All rights reserved.</div>
+          <div>Avalon Beach, NSW</div>
         </div>
       </div>
     </footer>
