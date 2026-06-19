@@ -47,9 +47,13 @@ export default function FunctionsPage() {
             {ROOMS.map((room) => (
               <div key={room.name} className="room-card">
                 <div className="room-photo">
-                  <div className="room-photo-placeholder">
-                    <span className="placeholder-label">PHOTOGRAPHY</span>
-                  </div>
+                  {room.image ? (
+                    <img src={room.image} alt={room.name} />
+                  ) : (
+                    <div className="room-photo-placeholder">
+                      <span className="placeholder-label">PHOTOGRAPHY</span>
+                    </div>
+                  )}
                 </div>
                 <div className="room-body">
                   <div className="room-name-row">

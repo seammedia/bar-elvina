@@ -60,9 +60,7 @@ export default function AboutPage() {
               <a href="/contact" className="link-tan">Come say hi.</a>
             </div>
             <div className="about-photo">
-              <div className="about-photo-placeholder">
-                <span className="placeholder-label">PHOTOGRAPHY</span>
-              </div>
+              <img src="/images/venue-bar.jpg" alt="The bar window at Elvina, looking over Avalon Beach" />
             </div>
           </div>
         </div>

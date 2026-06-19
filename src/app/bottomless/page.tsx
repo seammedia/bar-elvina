@@ -75,9 +75,7 @@ export default function BottomlessPage() {
               </a>
             </div>
             <div className="about-photo">
-              <div className="about-photo-placeholder">
-                <span className="placeholder-label">PHOTOGRAPHY</span>
-              </div>
+              <img src="/images/drink-spritz.jpg" alt="A spritz at Elvina" />
             </div>
           </div>
         </div>

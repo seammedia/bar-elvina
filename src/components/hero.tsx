@@ -3,7 +3,9 @@ import { BOOKING_URL } from "@/lib/config";
 export function Hero() {
   return (
     <section className="hero">
-      <div className="hero-bg" />
+      <div className="hero-bg">
+        <img src="/images/venue-terrace.jpg" alt="The terrace at Elvina, Avalon Beach" />
+      </div>
       <div className="hero-inner">
         <div className="container">
           <div className="hero-content">
