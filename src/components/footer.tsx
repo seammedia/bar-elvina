@@ -28,8 +28,9 @@ export function Footer() {
             <h4>Navigation</h4>
             <ul>
               <li><a href="/menu">Menu</a></li>
-              <li><a href="/happenings">Happenings</a></li>
-              <li><a href="/bottomless-lunch">Bottomless</a></li>
+              <li><a href="/functions">Functions</a></li>
+              <li><a href="/whats-on">What&apos;s On</a></li>
+              <li><a href="/bottomless">Bottomless</a></li>
               <li><a href="/about">About</a></li>
               <li><a href="/contact">Visit</a></li>
             </ul>
@@ -37,10 +38,9 @@ export function Footer() {
           <div className="foot-col">
             <h4>Hours</h4>
             <div className="lines">
-              <div className="hour-line"><span>Wed-Thu</span><span>5pm - 10pm</span></div>
-              <div className="hour-line"><span>Fri</span><span>4pm - late</span></div>
-              <div className="hour-line"><span>Sat-Sun</span><span>12pm - late</span></div>
-              <div className="hour-line"><span>Mon-Tue</span><span>Closed</span></div>
+              <div className="hour-line"><span>Wed-Thu</span><span>5pm - late</span></div>
+              <div className="hour-line"><span>Fri-Sat</span><span>4pm - late</span></div>
+              <div className="hour-line"><span>Sun-Tue</span><span>Closed</span></div>
             </div>
           </div>
           <div className="foot-col">

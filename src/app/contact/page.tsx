@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import { PageHeader } from "@/components/page-header";
+import { ContactForm } from "@/components/contact-form";
 import { IconPin, IconClock, IconMail, IconPhone } from "@/components/icons";
+import { BOOKING_URL } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Visit — Elvina",
   description:
-    "Book a table at Elvina, find our hours and location, or send us an enquiry.",
+    "Find Elvina on Avalon Beach. Hours, location, and how to get in touch.",
 };
 
 export default function ContactPage() {
@@ -16,47 +18,13 @@ export default function ContactPage() {
       <Nav />
       <PageHeader
         eyebrow="Visit Us"
-        title="Book a table, say hi, plan an event."
-        description="We answer emails within one business day. For larger bookings and private events, send through the details and we'll come back fast."
+        title="Drop in, book in, get in touch."
+        description="The fastest way to a table is the booking button. For everything else, we're a phone call or an email away."
       />
 
       <section>
         <div className="container">
           <div className="contact-grid">
-            <form
-              className="contact-form"
-              action="https://formsubmit.co/info@barelvina.com.au"
-              method="POST"
-            >
-              <div className="field-row">
-                <div className="field">
-                  <label htmlFor="name">Name</label>
-                  <input id="name" name="name" type="text" required placeholder="Your name" />
-                </div>
-                <div className="field">
-                  <label htmlFor="email">Email</label>
-                  <input id="email" name="email" type="email" required placeholder="you@email.com" />
-                </div>
-              </div>
-              <div className="field">
-                <label htmlFor="subject">Subject</label>
-                <select id="subject" name="subject" defaultValue="Booking">
-                  <option>Booking enquiry</option>
-                  <option>Private event</option>
-                  <option>Bottomless Menu</option>
-                  <option>Press</option>
-                  <option>General enquiry</option>
-                </select>
-              </div>
-              <div className="field">
-                <label htmlFor="message">Message</label>
-                <textarea id="message" name="message" required placeholder="Date, headcount, and anything we should know..." />
-              </div>
-              <button type="submit" className="btn btn-tan" style={{ alignSelf: "flex-start" }}>
-                Send Message
-              </button>
-            </form>
-
             <div className="contact-info">
               <div>
                 <h3>Find us</h3>
@@ -72,10 +40,9 @@ export default function ContactPage() {
                   <div className="visit-row">
                     <span className="icon"><IconClock /></span>
                     <div className="text">
-                      <div className="hour-line"><span>Wed-Thu</span><span>5pm - 10pm</span></div>
-                      <div className="hour-line"><span>Fri</span><span>4pm - late</span></div>
-                      <div className="hour-line"><span>Sat-Sun</span><span>12pm - late</span></div>
-                      <div className="hour-line"><span>Mon-Tue</span><span>Closed</span></div>
+                      <div className="hour-line"><span>Wed-Thu</span><span>5pm - late</span></div>
+                      <div className="hour-line"><span>Fri-Sat</span><span>4pm - late</span></div>
+                      <div className="hour-line"><span>Sun-Tue</span><span>Closed</span></div>
                     </div>
                   </div>
                   <div className="visit-row">
@@ -91,6 +58,16 @@ export default function ContactPage() {
                 </div>
               </div>
 
+              <a
+                href={BOOKING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-tan btn-lg"
+                style={{ alignSelf: "flex-start" }}
+              >
+                Book a Table
+              </a>
+
               <div className="visit-map" style={{ minHeight: 320 }}>
                 <iframe
                   title="Elvina location map"
@@ -99,6 +76,24 @@ export default function ContactPage() {
                   referrerPolicy="no-referrer-when-downgrade"
                 />
               </div>
+            </div>
+
+            <div>
+              <h3 style={{
+                fontFamily: "var(--display)",
+                fontWeight: 500,
+                textTransform: "uppercase",
+                letterSpacing: "0.06em",
+                fontSize: 22,
+                color: "var(--burnt-sienna)",
+                margin: "0 0 8px",
+              }}>
+                Can&apos;t find what you&apos;re looking for?
+              </h3>
+              <p style={{ fontSize: 15, lineHeight: 1.7, color: "var(--muted)", margin: "0 0 24px" }}>
+                Use the box below and we&apos;ll get back to you within one business day.
+              </p>
+              <ContactForm />
             </div>
           </div>
         </div>

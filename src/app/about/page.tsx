@@ -3,11 +3,12 @@ import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import { PageHeader } from "@/components/page-header";
 import { IconPin, IconStar, Arrow } from "@/components/icons";
+import { BOOKING_URL } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "About — Elvina",
   description:
-    "A neighbourhood bar and kitchen on Avalon Beach. Coastal-European in feel.",
+    "A Mediterranean bar and kitchen on Avalon Beach. A place that feels like the coast.",
 };
 
 const values = [
@@ -19,9 +20,9 @@ const values = [
   },
   {
     icon: <IconPin />,
-    title: "Avalon-first",
+    title: "Avalon first",
     body:
-      "A room for the locals, the regulars, the friends visiting on weekends. The Beaches in here, on the plate.",
+      "A room for the locals, the regulars, the friends visiting on weekends. The coast in here, on the plate.",
   },
   {
     icon: <IconStar />,
@@ -38,7 +39,7 @@ export default function AboutPage() {
       <PageHeader
         eyebrow="Our Story"
         title="Inviting. Breezy. Intriguing."
-        description="Inspiring in a subtle and refined way. Informed by a coastal {very much Euro} feeling."
+        description="Inspiring in a subtle and refined way. Informed by a coastal, Mediterranean feeling."
       />
 
       <section className="section-pad-sm">
@@ -46,11 +47,11 @@ export default function AboutPage() {
           <div className="about-grid">
             <div className="about-copy">
               <span className="eyebrow">Why we&apos;re here</span>
-              <h2>A bar that feels like the coast.</h2>
+              <h2>A place that feels like the coast.</h2>
               <p>
                 Elvina sits on the level above Avalon Beach, looking out toward
-                the headland. Inside, an honest wine list, plates pulled from the
-                Mediterranean, and a warmth that makes the afternoon disappear.
+                the main street. Inside, an honest wine list, plates pulled from
+                the Mediterranean, and a warmth that makes the afternoon disappear.
               </p>
               <p>
                 The room is warm. The afternoons are long. The wine is always cold.
@@ -60,7 +61,7 @@ export default function AboutPage() {
             </div>
             <div className="about-photo">
               <div className="about-photo-placeholder">
-                <span className="placeholder-label">THE ROOM</span>
+                <span className="placeholder-label">PHOTOGRAPHY</span>
               </div>
             </div>
           </div>
@@ -91,7 +92,14 @@ export default function AboutPage() {
             walk-ins always welcome at the bar.
           </p>
           <div className="cta-strip-actions">
-            <a href="/contact" className="btn btn-tan">Book a Table <Arrow /></a>
+            <a
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-tan"
+            >
+              Book a Table <Arrow />
+            </a>
             <a href="/menu" className="btn btn-outline-light">View Menu</a>
           </div>
         </div>

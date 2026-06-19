@@ -1,5 +1,5 @@
 import { IconStar } from "./icons";
-import { BOTTOMLESS_LUNCH } from "@/lib/config";
+import { BOTTOMLESS } from "@/lib/config";
 
 const reviews = [
   {
@@ -35,11 +35,11 @@ export function Together() {
             <div className="promo-bg-placeholder" />
             <div className="promo-content">
               <span className="eyebrow">The Bottomless Menu</span>
-              <h3>Two hours.<br />{BOTTOMLESS_LUNCH.price} pp.</h3>
+              <h3>Two hours.<br />{BOTTOMLESS.price} pp.</h3>
               <p className="promo-desc">
-                {BOTTOMLESS_LUNCH.description}
+                {BOTTOMLESS.description}
               </p>
-              <a href="/bottomless-lunch" className="btn">Find Out More</a>
+              <a href="/bottomless" className="btn">Find Out More</a>
             </div>
           </div>
           <div className="reviews-block">

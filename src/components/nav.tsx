@@ -1,3 +1,5 @@
+import { BOOKING_URL } from "@/lib/config";
+
 export function Nav() {
   return (
     <header className="nav">
@@ -7,12 +9,21 @@ export function Nav() {
         </a>
         <nav className="nav-links">
           <a href="/menu">Menu</a>
-          <a href="/happenings">Happenings</a>
-          <a href="/bottomless-lunch">Bottomless</a>
+          <span className="nav-sep">/</span>
+          <a href="/functions">Functions</a>
+          <span className="nav-sep">/</span>
+          <a href="/whats-on">What&apos;s On</a>
+          <span className="nav-sep">/</span>
+          <a href="/bottomless">Bottomless</a>
+          <span className="nav-sep">/</span>
           <a href="/about">About</a>
-          <a href="/contact">Visit</a>
         </nav>
-        <a href="/contact" className="btn btn-tan nav-cta">
+        <a
+          href={BOOKING_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-tan nav-cta"
+        >
           Book
         </a>
       </div>

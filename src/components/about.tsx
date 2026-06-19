@@ -4,12 +4,12 @@ export function About() {
       <div className="container">
         <div className="about-grid">
           <div className="about-copy">
-            <span className="eyebrow">The Room</span>
-            <h2>A neighbourhood spot, with a very-much-Euro feeling.</h2>
+            <span className="eyebrow">A Place That Feels Like The Coast</span>
+            <h2>Mediterranean, on Avalon Beach.</h2>
             <p>
               Elvina sits on the level above Avalon Beach, looking out toward
-              the headland. Inside, an honest list of wine, plates pulled from the
-              Mediterranean, and a warmth that makes the afternoon disappear.
+              the main street. Inside, an honest list of wine, plates pulled from
+              the Mediterranean, and a warmth that makes the afternoon disappear.
             </p>
             <p>
               Friends welcome. Long sittings encouraged. Bare feet not discouraged.

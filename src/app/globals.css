@@ -145,6 +145,11 @@ a { color: inherit; text-decoration: none; }
 .btn-dark:hover {
   background: #2B1310;
 }
+.btn-lg {
+  padding: 18px 38px;
+  font-size: 13px;
+  letter-spacing: 0.32em;
+}
 
 /* ===== Nav ===== */
 .nav {
@@ -159,7 +164,7 @@ a { color: inherit; text-decoration: none; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 88px;
+  height: 108px;
   gap: 24px;
 }
 .nav-brand {
@@ -169,27 +174,33 @@ a { color: inherit; text-decoration: none; }
   color: var(--sundial);
 }
 .nav-logo {
-  height: 48px;
+  height: 72px;
   width: auto;
 }
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 18px;
 }
 .nav-links a {
   font-family: var(--display);
   color: var(--burnt-sienna);
-  font-size: 11px;
-  letter-spacing: 0.36em;
+  font-size: 12px;
+  letter-spacing: 0.28em;
   text-transform: uppercase;
   font-weight: 500;
   transition: color 0.2s;
 }
 .nav-links a:hover { color: var(--sundial); }
+.nav-sep {
+  color: var(--sundial);
+  font-family: var(--display);
+  font-size: 12px;
+  opacity: 0.6;
+}
 .nav-cta {
-  padding: 10px 22px;
-  font-size: 11px;
+  padding: 13px 28px;
+  font-size: 12px;
 }
 
 /* ===== Hero ===== */
@@ -212,9 +223,9 @@ a { color: inherit; text-decoration: none; }
   inset: 0;
   background-image: url("/logos/elvina-mermaid-white.svg");
   background-repeat: no-repeat;
-  background-position: 92% 50%;
-  background-size: 580px auto;
-  opacity: 0.15;
+  background-position: 90% 50%;
+  background-size: 760px auto;
+  opacity: 0.2;
 }
 .hero-bg::after {
   content: "";
@@ -327,6 +338,51 @@ section {
 
 /* ===== Menu page ===== */
 .menu-page { background: var(--off-white); }
+.menu-banner {
+  text-align: center;
+  padding: 28px 24px;
+  border: 1px solid var(--sundial);
+  margin-bottom: clamp(40px, 5vw, 64px);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.menu-banner-title {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--sundial);
+}
+.menu-banner-sub {
+  font-family: var(--mono);
+  font-style: italic;
+  font-size: 13px;
+  color: var(--muted);
+}
+.menu-section-head {
+  margin-bottom: clamp(28px, 4vw, 44px);
+  padding-bottom: 18px;
+  border-bottom: 2px solid var(--sundial);
+}
+.menu-section-head .eyebrow { display: block; margin-bottom: 12px; }
+.menu-section-head h2 {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: clamp(26px, 3.4vw, 38px);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--burnt-sienna);
+}
+.menu-tags {
+  font-family: var(--mono);
+  font-style: italic;
+  font-size: 11px;
+  color: var(--sundial);
+  letter-spacing: 0.04em;
+}
 .menu-cats {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -780,7 +836,113 @@ section {
 }
 .sig-link:hover { color: var(--sundial-deep); }
 
-/* ===== Happenings ===== */
+/* ===== Rooms ===== */
+.rooms {
+  background: var(--off-white);
+}
+.rooms-head {
+  max-width: 620px;
+  margin-bottom: clamp(40px, 5vw, 64px);
+}
+.rooms-head .eyebrow { display: block; margin-bottom: 18px; }
+.rooms-head h2 {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin: 0 0 18px;
+  color: var(--burnt-sienna);
+}
+.rooms-head p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--burnt-sienna);
+  margin: 0;
+  max-width: 52ch;
+}
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.room-card {
+  background: var(--off-white);
+  border: 1px solid var(--rule);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.room-photo {
+  aspect-ratio: 3/2;
+  overflow: hidden;
+}
+.room-photo img { width: 100%; height: 100%; object-fit: cover; }
+.room-photo-placeholder {
+  width: 100%;
+  height: 100%;
+  background: var(--sundial);
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.room-photo-placeholder::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/logos/elvina-mermaid-white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 44% auto;
+  opacity: 0.5;
+}
+.room-body {
+  padding: 26px 26px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+.room-name-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+.room-body h3 {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: 19px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--burnt-sienna);
+  margin: 0;
+}
+.room-cap {
+  font-family: var(--mono);
+  font-style: italic;
+  font-size: 12px;
+  color: var(--sundial);
+  white-space: nowrap;
+}
+.room-body p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0;
+}
+.room-card-cta {
+  background: var(--burnt-sienna);
+  justify-content: center;
+}
+.room-card-cta .room-body { gap: 14px; }
+.room-card-cta h3 { color: var(--off-white); font-size: 22px; }
+.room-card-cta p { color: rgba(253,250,240,0.78); }
+.room-card-cta .btn { align-self: flex-start; margin-top: 8px; }
+
+/* ===== Happenings / What's On ===== */
 .happenings {
   background: var(--off-white);
   text-align: center;
@@ -1160,6 +1322,7 @@ footer {
   .nav-links { display: none; }
   .about-grid { grid-template-columns: 1fr; }
   .sig-grid { grid-template-columns: repeat(2, 1fr); }
+  .rooms-grid { grid-template-columns: repeat(2, 1fr); }
   .together-grid { grid-template-columns: 1fr; }
   .review-row { grid-template-columns: 1fr; }
   .visit-grid { grid-template-columns: 1fr; }
@@ -1178,6 +1341,7 @@ footer {
 
 @media (max-width: 600px) {
   .sig-grid { grid-template-columns: 1fr; }
+  .rooms-grid { grid-template-columns: 1fr; }
   .foot-inner { grid-template-columns: 1fr; }
   .about-stats-row { grid-template-columns: 1fr; }
 }

@@ -1,4 +1,5 @@
 import { IconPin, IconClock, IconMail, IconPhone } from "./icons";
+import { BOOKING_URL } from "@/lib/config";
 
 export function Visit() {
   return (
@@ -20,11 +21,9 @@ export function Visit() {
               <div className="visit-row">
                 <span className="icon"><IconClock /></span>
                 <div className="text">
-                  <div className="hour-line"><span>Wed-Thu</span><span>5pm - 10pm</span></div>
-                  <div className="hour-line"><span>Fri</span><span>4pm - late</span></div>
-                  <div className="hour-line"><span>Sat</span><span>12pm - late</span></div>
-                  <div className="hour-line"><span>Sun</span><span>12pm - late</span></div>
-                  <div className="hour-line"><span>Mon-Tue</span><span>Closed</span></div>
+                  <div className="hour-line"><span>Wed-Thu</span><span>5pm - late</span></div>
+                  <div className="hour-line"><span>Fri-Sat</span><span>4pm - late</span></div>
+                  <div className="hour-line"><span>Sun-Tue</span><span>Closed</span></div>
                 </div>
               </div>
               <div className="visit-row">
@@ -40,7 +39,14 @@ export function Visit() {
                 </div>
               </div>
             </div>
-            <a href="/contact" className="btn btn-tan">Book a Table</a>
+            <a
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-tan btn-lg"
+            >
+              Book a Table
+            </a>
           </div>
           <div className="visit-map">
             <iframe

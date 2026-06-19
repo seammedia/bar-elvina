@@ -1,3 +1,5 @@
+import { BOOKING_URL } from "@/lib/config";
+
 export function Hero() {
   return (
     <section className="hero">
@@ -8,13 +10,21 @@ export function Hero() {
             <span className="eyebrow hero-eyebrow">Avalon Beach</span>
             <h1>Inviting.<br />Breezy.<br />Intriguing.</h1>
             <p>
-              A coastal-European bar and kitchen on the Northern Beaches.
+              A Mediterranean bar and kitchen on the Northern Beaches.
               Sun-drunk afternoons, slow evenings, and a list that knows
               the long way home.
             </p>
             <div className="hero-ctas">
-              <a href="/contact" className="btn btn-tan">Book a Table</a>
-              <a href="/bottomless-lunch" className="btn btn-outline-light">Bottomless Menu</a>
+              <a
+                href={BOOKING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-tan btn-lg"
+              >
+                Book a Table
+              </a>
+              <a href="/functions" className="btn btn-outline-light btn-lg">Functions</a>
+              <a href="/bottomless" className="btn btn-outline-light btn-lg">Bottomless</a>
             </div>
           </div>
         </div>
