@@ -987,6 +987,23 @@ section {
   height: 100%;
   object-fit: cover;
 }
+.happening-thumb-placeholder {
+  width: 100%;
+  height: 100%;
+  background: var(--sundial);
+  position: relative;
+  overflow: hidden;
+}
+.happening-thumb-placeholder::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/logos/elvina-mermaid-white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 64% auto;
+  opacity: 0.55;
+}
 .happening-row .name {
   font-family: var(--display);
   font-weight: 500;

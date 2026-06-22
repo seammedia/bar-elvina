@@ -56,6 +56,6 @@ export const ROOMS = [
     name: "The Garden",
     capacity: "Up to 15",
     desc: "An open-air garden out back. Long lunches and golden hour.",
-    image: "/images/food-prawns.jpg",
+    image: "", // TODO: real garden photo from Lucas (placeholder food shot was actually the foyer)
   },
 ];

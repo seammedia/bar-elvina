@@ -32,7 +32,7 @@ export function Together() {
       <div className="container">
         <div className="together-grid">
           <div className="promo">
-            <img src="/images/food-feast.jpg" alt="A spread of plates at Elvina" className="promo-img" />
+            <img src="/images/drink-spritz.jpg" alt="A spritz at Elvina" className="promo-img" />
             <div className="promo-content">
               <span className="eyebrow">The Bottomless Menu</span>
               <h3>Two hours.<br />{BOTTOMLESS.price} pp.</h3>

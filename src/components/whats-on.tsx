@@ -9,13 +9,13 @@ const events = [
     name: "Ribs Thursday",
     desc: "Low and slow. The chef's weekly special.",
     when: "Thu",
-    image: "/images/food-steak-wine.jpg",
+    image: "", // TODO: ribs pic from Lucas (temporary special)
   },
   {
     name: "Supper Club — Live DJ",
     desc: "A DJ on the decks and the bar running late.",
     when: "Fri",
-    image: "/images/drink-spritz.jpg",
+    image: "", // TODO: party / DJ decks pic from Lucas
   },
   {
     name: "Sunset Happy Hour",
@@ -27,7 +27,7 @@ const events = [
     name: "Bottomless Weekends",
     desc: "Two hours, $99pp, all the good stuff. Sat & Sun.",
     when: "Sat-Sun",
-    image: "/images/food-feast.jpg",
+    image: "", // TODO: current bottomless food/drink pic from Lucas
   },
 ];
 
@@ -42,7 +42,11 @@ export function WhatsOn() {
             <div key={e.name} className="happening-row">
               <div className="happening-main">
                 <div className="happening-thumb">
-                  <img src={e.image} alt={e.name} />
+                  {e.image ? (
+                    <img src={e.image} alt={e.name} />
+                  ) : (
+                    <div className="happening-thumb-placeholder" aria-hidden="true" />
+                  )}
                 </div>
                 <div>
                   <p className="name">{e.name}</p>
