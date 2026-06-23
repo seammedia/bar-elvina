@@ -1,4 +1,4 @@
-import { BOOKING_URL } from "@/lib/config";
+import { BOOKING_URL, GIFT_VOUCHER_URL } from "@/lib/config";
 
 export function Nav() {
   return (
@@ -17,6 +17,15 @@ export function Nav() {
           <a href="/bottomless">Bottomless</a>
           <span className="nav-sep">/</span>
           <a href="/about">About</a>
+          <span className="nav-sep">/</span>
+          <a
+            href={GIFT_VOUCHER_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="nav-gift"
+          >
+            Gift Vouchers
+          </a>
         </nav>
         <a
           href={BOOKING_URL}
