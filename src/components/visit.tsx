@@ -1,5 +1,5 @@
 import { IconPin, IconClock, IconMail, IconPhone } from "./icons";
-import { BOOKING_URL } from "@/lib/config";
+import { BOOKING_URL, GIFT_VOUCHER_URL } from "@/lib/config";
 
 export function Visit() {
   return (
@@ -39,14 +39,24 @@ export function Visit() {
                 </div>
               </div>
             </div>
-            <a
-              href={BOOKING_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-tan btn-lg"
-            >
-              Book a Table
-            </a>
+            <div className="visit-ctas">
+              <a
+                href={BOOKING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-tan btn-lg"
+              >
+                Book a Table
+              </a>
+              <a
+                href={GIFT_VOUCHER_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-dark btn-lg"
+              >
+                Gift Vouchers
+              </a>
+            </div>
           </div>
           <div className="visit-map">
             <iframe

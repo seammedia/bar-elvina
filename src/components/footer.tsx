@@ -1,4 +1,5 @@
 import { IconInstagram } from "./icons";
+import { GIFT_VOUCHER_URL } from "@/lib/config";
 
 export function Footer() {
   return (
@@ -10,7 +11,7 @@ export function Footer() {
               <img src="/logos/elvina-mermaid-white.svg" alt="Elvina" className="nav-logo" />
             </a>
             <p>
-              A coastal-European bar and kitchen on Avalon Beach.
+              A Mediterranean bar and kitchen on Avalon Beach.
               Inviting. Breezy. Intriguing.
             </p>
             <div className="foot-social">
@@ -33,6 +34,11 @@ export function Footer() {
               <li><a href="/bottomless">Bottomless</a></li>
               <li><a href="/about">About</a></li>
               <li><a href="/contact">Visit</a></li>
+              <li>
+                <a href={GIFT_VOUCHER_URL} target="_blank" rel="noopener noreferrer">
+                  Gift Vouchers
+                </a>
+              </li>
             </ul>
           </div>
           <div className="foot-col">

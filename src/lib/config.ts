@@ -4,6 +4,9 @@
 // TODO: Swap for the embedded SevenRooms widget code once Dorgan/Dingdus Bookings supply it.
 export const BOOKING_URL = "https://www.sevenrooms.com/reservations/barelvina";
 
+// Square gift voucher purchase page (supplied by Lucas, June 2026).
+export const GIFT_VOUCHER_URL = "https://app.squareup.com/gift/ML2RT53PZQJMW/order";
+
 export const BUSINESS = {
   name: "Elvina",
   address: "Level One, 50 Old Barrenjoey Rd, Avalon Beach NSW 2107",
