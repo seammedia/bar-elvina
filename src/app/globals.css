@@ -231,7 +231,7 @@ a { color: inherit; text-decoration: none; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 55%;
+  object-position: center 52%;
 }
 .hero-bg::after {
   content: "";
