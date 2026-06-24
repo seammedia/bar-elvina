@@ -29,13 +29,13 @@ export const BOTTOMLESS = {
 };
 
 // Five distinct spaces - functions are a key revenue priority.
-// NOTE: Garden image is a placeholder food/greenery shot - needs a real garden photo.
+// All five now have dedicated photography supplied by Lucas (June 2026).
 export const ROOMS = [
   {
     name: "The Foyer",
     capacity: "Seats 25",
     desc: "Our inside dining room. Warm, intimate, the heart of the venue.",
-    image: "/images/venue-foyer.jpg",
+    image: "/images/room-foyer.jpg",
   },
   {
     name: "The Terrace",
@@ -47,18 +47,18 @@ export const ROOMS = [
     name: "The Bar",
     capacity: "Seats 12",
     desc: "A little bar setting for a drink, a snack, and a slow afternoon.",
-    image: "/images/venue-bar.jpg",
+    image: "/images/room-bar.jpg",
   },
   {
     name: "The Function Room",
     capacity: "Seats 20",
     desc: "A private room at the back, yours for the evening.",
-    image: "/images/venue-banquette.jpg",
+    image: "/images/room-function.jpg",
   },
   {
     name: "The Garden",
     capacity: "Up to 15",
     desc: "An open-air garden out back. Long lunches and golden hour.",
-    image: "", // TODO: real garden photo from Lucas (placeholder food shot was actually the foyer)
+    image: "/images/room-garden.jpg",
   },
 ];

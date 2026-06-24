@@ -75,7 +75,7 @@ export default function BottomlessPage() {
               </a>
             </div>
             <div className="about-photo">
-              <img src="/images/drink-spritz.jpg" alt="A spritz at Elvina" />
+              <img src="/images/food-bottomless.jpg" alt="A spread of plates and drinks at Elvina" />
             </div>
           </div>
         </div>

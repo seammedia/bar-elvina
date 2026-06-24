@@ -17,7 +17,7 @@ export function About() {
             <a href="/about" className="link-tan">Our story.</a>
           </div>
           <div className="about-photo">
-            <img src="/images/venue-foyer.jpg" alt="The Foyer dining room at Elvina" />
+            <img src="/images/room-foyer.jpg" alt="The dining room at Elvina, Avalon Beach" />
           </div>
         </div>
       </div>

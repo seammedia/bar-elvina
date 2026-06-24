@@ -15,7 +15,7 @@ const events = [
     name: "Supper Club — Live DJ",
     desc: "A DJ on the decks and the bar running late.",
     when: "Fri",
-    image: "", // TODO: party / DJ decks pic from Lucas
+    image: "/images/room-bar.jpg",
   },
   {
     name: "Sunset Happy Hour",
@@ -27,7 +27,7 @@ const events = [
     name: "Bottomless Weekends",
     desc: "Two hours, $99pp, all the good stuff. Sat & Sun.",
     when: "Sat-Sun",
-    image: "", // TODO: current bottomless food/drink pic from Lucas
+    image: "/images/food-bottomless.jpg",
   },
 ];
 
