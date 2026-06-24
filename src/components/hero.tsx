@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <section className="hero">
       <div className="hero-bg">
-        <img src="/images/venue-terrace.jpg" alt="The terrace at Elvina, Avalon Beach" />
+        <img src="/images/room-garden.jpg" alt="The rooftop garden at Elvina, Avalon Beach, at sunset" />
       </div>
       <div className="hero-inner">
         <div className="container">
