@@ -3,16 +3,16 @@ import { BOTTOMLESS } from "@/lib/config";
 
 const reviews = [
   {
-    quote: "Exactly what Avalon needed. The wine list is a treat.",
-    author: "A LOCAL",
+    quote: "A bloody impressive venue in Avalon.",
+    author: "SPOONING AUSTRALIA",
   },
   {
-    quote: "Bottomless menu was the best Saturday I've had in months.",
-    author: "A REGULAR",
+    quote: "Had a lovely evening here and the service was fab. Grace looked after us so well.",
+    author: "SERENA M, TRIPADVISOR",
   },
   {
-    quote: "Service is warm, the room is gorgeous, the kitchen is on point.",
-    author: "A FRIEND",
+    quote: "The balcony is a superb place to sit watching the sun go down, sipping cocktails.",
+    author: "SPOONING AUSTRALIA",
   },
 ];
 
@@ -43,8 +43,8 @@ export function Together() {
             </div>
           </div>
           <div className="reviews-block">
-            <span className="eyebrow">From The Locals</span>
-            <h2>A proper Avalon room.</h2>
+            <span className="eyebrow">What They&apos;re Saying</span>
+            <h2>Loved in Avalon.</h2>
             <div className="review-row">
               {reviews.map((r) => (
                 <div key={r.author} className="review-card">
