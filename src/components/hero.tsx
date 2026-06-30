@@ -12,9 +12,9 @@ export function Hero() {
             <span className="eyebrow hero-eyebrow">Avalon Beach</span>
             <h1>Inviting.<br />Breezy.<br />Intriguing.</h1>
             <p>
-              A Mediterranean bar and kitchen on the Northern Beaches.
-              Sun-drunk afternoons, slow evenings, and a list that knows
-              the long way home.
+              A Mediterranean restaurant and bar perched above Avalon Beach.
+              A kitchen built for long lunches, a bar made for sun-drunk
+              afternoons, and an eclectic wine list to see out the evening.
             </p>
             <div className="hero-ctas">
               <a
@@ -30,6 +30,10 @@ export function Hero() {
             </div>
           </div>
         </div>
+        <a href="#about" className="hero-scroll" aria-label="Scroll down">
+          <span className="hero-scroll-text">Take a look</span>
+          <span className="hero-scroll-arrow" aria-hidden="true" />
+        </a>
       </div>
     </section>
   );

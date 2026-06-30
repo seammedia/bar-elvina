@@ -33,31 +33,31 @@ export const BOTTOMLESS = {
 export const ROOMS = [
   {
     name: "The Foyer",
-    capacity: "Seats 25",
+    capacity: "Seats 25 · Stands 30",
     desc: "Our inside dining room. Warm, intimate, the heart of the venue.",
     image: "/images/room-foyer.jpg",
   },
   {
     name: "The Terrace",
-    capacity: "Seats 30",
+    capacity: "Stands 50",
     desc: "Covered dining with the sea air. Cool in summer, warm in winter.",
     image: "/images/venue-terrace.jpg",
   },
   {
     name: "The Bar",
-    capacity: "Seats 12",
+    capacity: "Sits 20 · Stands 25",
     desc: "A little bar setting for a drink, a snack, and a slow afternoon.",
     image: "/images/room-bar.jpg",
   },
   {
-    name: "The Function Room",
-    capacity: "Seats 20",
+    name: "The Private Dining Room",
+    capacity: "Stands 20",
     desc: "A private room at the back, yours for the evening.",
     image: "/images/room-function.jpg",
   },
   {
     name: "The Garden",
-    capacity: "Up to 15",
+    capacity: "Sits 20 · Stands 30",
     desc: "An open-air garden out back. Long lunches and golden hour.",
     image: "/images/room-garden.jpg",
   },

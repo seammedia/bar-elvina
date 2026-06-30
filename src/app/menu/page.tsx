@@ -161,7 +161,7 @@ export default function MenuPage() {
       <Nav />
       <PageHeader
         eyebrow="The Menu"
-        title="A Mediterranean kitchen + an honest list."
+        title="A Mediterranean kitchen + an eclectic list."
         description="A sample of what we're serving. Menus shift with the season. Bookings recommended for specials and weekends."
       />
 

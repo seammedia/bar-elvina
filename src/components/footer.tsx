@@ -32,7 +32,7 @@ export function Footer() {
               <li><a href="/functions">Functions</a></li>
               <li><a href="/whats-on">What&apos;s On</a></li>
               <li><a href="/bottomless">Bottomless</a></li>
-              <li><a href="/about">About</a></li>
+              <li><a href="/about">Our Story</a></li>
               <li><a href="/contact">Visit</a></li>
               <li>
                 <a href={GIFT_VOUCHER_URL} target="_blank" rel="noopener noreferrer">

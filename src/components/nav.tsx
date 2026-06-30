@@ -16,7 +16,7 @@ export function Nav() {
           <span className="nav-sep">/</span>
           <a href="/bottomless">Bottomless</a>
           <span className="nav-sep">/</span>
-          <a href="/about">About</a>
+          <a href="/about">Our Story</a>
           <span className="nav-sep">/</span>
           <a
             href={GIFT_VOUCHER_URL}

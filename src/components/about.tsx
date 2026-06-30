@@ -4,15 +4,16 @@ export function About() {
       <div className="container">
         <div className="about-grid">
           <div className="about-copy">
-            <span className="eyebrow">A Place That Feels Like The Coast</span>
-            <h2>Mediterranean, on Avalon Beach.</h2>
+            <span className="eyebrow">A True Local</span>
+            <h2>Mediterranean, in Avalon Beach.</h2>
             <p>
-              Elvina sits on the level above Avalon Beach, looking out toward
-              the main street. Inside, an honest list of wine, plates pulled from
-              the Mediterranean, and a warmth that makes the afternoon disappear.
+              Elvina sits perched above Avalon Beach: a restaurant and bar
+              inspired by the relaxed spirit of the Mediterranean. A kitchen of
+              generous sharing plates, a bar for sun-drunk afternoons, and an
+              eclectic wine list to see out the evening.
             </p>
             <p>
-              Friends welcome. Long sittings encouraged. Bare feet not discouraged.
+              Friends welcome. Long lunches encouraged. Bare feet not discouraged.
             </p>
             <a href="/about" className="link-tan">Our story.</a>
           </div>

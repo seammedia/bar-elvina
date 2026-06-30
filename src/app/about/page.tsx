@@ -6,9 +6,9 @@ import { IconPin, IconStar, Arrow } from "@/components/icons";
 import { BOOKING_URL } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "About — Elvina",
+  title: "Our Story — Elvina",
   description:
-    "A Mediterranean bar and kitchen on Avalon Beach. A place that feels like the coast.",
+    "Elvina is a neighbourhood restaurant and bar in Avalon Beach, inspired by the relaxed spirit of the Mediterranean.",
 };
 
 const values = [
@@ -20,15 +20,15 @@ const values = [
   },
   {
     icon: <IconPin />,
-    title: "Avalon first",
+    title: "A true local",
     body:
-      "A room for the locals, the regulars, the friends visiting on weekends. The coast in here, on the plate.",
+      "A place that should feel like your local: the regulars, the friends, the after-beach crowd, all welcome.",
   },
   {
     icon: <IconStar />,
-    title: "Honest hospitality",
+    title: "Genuine hospitality",
     body:
-      "Good wine, good plates, good people. Nothing fussy. Everything done properly.",
+      "Seasonal produce, generous sharing plates and an eclectic wine list, brought together with real warmth.",
   },
 ];
 
@@ -38,8 +38,8 @@ export default function AboutPage() {
       <Nav />
       <PageHeader
         eyebrow="Our Story"
-        title="Inviting. Breezy. Intriguing."
-        description="Inspiring in a subtle and refined way. Informed by a coastal, Mediterranean feeling."
+        title="A neighbourhood local, reborn."
+        description="Nestled in the heart of Avalon Beach, Elvina is a restaurant and bar inspired by the relaxed spirit of the Mediterranean."
       />
 
       <section className="section-pad-sm">
@@ -47,21 +47,40 @@ export default function AboutPage() {
           <div className="about-grid">
             <div className="about-copy">
               <span className="eyebrow">Why we&apos;re here</span>
-              <h2>A place that feels like the coast.</h2>
+              <h2>Mediterranean, in Avalon.</h2>
               <p>
-                Elvina sits on the level above Avalon Beach, looking out toward
-                the main street. Inside, an honest wine list, plates pulled from
-                the Mediterranean, and a warmth that makes the afternoon disappear.
+                Elvina sits perched above Avalon Beach. Our menu celebrates seasonal
+                produce, generous sharing plates and thoughtfully selected wines, all
+                brought together with genuine hospitality.
               </p>
               <p>
-                The room is warm. The afternoons are long. The wine is always cold.
-                Pull up a chair on the beach side of the Northern Beaches.
+                Whether you&apos;re joining us after the beach, for a long lunch or an
+                evening with friends, we want every visit to feel relaxed, memorable
+                and welcoming.
               </p>
               <a href="/contact" className="link-tan">Come say hi.</a>
             </div>
             <div className="about-photo">
               <img src="/images/room-bar.jpg" alt="The bar at Elvina, looking over Avalon Beach" />
             </div>
+          </div>
+
+          <div className="story-prose">
+            <p>
+              Founded in 2020 by Andy Emerson, Elvina quickly became a much-loved
+              local, built on great food, warm service and a strong sense of
+              community.
+            </p>
+            <p>
+              In 2026, the venue entered its next chapter under the ownership of
+              Lucas Cristofle, whose vision is simple: preserve everything locals
+              already love while thoughtfully evolving Elvina into one of Sydney&apos;s
+              leading neighbourhood dining destinations.
+            </p>
+            <p>
+              At its heart, Elvina is a place to gather, share great food and wine,
+              and feel proud to call your local.
+            </p>
           </div>
         </div>
       </section>
