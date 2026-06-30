@@ -50,7 +50,7 @@ export const ROOMS = [
   },
   {
     name: "The Terrace",
-    capacity: "Stands 50",
+    capacity: "Sits 20 · Stands 50",
     desc: "Covered dining with the sea air. Cool in summer, warm in winter.",
     image: "/images/venue-terrace.jpg",
   },
@@ -62,7 +62,7 @@ export const ROOMS = [
   },
   {
     name: "The Private Dining Room",
-    capacity: "Stands 20",
+    capacity: "Sits 20 · Stands 20",
     desc: "A private room at the back, yours for the evening.",
     image: "/images/room-function.jpg",
   },
