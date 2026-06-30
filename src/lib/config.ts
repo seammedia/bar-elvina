@@ -7,6 +7,17 @@ export const BOOKING_URL = "https://www.sevenrooms.com/reservations/barelvina";
 // Square gift voucher purchase page (supplied by Lucas, June 2026).
 export const GIFT_VOUCHER_URL = "https://app.squareup.com/gift/ML2RT53PZQJMW/order";
 
+// Events / function pack PDF. TODO: replace placeholder with Lucas's real pack.
+export const FUNCTION_PACK_URL = "/elvina-function-pack.pdf";
+
+// Menu PDFs (boxes on the menu page). TODO: replace placeholders with real menus.
+export const MENUS = [
+  { name: "A La Carte", desc: "Our full seasonal menu.", file: "/menus/a-la-carte.pdf" },
+  { name: "Set Menu", desc: "Shared feasting for groups.", file: "/menus/set-menu.pdf" },
+  { name: "Set Menu · $85", desc: "The full Elvina experience.", file: "/menus/set-menu-85.pdf" },
+  { name: "Kids Menu", desc: "For the little ones.", file: "/menus/kids-menu.pdf" },
+];
+
 export const BUSINESS = {
   name: "Elvina",
   address: "Level One, 50 Old Barrenjoey Rd, Avalon Beach NSW 2107",
@@ -25,7 +36,7 @@ export const BOTTOMLESS = {
   price: "$99",
   duration: "2 hours",
   minimum: "Minimum 2 people",
-  description: "Two hours of unlimited beers, bubbles, vino (white/rosé/red), spritz's and margaritas.",
+  description: "Two hours of unlimited beers, bubbles, vino, spritz's and margaritas.",
 };
 
 // Five distinct spaces - functions are a key revenue priority.

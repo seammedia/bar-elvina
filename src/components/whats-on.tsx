@@ -6,12 +6,6 @@ const events = [
     image: "/images/food-wagyu.jpg",
   },
   {
-    name: "Ribs Thursday",
-    desc: "Low and slow. The chef's weekly special.",
-    when: "Thu",
-    image: "", // TODO: ribs pic from Lucas (temporary special)
-  },
-  {
     name: "Supper Club — Live DJ",
     desc: "A DJ on the decks and the bar running late.",
     when: "Fri",
@@ -24,9 +18,9 @@ const events = [
     image: "/images/venue-bar.jpg",
   },
   {
-    name: "Bottomless Weekends",
-    desc: "Two hours, $99pp, all the good stuff. Sat & Sun.",
-    when: "Sat-Sun",
+    name: "Bottomless",
+    desc: "Two hours, $99pp, all the good stuff. Every day.",
+    when: "Daily",
     image: "/images/food-bottomless.jpg",
   },
 ];

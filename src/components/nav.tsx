@@ -10,11 +10,9 @@ export function Nav() {
         <nav className="nav-links">
           <a href="/menu">Menu</a>
           <span className="nav-sep">/</span>
-          <a href="/functions">Functions</a>
+          <a href="/functions">Events &amp; Weddings</a>
           <span className="nav-sep">/</span>
           <a href="/whats-on">What&apos;s On</a>
-          <span className="nav-sep">/</span>
-          <a href="/bottomless">Bottomless</a>
           <span className="nav-sep">/</span>
           <a href="/about">Our Story</a>
           <span className="nav-sep">/</span>

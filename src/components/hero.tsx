@@ -12,9 +12,9 @@ export function Hero() {
             <span className="eyebrow hero-eyebrow">Avalon Beach</span>
             <h1>Inviting.<br />Breezy.<br />Intriguing.</h1>
             <p>
-              A Mediterranean restaurant and bar perched above Avalon Beach.
-              A kitchen built for long lunches, a bar made for sun-drunk
-              afternoons, and an eclectic wine list to see out the evening.
+              A Mediterranean bar and kitchen perched above Avalon Beach.
+              Long lunches, sun-drunk afternoons and dancing evenings, all
+              with an eclectic wine list.
             </p>
             <div className="hero-ctas">
               <a
@@ -25,7 +25,7 @@ export function Hero() {
               >
                 Book a Table
               </a>
-              <a href="/functions" className="btn btn-outline-light btn-lg">Functions</a>
+              <a href="/functions" className="btn btn-outline-light btn-lg">Events &amp; Weddings</a>
               <a href="/bottomless" className="btn btn-outline-light btn-lg">Bottomless</a>
             </div>
           </div>

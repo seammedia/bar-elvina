@@ -7,13 +7,12 @@ export function About() {
             <span className="eyebrow">A True Local</span>
             <h2>Mediterranean, in Avalon Beach.</h2>
             <p>
-              Elvina sits perched above Avalon Beach: a restaurant and bar
-              inspired by the relaxed spirit of the Mediterranean. A kitchen of
-              generous sharing plates, a bar for sun-drunk afternoons, and an
-              eclectic wine list to see out the evening.
+              Elvina sits perched above Avalon Beach, looking out toward the
+              main street. Inside, an eclectic list of wine, plates pulled from
+              the Mediterranean, and a warmth that makes the afternoon disappear.
             </p>
             <p>
-              Friends welcome. Long lunches encouraged. Bare feet not discouraged.
+              Friends welcome. Long sittings encouraged. Bare feet not discouraged.
             </p>
             <a href="/about" className="link-tan">Our story.</a>
           </div>

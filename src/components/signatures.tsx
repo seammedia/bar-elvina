@@ -1,7 +1,7 @@
 const items = [
   {
     name: "Booze",
-    desc: "Wines by region. Cocktails with a southern slant. Spritz hours that count.",
+    desc: "Wines by region. Cocktails with a coastal slant. Spritz hours that count.",
     href: "/menu",
     cta: "View Menu →",
   },

@@ -382,6 +382,71 @@ section {
 
 /* ===== Menu page ===== */
 .menu-page { background: var(--off-white); }
+.menu-pdf-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.menu-pdf-card {
+  background: var(--off-white);
+  border: 1px solid var(--rule);
+  padding: 36px 36px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  transition: border-color 0.2s, background 0.2s;
+}
+.menu-pdf-card:hover {
+  border-color: var(--sundial);
+  background: var(--cream-2);
+}
+.menu-pdf-body h3 {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: 26px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--burnt-sienna);
+  margin: 0 0 8px;
+}
+.menu-pdf-body p {
+  font-family: var(--mono);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--muted);
+  margin: 0;
+}
+.menu-pdf-cta {
+  font-family: var(--display);
+  font-size: 11px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--sundial);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+}
+.menu-dietaries {
+  text-align: center;
+  font-family: var(--mono);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--muted);
+  margin: clamp(36px, 5vw, 56px) auto 0;
+  max-width: 48ch;
+}
+.menu-foot-actions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+@media (max-width: 720px) {
+  .menu-pdf-grid { grid-template-columns: 1fr; }
+}
 .menu-banner {
   text-align: center;
   padding: 28px 24px;
@@ -1003,6 +1068,41 @@ section {
 .room-card-cta h3 { color: var(--off-white); font-size: 22px; }
 .room-card-cta p { color: rgba(253,250,240,0.78); }
 .room-card-cta .btn { align-self: flex-start; margin-top: 8px; }
+
+/* ===== Functions intro ===== */
+.functions-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 5vw, 80px);
+  align-items: center;
+}
+.occasions {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.occasion {
+  border-left: 2px solid var(--sundial);
+  padding: 4px 0 4px 20px;
+}
+.occasion h4 {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--burnt-sienna);
+  margin: 0 0 6px;
+}
+.occasion p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0;
+}
+@media (max-width: 980px) {
+  .functions-intro { grid-template-columns: 1fr; gap: 36px; }
+}
 
 /* ===== Happenings / What's On ===== */
 .happenings {

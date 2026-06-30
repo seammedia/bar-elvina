@@ -8,7 +8,7 @@ import { BOOKING_URL, BOTTOMLESS } from "@/lib/config";
 export const metadata: Metadata = {
   title: "Bottomless — Elvina",
   description:
-    "Two hours of unlimited beers, bubbles, vino, spritz's and margaritas. $99 per person. Daily when open.",
+    "Two hours of unlimited beers, bubbles, vino, spritz's and margaritas. $99 per person. Daily.",
 };
 
 const includes = [
@@ -33,10 +33,6 @@ const faqs = [
     q: "Whole-table only?",
     a: "Yes - everyone at the table needs to be on the package. Keeps the kitchen and bar in rhythm.",
   },
-  {
-    q: "Dietaries?",
-    a: "Always. Flag GF, vegetarian, vegan, or allergies on booking and we'll build the snacks around you.",
-  },
 ];
 
 export default function BottomlessPage() {
@@ -46,7 +42,7 @@ export default function BottomlessPage() {
       <PageHeader
         eyebrow="Bottomless"
         title={`Two hours. ${BOTTOMLESS.price} per person.`}
-        description={`${BOTTOMLESS.duration} of unlimited beers, bubbles, vino (white/rosé/red), spritz's and margaritas. Daily when open.`}
+        description={`${BOTTOMLESS.duration} of unlimited beers, bubbles, vino, spritz's and margaritas. Daily.`}
       />
 
       <section className="section-pad-sm">

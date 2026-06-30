@@ -4,25 +4,69 @@ import { Footer } from "@/components/footer";
 import { PageHeader } from "@/components/page-header";
 import { ContactForm } from "@/components/contact-form";
 import { IconMail, IconPhone, Arrow } from "@/components/icons";
-import { ROOMS, BUSINESS } from "@/lib/config";
+import { ROOMS, BUSINESS, FUNCTION_PACK_URL } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "Functions & Events — Elvina",
+  title: "Events & Weddings — Elvina",
   description:
-    "Host your next function at Elvina, Avalon Beach. Five distinct spaces, from intimate dinners to garden parties. Enquire today.",
+    "Weddings, private celebrations, corporate events and long lunches at Elvina, Avalon Beach. Five distinct spaces, all yours.",
 };
+
+const occasions = [
+  { title: "Weddings", body: "Ceremonies, receptions and rehearsal dinners with the Mediterranean as your backdrop." },
+  { title: "Private Celebrations", body: "Birthdays, engagements, anniversaries: the milestones worth gathering for." },
+  { title: "Corporate & Groups", body: "Team lunches, client dinners, end-of-year parties and everything between." },
+];
 
 export default function FunctionsPage() {
   return (
     <>
       <Nav />
       <PageHeader
-        eyebrow="Functions & Events"
-        title="Host with us on Avalon Beach."
-        description="From a long lunch to a private celebration, Elvina has a space to match the occasion. Five distinct areas, all yours."
+        eyebrow="Events & Weddings"
+        title="Celebrate with us on Avalon Beach."
+        description="From weddings and private celebrations to corporate events and long lunches, Elvina has a space to match the occasion. Five distinct areas, all yours."
       />
 
       <section className="section-pad-sm">
+        <div className="container">
+          <div className="functions-intro">
+            <div className="rooms-head" style={{ maxWidth: 560, marginBottom: 0 }}>
+              <span className="eyebrow">What We Host</span>
+              <h2 style={{
+                fontFamily: "var(--display)", fontWeight: 500,
+                fontSize: "clamp(28px, 4vw, 44px)", letterSpacing: "0.02em",
+                textTransform: "uppercase", color: "var(--burnt-sienna)",
+                margin: "0 0 18px", lineHeight: 1.1,
+              }}>
+                Made for the occasion.
+              </h2>
+              <p style={{ fontSize: 16, lineHeight: 1.7, color: "var(--burnt-sienna)", margin: "0 0 24px" }}>
+                Whatever you&apos;re marking, we&apos;ll tailor food, drinks and styling
+                to suit. Download our pack for spaces, capacities and sample menus.
+              </p>
+              <a
+                href={FUNCTION_PACK_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-tan btn-lg"
+              >
+                Download Function Pack <Arrow />
+              </a>
+            </div>
+            <div className="occasions">
+              {occasions.map((o) => (
+                <div key={o.title} className="occasion">
+                  <h4>{o.title}</h4>
+                  <p>{o.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-pad-sm" style={{ background: "var(--paper)" }}>
         <div className="container">
           <div className="rooms-head" style={{ maxWidth: 640 }}>
             <span className="eyebrow">The Spaces</span>
@@ -68,7 +112,7 @@ export default function FunctionsPage() {
         </div>
       </section>
 
-      <section style={{ background: "var(--paper)" }}>
+      <section>
         <div className="container">
           <div className="contact-grid">
             <div className="contact-info" style={{ justifyContent: "flex-start" }}>
@@ -91,7 +135,7 @@ export default function FunctionsPage() {
                 </div>
               </div>
             </div>
-            <ContactForm subjects={["Function enquiry", "Private dining", "Large group booking", "Corporate event", "General enquiry"]} defaultSubject="Function enquiry" />
+            <ContactForm subjects={["Wedding enquiry", "Private celebration", "Corporate event", "Large group booking", "General enquiry"]} defaultSubject="Wedding enquiry" />
           </div>
         </div>
       </section>

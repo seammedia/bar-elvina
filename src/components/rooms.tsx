@@ -41,7 +41,7 @@ export function Rooms() {
                 From a long lunch to a private function, we&apos;ll match the
                 space to the occasion.
               </p>
-              <a href="/functions" className="btn btn-tan">Functions &amp; Events</a>
+              <a href="/functions" className="btn btn-tan">Events &amp; Weddings</a>
             </div>
           </div>
         </div>
