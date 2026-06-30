@@ -5,7 +5,7 @@ export function About() {
         <div className="about-grid">
           <div className="about-copy">
             <span className="eyebrow">A True Local</span>
-            <h2>Mediterranean, in Avalon Beach.</h2>
+            <h2>Mediterranean, on Avalon Beach.</h2>
             <p>
               Elvina sits perched above Avalon Beach, looking out toward the
               main street. Inside, an eclectic list of wine, plates pulled from
