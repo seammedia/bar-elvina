@@ -11,7 +11,7 @@ export function Footer() {
               <img src="/logos/elvina-mermaid-white.svg" alt="Elvina" className="nav-logo" />
             </a>
             <p>
-              A Mediterranean restaurant and bar on Avalon Beach.
+              A coastal Mediterranean bar and kitchen in Avalon Beach.
               Inviting. Breezy. Intriguing.
             </p>
             <div className="foot-social">
@@ -45,7 +45,8 @@ export function Footer() {
             <h4>Hours</h4>
             <div className="lines">
               <div className="hour-line"><span>Wed-Thu</span><span>5pm - late</span></div>
-              <div className="hour-line"><span>Fri-Sat</span><span>4pm - late</span></div>
+              <div className="hour-line"><span>Fri</span><span>12pm - late</span></div>
+              <div className="hour-line"><span>Sat</span><span>4pm - late</span></div>
               <div className="hour-line"><span>Sun-Tue</span><span>Closed</span></div>
             </div>
           </div>

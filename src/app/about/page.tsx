@@ -8,7 +8,7 @@ import { BOOKING_URL } from "@/lib/config";
 export const metadata: Metadata = {
   title: "Our Story — Elvina",
   description:
-    "Elvina is a neighbourhood restaurant and bar on Avalon Beach, inspired by the relaxed spirit of the Mediterranean.",
+    "Elvina is a neighbourhood restaurant and bar in Avalon Beach, inspired by the relaxed spirit of the coastal Mediterranean.",
 };
 
 const values = [
@@ -39,29 +39,29 @@ export default function AboutPage() {
       <PageHeader
         eyebrow="Our Story"
         title="A neighbourhood local, reborn."
-        description="Nestled in the heart of Avalon Beach, Elvina is a restaurant and bar inspired by the relaxed spirit of the Mediterranean."
+        description="Avalon's own since 2020. Here's how Elvina came to be, and where it's headed."
       />
 
       <section className="section-pad-sm">
         <div className="container">
-          <div className="about-grid">
-            <div className="about-copy">
-              <span className="eyebrow">Why we&apos;re here</span>
-              <h2>Mediterranean, on Avalon.</h2>
-              <p>
-                Elvina sits perched above Avalon Beach. Our menu celebrates seasonal
-                produce, generous sharing plates and thoughtfully selected wines, all
-                brought together with genuine hospitality.
-              </p>
-              <p>
-                Whether you&apos;re joining us after the beach, for a long lunch or an
-                evening with friends, we want every visit to feel relaxed, memorable
-                and welcoming.
-              </p>
-              <a href="/contact" className="link-tan">Come say hi.</a>
-            </div>
+          <div className="about-grid about-grid-story">
             <div className="about-photo">
-              <img src="/images/room-bar.jpg" alt="The bar at Elvina, looking over Avalon Beach" />
+              <img src="/images/venue-lifestyle.jpg" alt="Guests at the bar at Elvina, Avalon Beach" />
+            </div>
+            <div className="about-copy">
+              <span className="eyebrow">The Story</span>
+              <p>
+                Nestled in the heart of Avalon Beach, Elvina is a neighbourhood
+                restaurant and bar inspired by the relaxed spirit of the coastal
+                Mediterranean.
+              </p>
+              <p>
+                Our menu celebrates seasonal produce, generous sharing plates and
+                thoughtfully selected wines, all brought together with genuine
+                hospitality. Whether you&apos;re joining us after the beach, for a
+                long lunch or an evening with friends, we want every visit to feel
+                relaxed, memorable and welcoming.
+              </p>
             </div>
           </div>
 
@@ -103,7 +103,7 @@ export default function AboutPage() {
 
       <section className="cta-strip">
         <div className="container">
-          <h2>Pull up a chair on Avalon.</h2>
+          <h2>Pull up a chair in Avalon.</h2>
           <p>
             Level One, 50 Old Barrenjoey Rd. Bookings open most nights,
             walk-ins always welcome at the bar.

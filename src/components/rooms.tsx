@@ -38,8 +38,8 @@ export function Rooms() {
             <div className="room-body">
               <h3>Host with us.</h3>
               <p>
-                From a long lunch to a private function, we&apos;ll match the
-                space to the occasion.
+                From a long lunch to a wedding or private celebration,
+                we&apos;ll match the space to the occasion.
               </p>
               <a href="/functions" className="btn btn-tan">Events &amp; Weddings</a>
             </div>

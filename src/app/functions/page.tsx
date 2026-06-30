@@ -9,11 +9,11 @@ import { ROOMS, BUSINESS, FUNCTION_PACK_URL } from "@/lib/config";
 export const metadata: Metadata = {
   title: "Events & Weddings — Elvina",
   description:
-    "Weddings, private celebrations, corporate events and long lunches at Elvina, Avalon Beach. Five distinct spaces, all yours.",
+    "Weddings, private celebrations, corporate events and long lunches at Elvina, in Avalon Beach. Five distinct spaces, all yours.",
 };
 
 const occasions = [
-  { title: "Weddings", body: "Ceremonies, receptions and rehearsal dinners with the Mediterranean as your backdrop." },
+  { title: "Weddings", body: "Ceremonies, receptions and rehearsal dinners with the coastal Mediterranean as your backdrop." },
   { title: "Private Celebrations", body: "Birthdays, engagements, anniversaries: the milestones worth gathering for." },
   { title: "Corporate & Groups", body: "Team lunches, client dinners, end-of-year parties and everything between." },
 ];
@@ -24,7 +24,7 @@ export default function FunctionsPage() {
       <Nav />
       <PageHeader
         eyebrow="Events & Weddings"
-        title="Celebrate with us on Avalon Beach."
+        title="Celebrate with us in Avalon Beach."
         description="From weddings and private celebrations to corporate events and long lunches, Elvina has a space to match the occasion. Five distinct areas, all yours."
       />
 

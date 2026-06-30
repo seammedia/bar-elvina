@@ -27,7 +27,8 @@ export const BUSINESS = {
   instagram: "https://www.instagram.com/barelvina/",
   hours: {
     wedThu: "5:00pm - late",
-    friSat: "4:00pm - late",
+    fri: "12:00pm - late",
+    sat: "4:00pm - late",
     sunMonTue: "Closed",
   },
 };
@@ -50,25 +51,25 @@ export const ROOMS = [
   },
   {
     name: "The Terrace",
-    capacity: "Sits 20 · Stands 50",
+    capacity: "Seats 30 · Stands 50",
     desc: "Covered dining with the sea air. Cool in summer, warm in winter.",
     image: "/images/venue-terrace.jpg",
   },
   {
     name: "The Bar",
-    capacity: "Sits 20 · Stands 25",
+    capacity: "Seats 20 · Stands 25",
     desc: "A little bar setting for a drink, a snack, and a slow afternoon.",
     image: "/images/room-bar.jpg",
   },
   {
     name: "The Private Dining Room",
-    capacity: "Sits 20 · Stands 20",
+    capacity: "Seats 20 · Stands 25",
     desc: "A private room at the back, yours for the evening.",
     image: "/images/room-function.jpg",
   },
   {
     name: "The Garden",
-    capacity: "Sits 20 · Stands 30",
+    capacity: "Seats 20 · Stands 30",
     desc: "An open-air garden out back. Long lunches and golden hour.",
     image: "/images/room-garden.jpg",
   },

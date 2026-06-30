@@ -382,51 +382,51 @@ section {
 
 /* ===== Menu page ===== */
 .menu-page { background: var(--off-white); }
-.menu-pdf-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-}
-.menu-pdf-card {
-  background: var(--off-white);
-  border: 1px solid var(--rule);
-  padding: 36px 36px 32px;
+.menu-viewer {
   display: flex;
   flex-direction: column;
-  gap: 22px;
-  transition: border-color 0.2s, background 0.2s;
+  gap: 0;
 }
-.menu-pdf-card:hover {
-  border-color: var(--sundial);
-  background: var(--cream-2);
+.menu-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
 }
-.menu-pdf-body h3 {
+.menu-tab {
   font-family: var(--display);
-  font-weight: 500;
-  font-size: 26px;
-  letter-spacing: 0.04em;
+  font-size: 12px;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
+  font-weight: 500;
   color: var(--burnt-sienna);
-  margin: 0 0 8px;
+  background: var(--cream-2);
+  border: 1px solid var(--rule);
+  border-bottom: none;
+  padding: 14px 22px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
 }
-.menu-pdf-body p {
-  font-family: var(--mono);
-  font-style: italic;
-  font-size: 14px;
-  color: var(--muted);
-  margin: 0;
+.menu-tab:hover { color: var(--sundial); }
+.menu-tab.is-active {
+  background: var(--burnt-sienna);
+  color: var(--off-white);
+  border-color: var(--burnt-sienna);
 }
-.menu-pdf-cta {
-  font-family: var(--display);
-  font-size: 11px;
-  letter-spacing: 0.32em;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: var(--sundial);
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: auto;
+.menu-embed {
+  border: 1px solid var(--rule);
+  background: var(--cream-2);
+  aspect-ratio: 1 / 1.414; /* A4 portrait */
+  max-height: 1100px;
+}
+.menu-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+@media (max-width: 600px) {
+  .menu-embed { aspect-ratio: auto; height: 75vh; }
+  .menu-tab { padding: 12px 16px; font-size: 11px; letter-spacing: 0.12em; }
 }
 .menu-dietaries {
   text-align: center;
@@ -443,9 +443,6 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 28px;
-}
-@media (max-width: 720px) {
-  .menu-pdf-grid { grid-template-columns: 1fr; }
 }
 .menu-banner {
   text-align: center;

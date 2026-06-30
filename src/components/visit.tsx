@@ -8,7 +8,7 @@ export function Visit() {
         <div className="visit-grid">
           <div className="visit-info">
             <span className="eyebrow">Find Us</span>
-            <h2>Visit us on Avalon Beach.</h2>
+            <h2>Visit us in Avalon Beach.</h2>
             <div className="visit-rows">
               <div className="visit-row">
                 <span className="icon"><IconPin /></span>
@@ -22,7 +22,8 @@ export function Visit() {
                 <span className="icon"><IconClock /></span>
                 <div className="text">
                   <div className="hour-line"><span>Wed-Thu</span><span>5pm - late</span></div>
-                  <div className="hour-line"><span>Fri-Sat</span><span>4pm - late</span></div>
+                  <div className="hour-line"><span>Fri</span><span>12pm - late</span></div>
+                  <div className="hour-line"><span>Sat</span><span>4pm - late</span></div>
                   <div className="hour-line"><span>Sun-Tue</span><span>Closed</span></div>
                 </div>
               </div>
