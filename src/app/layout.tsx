@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Elvina — Avalon Beach",
     description:
       "Coastal Mediterranean in feel. Inviting. Breezy. Intriguing.",
-    url: "https://barelvina.com.au",
+    url: "https://elvina.com.au",
     siteName: "Elvina",
     locale: "en_AU",
     type: "website",
