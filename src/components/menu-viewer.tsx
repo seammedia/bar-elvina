@@ -25,7 +25,7 @@ export function MenuViewer() {
       <div className="menu-embed">
         <iframe
           key={current.file}
-          src={`${current.file}#view=FitH&toolbar=0`}
+          src={`${current.file}#view=Fit&toolbar=0&navpanes=0`}
           title={`${current.name} menu`}
           loading="lazy"
         />

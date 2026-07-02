@@ -46,7 +46,7 @@ export default function AboutPage() {
         <div className="container">
           <div className="about-grid about-grid-story">
             <div className="about-photo">
-              <img src="/images/venue-lifestyle.jpg" alt="Guests at the bar at Elvina, Avalon Beach" />
+              <img src="/images/our-story.jpg" alt="Two margaritas raised in a toast on the terrace at Elvina" />
             </div>
             <div className="about-copy">
               <span className="eyebrow">The Story</span>

@@ -1,28 +1,7 @@
-const events = [
-  {
-    name: "Wagyu Wednesday",
-    desc: "250g Tajima Wagyu rump, onion rings, eschalot butter, garden leaves.",
-    when: "Wed",
-    image: "/images/food-wagyu.jpg",
-  },
-  {
-    name: "Supper Club — Live DJ",
-    desc: "A DJ on the decks and the bar running late.",
-    when: "Fri",
-    image: "/images/room-bar.jpg",
-  },
-  {
-    name: "Sunset Happy Hour",
-    desc: "Spritz, beers, snacks. Watch the day wind down.",
-    when: "Wed-Fri 4-6pm",
-    image: "/images/venue-bar.jpg",
-  },
-  {
-    name: "Bottomless",
-    desc: "Two hours, $99pp, all the good stuff. Every day.",
-    when: "Daily",
-    image: "/images/food-bottomless.jpg",
-  },
+const posters = [
+  { name: "Wagyu Wednesday", image: "/images/whatson-wagyu.jpg", alt: "Wagyu Wednesday - $33 Tajima wagyu rump, Wednesdays at Elvina" },
+  { name: "Aperitivo Time", image: "/images/whatson-aperitivo.jpg", alt: "Aperitivo Time - Wed to Fri 5-7pm, oysters, margaritas, spritz and wine" },
+  { name: "Bottomless", image: "/images/whatson-bottomless.jpg", alt: "Bottomless lunch and dinner - $99 per person, Wed to Sat all winter" },
 ];
 
 export function WhatsOn() {
@@ -31,24 +10,11 @@ export function WhatsOn() {
       <div className="container">
         <span className="eyebrow">What&apos;s On</span>
         <h2>Always something on.</h2>
-        <div className="happenings-list">
-          {events.map((e) => (
-            <div key={e.name} className="happening-row">
-              <div className="happening-main">
-                <div className="happening-thumb">
-                  {e.image ? (
-                    <img src={e.image} alt={e.name} />
-                  ) : (
-                    <div className="happening-thumb-placeholder" aria-hidden="true" />
-                  )}
-                </div>
-                <div>
-                  <p className="name">{e.name}</p>
-                  <p className="desc">{e.desc}</p>
-                </div>
-              </div>
-              <span className="when">{e.when}</span>
-            </div>
+        <div className="whatson-grid">
+          {posters.map((p) => (
+            <figure key={p.name} className="whatson-poster">
+              <img src={p.image} alt={p.alt} />
+            </figure>
           ))}
         </div>
       </div>

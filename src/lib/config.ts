@@ -10,11 +10,11 @@ export const GIFT_VOUCHER_URL = "https://app.squareup.com/gift/ML2RT53PZQJMW/ord
 // Events / function pack PDF. TODO: replace placeholder with Lucas's real pack.
 export const FUNCTION_PACK_URL = "/elvina-function-pack.pdf";
 
-// Menu PDFs (boxes on the menu page). TODO: replace placeholders with real menus.
+// Menu PDFs embedded on the menu page (tabbed viewer).
 export const MENUS = [
   { name: "A La Carte", desc: "Our full seasonal menu.", file: "/menus/a-la-carte.pdf" },
-  { name: "Set Menu", desc: "Shared feasting for groups.", file: "/menus/set-menu.pdf" },
-  { name: "Set Menu · $85", desc: "The full Elvina experience.", file: "/menus/set-menu-85.pdf" },
+  { name: "Set Menus", desc: "Share the Love $69 · More to Love $89.", file: "/menus/set-menus.pdf" },
+  { name: "Dessert", desc: "Sweets, digestives and pairings.", file: "/menus/dessert.pdf" },
   { name: "Kids Menu", desc: "For the little ones.", file: "/menus/kids-menu.pdf" },
 ];
 
