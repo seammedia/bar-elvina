@@ -13,7 +13,7 @@ export const FUNCTION_PACK_URL = "/elvina-function-pack.pdf";
 // Menu PDFs embedded on the menu page (tabbed viewer).
 export const MENUS = [
   { name: "A La Carte", desc: "Our full seasonal menu.", file: "/menus/a-la-carte.pdf" },
-  { name: "Set Menus", desc: "Share the Love $69 · More to Love $89.", file: "/menus/set-menus.pdf" },
+  { name: "Set Menus", desc: "To Gather $69 · To Share $89.", file: "/menus/set-menus.pdf" },
   { name: "Dessert", desc: "Sweets, digestives and pairings.", file: "/menus/dessert.pdf" },
   { name: "Kids Menu", desc: "For the little ones.", file: "/menus/kids-menu.pdf" },
 ];
@@ -37,7 +37,7 @@ export const BOTTOMLESS = {
   price: "$99",
   duration: "2 hours",
   minimum: "Minimum 2 people",
-  description: "Two hours of unlimited beers, bubbles, vino, spritz's and margaritas.",
+  description: "A signature banquet with two hours of margaritas, spritzes, beer, bubbles and house wines.",
 };
 
 // Five distinct spaces - functions are a key revenue priority.

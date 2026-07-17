@@ -4,7 +4,7 @@ import { Footer } from "@/components/footer";
 import { PageHeader } from "@/components/page-header";
 import { ContactForm } from "@/components/contact-form";
 import { IconMail, IconPhone, Arrow } from "@/components/icons";
-import { ROOMS, BUSINESS, FUNCTION_PACK_URL } from "@/lib/config";
+import { ROOMS, BUSINESS } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Events & Weddings — Elvina",
@@ -43,15 +43,14 @@ export default function FunctionsPage() {
               </h2>
               <p style={{ fontSize: 16, lineHeight: 1.7, color: "var(--burnt-sienna)", margin: "0 0 24px" }}>
                 Whatever you&apos;re marking, we&apos;ll tailor food, drinks and styling
-                to suit. Download our pack for spaces, capacities and sample menus.
+                to suit. Get in touch and we&apos;ll send our pack with spaces,
+                capacities and sample menus.
               </p>
               <a
-                href={FUNCTION_PACK_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={`mailto:${BUSINESS.email}?subject=${encodeURIComponent("Function Pack request")}&body=${encodeURIComponent("Hi Elvina,\n\nCould you please send through your function pack? A few details about my event:\n\nDate:\nNumber of guests:\nOccasion:\n\nThanks,")}`}
                 className="btn btn-tan btn-lg"
               >
-                Download Function Pack <Arrow />
+                Request Function Pack <Arrow />
               </a>
             </div>
             <div className="occasions">

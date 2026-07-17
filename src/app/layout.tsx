@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://elvina.com.au"),
   title: "Elvina — Avalon Beach",
   description:
-    "A neighbourhood bar and kitchen in Avalon Beach. Coastal Mediterranean in feel. Inviting. Breezy. Intriguing.",
+    "A neighbourhood kitchen and bar in Avalon Beach. Coastal Mediterranean in feel. Inviting. Breezy. Intriguing.",
   openGraph: {
     title: "Elvina — Avalon Beach",
     description:

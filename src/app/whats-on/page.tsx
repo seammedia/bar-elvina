@@ -9,7 +9,7 @@ import { BOOKING_URL } from "@/lib/config";
 export const metadata: Metadata = {
   title: "What's On — Elvina",
   description:
-    "What's on this week at Elvina. Wagyu Wednesday, Ribs Thursday, Friday DJ supper club, happy hour and bottomless weekends.",
+    "What's on at Elvina: Aperitivo Time, $99 bottomless lunch and dinner, Wagyu Wednesday and Vino Vinyl Fridays.",
 };
 
 export default function WhatsOnPage() {

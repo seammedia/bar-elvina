@@ -8,16 +8,18 @@ import { BOOKING_URL, BOTTOMLESS } from "@/lib/config";
 export const metadata: Metadata = {
   title: "Bottomless — Elvina",
   description:
-    "Two hours of unlimited beers, bubbles, vino, spritz's and margaritas. $99 per person. Daily.",
+    "A signature banquet with two hours of margaritas, spritzes, beer, bubbles and house wines. $99 per person.",
 };
 
 const includes = [
-  "House sparkling, white, rosé, red",
-  "Tap beers + cider",
-  "Aperol Spritz + house spritz",
-  "Margaritas to keep it interesting",
-  "Snacks while you settle in",
-  "Two-hour sitting, your pace",
+  "Rosemary & confit garlic focaccia",
+  "Marinated Sicilian olives",
+  "White bean hummus, confit leek, paprika",
+  "Mediterranean dip, kalamata olives, peppers, anchovies",
+  "Mushroom & saffron arancini, parmesan",
+  "Rany's chargrilled spatchcock, roasted red pepper, guindillas & lime",
+  "Fries, pimiento aioli",
+  "Rocket, radicchio, pistachio, pomegranate, citrus vinaigrette",
 ];
 
 const faqs = [
@@ -42,7 +44,7 @@ export default function BottomlessPage() {
       <PageHeader
         eyebrow="Bottomless"
         title={`Two hours. ${BOTTOMLESS.price} per person.`}
-        description={`${BOTTOMLESS.duration} of unlimited beers, bubbles, vino, spritz's and margaritas. Daily.`}
+        description={BOTTOMLESS.description}
       />
 
       <section className="section-pad-sm">
@@ -52,8 +54,9 @@ export default function BottomlessPage() {
               <span className="eyebrow">What&apos;s included</span>
               <h2>Drink well. Settle in. Take your time.</h2>
               <p>
-                Two hours of unlimited wine, beer, cocktails. {BOTTOMLESS.price} per
-                person, minimum two people. Available every day we&apos;re open.
+                A signature banquet with {BOTTOMLESS.duration} of margaritas,
+                spritzes, beer, bubbles and house wines. {BOTTOMLESS.price} per
+                person, minimum two people.
               </p>
               <ul className="bottomless-includes">
                 {includes.map((i) => (
@@ -96,8 +99,8 @@ export default function BottomlessPage() {
         <div className="container">
           <h2>Lock it in.</h2>
           <p>
-            Tables go quickly through summer. {BOTTOMLESS.price} per person,
-            {" "}{BOTTOMLESS.duration}, all the good stuff included.
+            {BOTTOMLESS.price} per person, {BOTTOMLESS.duration}, signature
+            banquet and drinks package included.
           </p>
           <div className="cta-strip-actions">
             <a

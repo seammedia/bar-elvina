@@ -25,13 +25,27 @@ export function ContactForm({
           <input id="email" name="email" type="email" required placeholder="you@email.com" />
         </div>
       </div>
-      <div className="field">
-        <label htmlFor="subject">Subject</label>
-        <select id="subject" name="subject" defaultValue={defaultSubject}>
-          {subjects.map((s) => (
-            <option key={s}>{s}</option>
-          ))}
-        </select>
+      <div className="field-row">
+        <div className="field">
+          <label htmlFor="phone">Mobile Number</label>
+          <input
+            id="phone"
+            name="phone"
+            type="text"
+            inputMode="tel"
+            required
+            pattern="\+?[0-9 \(\)\-]{8,}"
+            placeholder="04XX XXX XXX"
+          />
+        </div>
+        <div className="field">
+          <label htmlFor="subject">Subject</label>
+          <select id="subject" name="subject" defaultValue={defaultSubject}>
+            {subjects.map((s) => (
+              <option key={s}>{s}</option>
+            ))}
+          </select>
+        </div>
       </div>
       <div className="field">
         <label htmlFor="message">Message</label>

@@ -12,7 +12,7 @@ export function Hero() {
             <span className="eyebrow hero-eyebrow">Avalon Beach</span>
             <h1>Inviting.<br />Breezy.<br />Intriguing.</h1>
             <p>
-              A coastal Mediterranean bar and kitchen perched above Avalon
+              A coastal Mediterranean kitchen and bar perched above Avalon
               Beach. Long lunches, sun-drunk afternoons and dancing evenings,
               all with an eclectic wine list.
             </p>
