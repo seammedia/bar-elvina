@@ -15,7 +15,6 @@ export const MENUS = [
   { name: "A La Carte", desc: "Our full seasonal menu.", file: "/menus/a-la-carte.pdf" },
   { name: "To Gather · $69", desc: "Our sharing menu for a relaxed gathering.", file: "/menus/set-menu-gather.pdf" },
   { name: "To Share · $89", desc: "The fuller Elvina sharing experience.", file: "/menus/set-menu-share.pdf" },
-  { name: "Dessert", desc: "Sweets, digestives and pairings.", file: "/menus/dessert.pdf" },
   { name: "Kids Menu", desc: "For the little ones.", file: "/menus/kids-menu.pdf" },
 ];
 
