@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 const BASE = "https://elvina.com.au";
-const UPDATED = new Date("2026-07-13");
+const UPDATED = new Date("2026-07-23");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
