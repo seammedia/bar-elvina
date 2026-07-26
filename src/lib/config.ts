@@ -13,6 +13,7 @@ export const FUNCTION_PACK_URL = "/elvina-function-pack.pdf";
 // Menu PDFs embedded on the menu page (tabbed viewer).
 export const MENUS = [
   { name: "A La Carte", desc: "Our full seasonal menu.", file: "/menus/a-la-carte.pdf" },
+  { name: "Drinks", desc: "Cocktails, wine, beer and non-alcoholic drinks.", file: "/menus/drinks.pdf" },
   { name: "To Gather · $69", desc: "Our sharing menu for a relaxed gathering.", file: "/menus/set-menu-gather.pdf" },
   { name: "To Share · $89", desc: "The fuller Elvina sharing experience.", file: "/menus/set-menu-share.pdf" },
   { name: "Kids Menu", desc: "For the little ones.", file: "/menus/kids-menu.pdf" },
