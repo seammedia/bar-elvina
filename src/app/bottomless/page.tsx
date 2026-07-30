@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     q: "Minimum group size?",
-    a: "Two people. Larger groups can get the private dining room on request.",
+    a: "Eight people. Larger groups can get the private dining room on request.",
   },
   {
     q: "Whole-table only?",
@@ -56,7 +56,7 @@ export default function BottomlessPage() {
               <p>
                 A signature banquet with {BOTTOMLESS.duration} of margaritas,
                 spritzes, beer, bubbles and house wines. {BOTTOMLESS.price} per
-                person, minimum two people.
+                person, minimum eight people.
               </p>
               <ul className="bottomless-includes">
                 {includes.map((i) => (

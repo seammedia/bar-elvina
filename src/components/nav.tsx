@@ -5,6 +5,7 @@ import { BOOKING_URL, GIFT_VOUCHER_URL } from "@/lib/config";
 
 const LINKS = [
   { href: "/menu", label: "Menu" },
+  { href: "/bottomless", label: "Bottomless" },
   { href: "/functions", label: "Events & Weddings" },
   { href: "/whats-on", label: "What's On" },
   { href: "/about", label: "Our Story" },
@@ -22,6 +23,8 @@ export function Nav() {
 
         <nav className="nav-links">
           <a href="/menu">Menu</a>
+          <span className="nav-sep">/</span>
+          <a href="/bottomless">Bottomless</a>
           <span className="nav-sep">/</span>
           <a href="/functions">Events &amp; Weddings</a>
           <span className="nav-sep">/</span>
