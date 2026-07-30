@@ -8,7 +8,7 @@ export function Visit() {
         <div className="visit-grid">
           <div className="visit-info">
             <span className="eyebrow">Find Us</span>
-            <h2>Visit us in Avalon Beach.</h2>
+            <h2>Visit us in Avalon Village.</h2>
             <div className="visit-rows">
               <div className="visit-row">
                 <span className="icon"><IconPin /></span>

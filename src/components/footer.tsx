@@ -11,8 +11,8 @@ export function Footer() {
               <img src="/logos/elvina-mermaid-white.svg" alt="Elvina" className="nav-logo" />
             </a>
             <p>
-              A coastal Mediterranean bar and kitchen in Avalon Beach.
-              Inviting. Breezy. Intriguing.
+              A coastal Mediterranean bar and kitchen in Avalon Village.
+              Inviting. Breezy. Sun-soaked.
             </p>
             <div className="foot-social">
               <a
@@ -62,7 +62,7 @@ export function Footer() {
         </div>
         <div className="foot-bottom">
           <div>© 2026 Elvina. All rights reserved.</div>
-          <div>Avalon Beach, NSW</div>
+          <div>Avalon Village, NSW</div>
         </div>
       </div>
     </footer>

@@ -9,7 +9,7 @@ import { BOOKING_URL } from "@/lib/config";
 export const metadata: Metadata = {
   title: "Visit — Elvina",
   description:
-    "Find Elvina in Avalon Beach. Hours, location, and how to get in touch.",
+    "Find Elvina in Avalon Village. Hours, location, and how to get in touch.",
 };
 
 export default function ContactPage() {

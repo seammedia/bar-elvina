@@ -4,13 +4,13 @@ export function Hero() {
   return (
     <section className="hero">
       <div className="hero-bg">
-        <img src="/images/hero-terrace.jpg" alt="The sunlit terrace at Elvina, Avalon Beach" />
+        <img src="/images/hero-terrace.jpg" alt="The sunlit terrace at Elvina, Avalon Village" />
       </div>
       <div className="hero-inner">
         <div className="container">
           <div className="hero-content">
-            <span className="eyebrow hero-eyebrow">Avalon Beach</span>
-            <h1>Inviting.<br />Breezy.<br />Intriguing.</h1>
+            <span className="eyebrow hero-eyebrow">Avalon Village</span>
+            <h1>Inviting.<br />Breezy.<br />Sun-soaked.</h1>
             <p>
               A coastal Mediterranean kitchen and bar in Avalon Village. Long
               lunches, sun-drunk afternoons and dancing evenings, all with an

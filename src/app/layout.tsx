@@ -3,13 +3,13 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://elvina.com.au"),
-  title: "Elvina — Avalon Beach",
+  title: "Elvina — Avalon Village",
   description:
-    "A neighbourhood kitchen and bar in Avalon Beach. Coastal Mediterranean in feel. Inviting. Breezy. Intriguing.",
+    "A neighbourhood kitchen and bar in Avalon Village. Coastal Mediterranean in feel. Inviting. Breezy. Sun-soaked.",
   openGraph: {
-    title: "Elvina — Avalon Beach",
+    title: "Elvina — Avalon Village",
     description:
-      "Coastal Mediterranean in feel. Inviting. Breezy. Intriguing.",
+      "Coastal Mediterranean in feel. Inviting. Breezy. Sun-soaked.",
     url: "https://elvina.com.au",
     siteName: "Elvina",
     locale: "en_AU",
