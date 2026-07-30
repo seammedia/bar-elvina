@@ -3,16 +3,16 @@ import { BOTTOMLESS } from "@/lib/config";
 
 const reviews = [
   {
-    quote: "A bloody impressive venue in Avalon.",
-    author: "SPOONING AUSTRALIA",
+    quote: "The staff were wonderful.",
+    author: "JASON K.",
   },
   {
     quote: "Had a lovely evening here and the service was fab. Grace looked after us so well.",
-    author: "SERENA M, TRIPADVISOR",
+    author: "SERENA M.",
   },
   {
     quote: "The balcony is a superb place to sit watching the sun go down, sipping cocktails.",
-    author: "SPOONING AUSTRALIA",
+    author: "JASON K.",
   },
 ];
 
@@ -44,10 +44,10 @@ export function Together() {
           </div>
           <div className="reviews-block">
             <span className="eyebrow">What They&apos;re Saying</span>
-            <h2>Loved in Avalon.</h2>
+            <h2>Loved in Avalon Village.</h2>
             <div className="review-row">
               {reviews.map((r) => (
-                <div key={r.author} className="review-card">
+                <div key={`${r.author}-${r.quote}`} className="review-card">
                   <Stars />
                   <p className="quote">&ldquo;{r.quote}&rdquo;</p>
                   <div className="author">{r.author}</div>

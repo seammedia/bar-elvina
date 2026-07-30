@@ -53,7 +53,7 @@ export function Footer() {
           <div className="foot-col">
             <h4>Visit</h4>
             <div className="lines">
-              <div className="line">Level One,<br />50 Old Barrenjoey Rd,<br />Avalon Beach 2107</div>
+              <div className="line">Level One,<br />50 Old Barrenjoey Rd,<br />Avalon Village 2107</div>
               <div className="line"><a href="tel:+61289262340">02 8926 2340</a></div>
               <div className="line"><a href="mailto:info@barelvina.com.au">info@barelvina.com.au</a></div>
             </div>

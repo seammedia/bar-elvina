@@ -15,7 +15,7 @@ export function Visit() {
                 <div className="text">
                   Level One,<br />
                   50 Old Barrenjoey Rd,<br />
-                  Avalon Beach NSW 2107
+                  Avalon Village NSW 2107
                 </div>
               </div>
               <div className="visit-row">
@@ -62,7 +62,7 @@ export function Visit() {
           <div className="visit-map">
             <iframe
               title="Elvina location map"
-              src="https://www.google.com/maps?q=50+Old+Barrenjoey+Rd,Avalon+Beach+NSW+2107&output=embed"
+              src="https://www.google.com/maps?q=50+Old+Barrenjoey+Rd+NSW+2107&output=embed"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />
