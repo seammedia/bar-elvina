@@ -7,8 +7,7 @@ import { BOOKING_URL, BOTTOMLESS } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Bottomless — Elvina",
-  description:
-    "A signature banquet with two hours of margaritas, spritzes, beer, bubbles and house wines. $99 per person.",
+  description: `${BOTTOMLESS.description} ${BOTTOMLESS.price} per person.`,
 };
 
 const includes = [
@@ -29,7 +28,7 @@ const faqs = [
   },
   {
     q: "Minimum group size?",
-    a: "Eight people. Larger groups can get the private dining room on request.",
+    a: BOTTOMLESS.minimum,
   },
   {
     q: "Whole-table only?",
@@ -54,9 +53,9 @@ export default function BottomlessPage() {
               <span className="eyebrow">What&apos;s included</span>
               <h2>Drink well. Settle in. Take your time.</h2>
               <p>
-                A signature banquet with {BOTTOMLESS.duration} of margaritas,
-                spritzes, beer, bubbles and house wines. {BOTTOMLESS.price} per
-                person, minimum eight people.
+                A signature banquet with {BOTTOMLESS.duration} of spritzes,
+                beer, bubbles and house wines. {BOTTOMLESS.price} per person. {" "}
+                {BOTTOMLESS.minimum}.
               </p>
               <ul className="bottomless-includes">
                 {includes.map((i) => (

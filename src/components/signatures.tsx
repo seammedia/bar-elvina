@@ -13,7 +13,7 @@ const items = [
   },
   {
     name: "Bottomless",
-    desc: "Signature banquet plus two hours of margaritas, spritzes, beer, bubbles and house wines.",
+    desc: "Signature banquet plus two hours of spritzes, beer, bubbles and house wines.",
     href: "/bottomless",
     cta: "View Page →",
   },

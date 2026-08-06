@@ -37,8 +37,8 @@ export const BUSINESS = {
 export const BOTTOMLESS = {
   price: "$99",
   duration: "2 hours",
-  minimum: "Minimum 8 people",
-  description: "A signature banquet with two hours of margaritas, spritzes, beer, bubbles and house wines.",
+  minimum: "Smaller groups on request",
+  description: "A signature banquet with two hours of spritzes, beer, bubbles and house wines.",
 };
 
 // Five distinct spaces - functions are a key revenue priority.
