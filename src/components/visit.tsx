@@ -23,7 +23,7 @@ export function Visit() {
                 <div className="text">
                   <div className="hour-line"><span>Wed-Thu</span><span>5pm - late</span></div>
                   <div className="hour-line"><span>Fri</span><span>12pm - late</span></div>
-                  <div className="hour-line"><span>Sat</span><span>4pm - late</span></div>
+                  <div className="hour-line"><span>Sat</span><span>12pm - late</span></div>
                   <div className="hour-line"><span>Sun-Tue</span><span>Closed</span></div>
                 </div>
               </div>
