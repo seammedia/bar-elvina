@@ -9,10 +9,9 @@ export function Hero() {
       <div className="hero-inner">
         <div className="container">
           <div className="hero-content">
-            <span className="eyebrow hero-eyebrow">Avalon Village</span>
             <h1>Inviting.<br />Breezy.<br />Sun-soaked.</h1>
             <p>
-              A coastal Mediterranean kitchen and bar in Avalon Village. Long
+              A coastal Mediterranean kitchen and bar in Avalon. Long
               lunches, sun-drunk afternoons and dancing evenings, all with an
               eclectic wine list.
             </p>

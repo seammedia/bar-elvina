@@ -9,7 +9,7 @@ import { BOOKING_URL } from "@/lib/config";
 export const metadata: Metadata = {
   title: "What's On — Elvina",
   description:
-    "What's on at Elvina: Aperitivo Time, $99 bottomless lunch and dinner, Wagyu Wednesday and Vino Vinyl Fridays.",
+    "What's on at Elvina: Aperitivo Time, Wine Club dinners, $99 bottomless lunch and dinner, Wagyu Wednesday and Vino Vinyl Fridays.",
 };
 
 export default function WhatsOnPage() {
@@ -21,7 +21,7 @@ export default function WhatsOnPage() {
         title="A reason for every night."
         description="Pull up a chair, find your spot. There's always something on at Elvina."
       />
-      <WhatsOn />
+      <WhatsOn eagerFirstPoster />
 
       <section className="cta-strip">
         <div className="container">
