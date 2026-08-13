@@ -9,7 +9,7 @@ import { BOOKING_URL } from "@/lib/config";
 export const metadata: Metadata = {
   title: "Visit — Elvina",
   description:
-    "Find Elvina in Avalon Village. Hours, location, and how to get in touch.",
+    "Find Elvina in Avalon. Hours, location, and how to get in touch.",
 };
 
 export default function ContactPage() {
@@ -34,7 +34,7 @@ export default function ContactPage() {
                     <div className="text">
                       Level One,<br />
                       50 Old Barrenjoey Rd,<br />
-                      Avalon Village NSW 2107
+                      Avalon NSW 2107
                     </div>
                   </div>
                   <div className="visit-row">

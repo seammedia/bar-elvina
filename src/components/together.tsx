@@ -44,7 +44,7 @@ export function Together() {
           </div>
           <div className="reviews-block">
             <span className="eyebrow">What They&apos;re Saying</span>
-            <h2>Loved in Avalon Village.</h2>
+            <h2>Loved in Avalon.</h2>
             <div className="review-row">
               {reviews.map((r) => (
                 <div key={`${r.author}-${r.quote}`} className="review-card">

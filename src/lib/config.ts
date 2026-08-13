@@ -21,7 +21,7 @@ export const MENUS = [
 
 export const BUSINESS = {
   name: "Elvina",
-  address: "Level One, 50 Old Barrenjoey Rd, Avalon Village NSW 2107",
+  address: "Level One, 50 Old Barrenjoey Rd, Avalon NSW 2107",
   email: "info@barelvina.com.au",
   phone: "02 8926 2340",
   phoneTel: "+61289262340",

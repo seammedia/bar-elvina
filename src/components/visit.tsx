@@ -8,14 +8,14 @@ export function Visit() {
         <div className="visit-grid">
           <div className="visit-info">
             <span className="eyebrow">Find Us</span>
-            <h2>Visit us in Avalon Village.</h2>
+            <h2>Visit us in Avalon.</h2>
             <div className="visit-rows">
               <div className="visit-row">
                 <span className="icon"><IconPin /></span>
                 <div className="text">
                   Level One,<br />
                   50 Old Barrenjoey Rd,<br />
-                  Avalon Village NSW 2107
+                  Avalon NSW 2107
                 </div>
               </div>
               <div className="visit-row">

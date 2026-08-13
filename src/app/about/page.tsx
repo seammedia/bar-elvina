@@ -8,7 +8,7 @@ import { BOOKING_URL } from "@/lib/config";
 export const metadata: Metadata = {
   title: "Our Story — Elvina",
   description:
-    "Elvina is a neighbourhood restaurant and bar in Avalon Village, inspired by the relaxed spirit of the coastal Mediterranean.",
+    "Elvina is a neighbourhood restaurant and bar in Avalon, inspired by the relaxed spirit of the coastal Mediterranean.",
 };
 
 const values = [
@@ -51,7 +51,7 @@ export default function AboutPage() {
             <div className="about-copy">
               <span className="eyebrow">The Story</span>
               <p>
-                Nestled in the heart of Avalon Village, Elvina is a neighbourhood
+                Nestled in the heart of Avalon, Elvina is a neighbourhood
                 restaurant and bar inspired by the relaxed spirit of the coastal
                 Mediterranean.
               </p>

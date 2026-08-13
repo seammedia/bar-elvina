@@ -11,7 +11,7 @@ export function Footer() {
               <img src="/logos/elvina-mermaid-white.svg" alt="Elvina" className="nav-logo" />
             </a>
             <p>
-              A coastal Mediterranean bar and kitchen in Avalon Village.
+              A coastal Mediterranean bar and kitchen in Avalon.
               Inviting. Breezy. Sun-soaked.
             </p>
             <div className="foot-social">
@@ -53,7 +53,7 @@ export function Footer() {
           <div className="foot-col">
             <h4>Visit</h4>
             <div className="lines">
-              <div className="line">Level One,<br />50 Old Barrenjoey Rd,<br />Avalon Village 2107</div>
+              <div className="line">Level One,<br />50 Old Barrenjoey Rd,<br />Avalon 2107</div>
               <div className="line"><a href="tel:+61289262340">02 8926 2340</a></div>
               <div className="line"><a href="mailto:info@barelvina.com.au">info@barelvina.com.au</a></div>
             </div>
@@ -62,7 +62,7 @@ export function Footer() {
         </div>
         <div className="foot-bottom">
           <div>© 2026 Elvina. All rights reserved.</div>
-          <div>Avalon Village, NSW</div>
+          <div>Avalon, NSW</div>
         </div>
       </div>
     </footer>

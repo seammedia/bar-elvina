@@ -9,7 +9,7 @@ import { ROOMS, BUSINESS } from "@/lib/config";
 export const metadata: Metadata = {
   title: "Events & Weddings — Elvina",
   description:
-    "Weddings, private celebrations, corporate events and long lunches at Elvina, in Avalon Village. Five distinct spaces, all yours.",
+    "Weddings, private celebrations, corporate events and long lunches at Elvina in Avalon. Five distinct spaces, all yours.",
 };
 
 const occasions = [
@@ -24,7 +24,7 @@ export default function FunctionsPage() {
       <Nav />
       <PageHeader
         eyebrow="Events & Weddings"
-        title="Celebrate with us in Avalon Village."
+        title="Celebrate with us in Avalon."
         description="From weddings and private celebrations to corporate events and long lunches, Elvina has a space to match the occasion. Five distinct areas, all yours."
       />
 
