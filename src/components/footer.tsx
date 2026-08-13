@@ -1,5 +1,6 @@
 import { IconInstagram } from "./icons";
 import { GIFT_VOUCHER_URL } from "@/lib/config";
+import { TradingHours } from "./trading-hours";
 
 export function Footer() {
   return (
@@ -11,7 +12,7 @@ export function Footer() {
               <img src="/logos/elvina-mermaid-white.svg" alt="Elvina" className="nav-logo" />
             </a>
             <p>
-              A coastal Mediterranean bar and kitchen in Avalon.
+              A coastal Mediterranean bar and kitchen in Avalon Village, Avalon Beach.
               Inviting. Breezy. Sun-soaked.
             </p>
             <div className="foot-social">
@@ -43,17 +44,12 @@ export function Footer() {
           </div>
           <div className="foot-col">
             <h4>Hours</h4>
-            <div className="lines">
-              <div className="hour-line"><span>Wed-Thu</span><span>5pm - late</span></div>
-              <div className="hour-line"><span>Fri</span><span>12pm - late</span></div>
-              <div className="hour-line"><span>Sat</span><span>12pm - late</span></div>
-              <div className="hour-line"><span>Sun-Tue</span><span>Closed</span></div>
-            </div>
+            <TradingHours />
           </div>
           <div className="foot-col">
             <h4>Visit</h4>
             <div className="lines">
-              <div className="line">Level One,<br />50 Old Barrenjoey Rd,<br />Avalon 2107</div>
+              <div className="line">Level One,<br />50 Old Barrenjoey Rd,<br />Avalon Beach NSW 2107</div>
               <div className="line"><a href="tel:+61289262340">02 8926 2340</a></div>
               <div className="line"><a href="mailto:info@barelvina.com.au">info@barelvina.com.au</a></div>
             </div>
@@ -62,7 +58,7 @@ export function Footer() {
         </div>
         <div className="foot-bottom">
           <div>© 2026 Elvina. All rights reserved.</div>
-          <div>Avalon, NSW</div>
+          <div>Avalon Beach, NSW</div>
         </div>
       </div>
     </footer>

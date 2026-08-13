@@ -21,7 +21,7 @@ export const MENUS = [
 
 export const BUSINESS = {
   name: "Elvina",
-  address: "Level One, 50 Old Barrenjoey Rd, Avalon NSW 2107",
+  address: "Level One, 50 Old Barrenjoey Rd, Avalon Beach NSW 2107",
   email: "info@barelvina.com.au",
   phone: "02 8926 2340",
   phoneTel: "+61289262340",
@@ -29,10 +29,81 @@ export const BUSINESS = {
   hours: {
     wedThu: "5:00pm - late",
     fri: "12:00pm - late",
-    sat: "4:00pm - late",
+    sat: "12:00pm - late",
     sunMonTue: "Closed",
   },
 };
+
+export const TRADING_HOURS = [
+  { days: "Wed-Thu", hours: BUSINESS.hours.wedThu },
+  { days: "Fri", hours: BUSINESS.hours.fri },
+  { days: "Sat", hours: BUSINESS.hours.sat },
+  { days: "Sun-Tue", hours: BUSINESS.hours.sunMonTue },
+];
+
+export const WHATS_ON_EVENTS = [
+  {
+    slug: "aperitivo-time",
+    name: "Aperitivo Time",
+    image: "/images/whatson-aperitivo.jpg",
+    alt: "Aperitivo Time at Elvina in Avalon Beach",
+    description:
+      "Ease into the evening with $4 oysters, $12 margaritas and spritzes, $7 Avalon Brewery beer and $10 vino classico.",
+    price: "From $4",
+    priceValue: 4,
+    when: "Wednesday-Friday, 5pm-7pm",
+    bookingUrl: BOOKING_URL,
+    schedule: { days: ["Wednesday", "Thursday", "Friday"], start: "17:00", end: "19:00" },
+  },
+  {
+    slug: "bottomless",
+    name: "Bottomless Lunch & Dinner",
+    image: "/images/whatson-bottomless-pink.jpg",
+    alt: "Bottomless lunch and dinner at Elvina in Avalon Beach",
+    description:
+      "A signature banquet with two hours of free-flowing spritzes, beer, bubbles and house wine.",
+    price: "$99 per person",
+    priceValue: 99,
+    when: "Lunch and dinner sittings",
+    bookingUrl: "https://www.sevenrooms.com/xmpcVvXn",
+  },
+  {
+    slug: "wagyu-wednesday",
+    name: "Wagyu Wednesday",
+    image: "/images/whatson-wagyu.jpg",
+    alt: "Wagyu Wednesday at Elvina in Avalon Beach",
+    description:
+      "250g Tajima MB4+ wagyu rump served with fries and eschalot butter.",
+    price: "$33",
+    priceValue: 33,
+    when: "Every Wednesday from 5pm",
+    bookingUrl: "https://www.sevenrooms.com/xov8ekXe",
+    schedule: { days: ["Wednesday"], start: "17:00" },
+  },
+  {
+    slug: "vino-vinyl-fridays",
+    name: "Vino Vinyl Fridays",
+    image: "/images/whatson-vinyl.jpg",
+    alt: "Vino Vinyl Fridays at Elvina in Avalon Beach",
+    description:
+      "Drinks, tunes and food upstairs, with music by Luke Tommy G, aka Luke Warm.",
+    price: "À la carte food and drinks",
+    when: "Every Friday from 5pm",
+    bookingUrl: "https://www.sevenrooms.com/x1kaQXh3",
+    schedule: { days: ["Friday"], start: "17:00" },
+  },
+  {
+    slug: "wine-club",
+    name: "Elvina Wine Club",
+    image: "/images/whatson-wine-club.jpg",
+    alt: "Elvina Wine Club dinners in Avalon Beach",
+    description:
+      "Monthly Thursday dinners with remarkable winemakers, good food and plenty to discover in the glass.",
+    price: "Pricing varies by dinner",
+    when: "Select Thursdays - see booking page for times",
+    bookingUrl: "https://www.sevenrooms.com/xCPuT68k",
+  },
+];
 
 export const BOTTOMLESS = {
   price: "$99",

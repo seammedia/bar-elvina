@@ -7,9 +7,9 @@ import { IconMail, IconPhone, Arrow } from "@/components/icons";
 import { ROOMS, BUSINESS } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "Events & Weddings — Elvina",
+  title: "Avalon Wedding Venue & Private Dining | Elvina",
   description:
-    "Weddings, private celebrations, corporate events and long lunches at Elvina in Avalon. Five distinct spaces, all yours.",
+    "Plan weddings, private dining, corporate events and long lunches at Elvina in Avalon Beach on Sydney's Northern Beaches. Explore five distinct spaces and enquire online.",
 };
 
 const occasions = [
@@ -24,7 +24,7 @@ export default function FunctionsPage() {
       <Nav />
       <PageHeader
         eyebrow="Events & Weddings"
-        title="Celebrate with us in Avalon."
+        title="Weddings & private events in Avalon Beach."
         description="From weddings and private celebrations to corporate events and long lunches, Elvina has a space to match the occasion. Five distinct areas, all yours."
       />
 
@@ -134,7 +134,7 @@ export default function FunctionsPage() {
                 </div>
               </div>
             </div>
-            <ContactForm subjects={["Wedding enquiry", "Private celebration", "Corporate event", "Large group booking", "General enquiry"]} defaultSubject="Wedding enquiry" />
+            <ContactForm subjects={["Wedding enquiry", "Private celebration", "Corporate event", "Large group booking", "General enquiry"]} defaultSubject="Wedding enquiry" eventFields />
           </div>
         </div>
       </section>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { BOOKING_URL, GIFT_VOUCHER_URL } from "@/lib/config";
 
 const LINKS = [
@@ -17,9 +18,9 @@ export function Nav() {
   return (
     <header className="nav">
       <div className="container nav-inner">
-        <a href="/" className="nav-brand" onClick={() => setOpen(false)}>
+        <Link href="/" className="nav-brand" onClick={() => setOpen(false)}>
           <img src="/logos/elvina-mermaid-sundial.svg" alt="Elvina" className="nav-logo" />
-        </a>
+        </Link>
 
         <nav className="nav-links">
           <a href="/menu">Menu</a>

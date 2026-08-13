@@ -7,7 +7,7 @@ export function About() {
             <span className="eyebrow">A True Local</span>
             <h2>Coastal Mediterranean.</h2>
             <p>
-              Elvina sits in Avalon, looking out toward the
+              Elvina sits in Avalon Village, Avalon Beach, looking out toward the
               main street. Inside, an eclectic list of wine, plates pulled from
               the coastal Mediterranean, and a warmth that makes the afternoon
               disappear.
@@ -18,7 +18,7 @@ export function About() {
             <a href="/about" className="link-tan">Our story.</a>
           </div>
           <div className="about-photo">
-            <img src="/images/room-foyer.jpg" alt="The dining room at Elvina, Avalon" />
+            <img src="/images/room-foyer.jpg" alt="The dining room at Elvina, Avalon Beach" />
           </div>
         </div>
       </div>

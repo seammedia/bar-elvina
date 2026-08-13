@@ -6,9 +6,9 @@ import { IconPin, IconStar, Arrow } from "@/components/icons";
 import { BOOKING_URL } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "Our Story — Elvina",
+  title: "Our Story | Elvina Avalon Beach",
   description:
-    "Elvina is a neighbourhood restaurant and bar in Avalon, inspired by the relaxed spirit of the coastal Mediterranean.",
+    "Elvina is a neighbourhood restaurant and wine bar in Avalon Village, Avalon Beach, inspired by the relaxed spirit of the coastal Mediterranean.",
 };
 
 const values = [
@@ -39,7 +39,7 @@ export default function AboutPage() {
       <PageHeader
         eyebrow="Our Story"
         title="A neighbourhood local, reborn."
-        description="Avalon's own since 2020. Here's how Elvina came to be, and where it's headed."
+        description="Avalon Beach's own since 2020. Here's how Elvina came to be, and where it's headed."
       />
 
       <section className="section-pad-sm">
@@ -51,7 +51,7 @@ export default function AboutPage() {
             <div className="about-copy">
               <span className="eyebrow">The Story</span>
               <p>
-                Nestled in the heart of Avalon, Elvina is a neighbourhood
+                Nestled in the heart of Avalon Village, Avalon Beach, Elvina is a neighbourhood
                 restaurant and bar inspired by the relaxed spirit of the coastal
                 Mediterranean.
               </p>
@@ -103,7 +103,7 @@ export default function AboutPage() {
 
       <section className="cta-strip">
         <div className="container">
-          <h2>Pull up a chair in Avalon.</h2>
+          <h2>Pull up a chair in Avalon Beach.</h2>
           <p>
             Level One, 50 Old Barrenjoey Rd. Bookings open most nights,
             walk-ins always welcome at the bar.

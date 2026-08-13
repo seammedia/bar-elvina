@@ -6,9 +6,9 @@ import { MenuViewer } from "@/components/menu-viewer";
 import { BOOKING_URL } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "Menu — Elvina",
+  title: "Menu | Avalon Beach Restaurant | Elvina",
   description:
-    "A coastal Mediterranean kitchen and an eclectic list. View our a la carte, set menus and kids menu.",
+    "Explore Elvina's seasonal coastal Mediterranean menu, sharing plates and eclectic wine list in Avalon Beach, Sydney's Northern Beaches.",
 };
 
 export default function MenuPage() {
@@ -17,7 +17,7 @@ export default function MenuPage() {
       <Nav />
       <PageHeader
         eyebrow="The Menu"
-        title="A coastal Mediterranean kitchen + an eclectic list."
+        title="Coastal Mediterranean dining in Avalon Beach."
         description="Seasonal produce, generous sharing plates and thoughtfully selected wines. Browse the menus below."
       />
 

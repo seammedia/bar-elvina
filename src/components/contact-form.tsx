@@ -3,11 +3,13 @@ import { BUSINESS } from "@/lib/config";
 type Props = {
   subjects?: string[];
   defaultSubject?: string;
+  eventFields?: boolean;
 };
 
 export function ContactForm({
   subjects = ["Booking enquiry", "Function enquiry", "Bottomless", "Press", "General enquiry"],
   defaultSubject = "Booking enquiry",
+  eventFields = false,
 }: Props) {
   return (
     <form
@@ -38,15 +40,38 @@ export function ContactForm({
             placeholder="04XX XXX XXX"
           />
         </div>
-        <div className="field">
-          <label htmlFor="subject">Subject</label>
-          <select id="subject" name="subject" defaultValue={defaultSubject}>
-            {subjects.map((s) => (
-              <option key={s}>{s}</option>
-            ))}
-          </select>
-        </div>
+        {eventFields ? (
+          <div className="field">
+            <label htmlFor="event-date">Preferred Event Date</label>
+            <input id="event-date" name="event_date" type="date" required />
+          </div>
+        ) : (
+          <div className="field">
+            <label htmlFor="subject">Subject</label>
+            <select id="subject" name="subject" defaultValue={defaultSubject}>
+              {subjects.map((s) => (
+                <option key={s}>{s}</option>
+              ))}
+            </select>
+          </div>
+        )}
       </div>
+      {eventFields && (
+        <div className="field-row">
+          <div className="field">
+            <label htmlFor="guest-count">Guest Count</label>
+            <input id="guest-count" name="guest_count" type="number" min="2" required placeholder="Number of guests" />
+          </div>
+          <div className="field">
+            <label htmlFor="event-type">Event Type</label>
+            <select id="event-type" name="event_type" defaultValue={defaultSubject}>
+              {subjects.map((s) => (
+                <option key={s}>{s}</option>
+              ))}
+            </select>
+          </div>
+        </div>
+      )}
       <div className="field">
         <label htmlFor="message">Message</label>
         <textarea id="message" name="message" required placeholder="Date, headcount, and anything we should know..." />

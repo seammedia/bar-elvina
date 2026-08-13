@@ -1,5 +1,6 @@
 import { IconPin, IconClock, IconMail, IconPhone } from "./icons";
 import { BOOKING_URL, GIFT_VOUCHER_URL } from "@/lib/config";
+import { TradingHours } from "./trading-hours";
 
 export function Visit() {
   return (
@@ -8,24 +9,19 @@ export function Visit() {
         <div className="visit-grid">
           <div className="visit-info">
             <span className="eyebrow">Find Us</span>
-            <h2>Visit us in Avalon.</h2>
+            <h2>Visit us in Avalon Beach.</h2>
             <div className="visit-rows">
               <div className="visit-row">
                 <span className="icon"><IconPin /></span>
                 <div className="text">
                   Level One,<br />
                   50 Old Barrenjoey Rd,<br />
-                  Avalon NSW 2107
+                  Avalon Beach NSW 2107
                 </div>
               </div>
               <div className="visit-row">
                 <span className="icon"><IconClock /></span>
-                <div className="text">
-                  <div className="hour-line"><span>Wed-Thu</span><span>5pm - late</span></div>
-                  <div className="hour-line"><span>Fri</span><span>12pm - late</span></div>
-                  <div className="hour-line"><span>Sat</span><span>12pm - late</span></div>
-                  <div className="hour-line"><span>Sun-Tue</span><span>Closed</span></div>
-                </div>
+                <div className="text"><TradingHours /></div>
               </div>
               <div className="visit-row">
                 <span className="icon"><IconPhone /></span>

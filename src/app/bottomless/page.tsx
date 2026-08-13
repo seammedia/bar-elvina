@@ -6,8 +6,8 @@ import { Arrow } from "@/components/icons";
 import { BOOKING_URL, BOTTOMLESS } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "Bottomless — Elvina",
-  description: `${BOTTOMLESS.description} ${BOTTOMLESS.price} per person.`,
+  title: "Bottomless Lunch Northern Beaches | Elvina",
+  description: `${BOTTOMLESS.description} ${BOTTOMLESS.price} per person at Elvina in Avalon Beach.`,
 };
 
 const includes = [
@@ -42,7 +42,7 @@ export default function BottomlessPage() {
       <Nav />
       <PageHeader
         eyebrow="Bottomless"
-        title={`Two hours. ${BOTTOMLESS.price} per person.`}
+        title={`Bottomless lunch in Avalon Beach. ${BOTTOMLESS.price} per person.`}
         description={BOTTOMLESS.description}
       />
 

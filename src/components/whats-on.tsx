@@ -1,31 +1,49 @@
 import Image from "next/image";
-
-const posters = [
-  { name: "Aperitivo Time", image: "/images/whatson-aperitivo.jpg", alt: "Aperitivo Time - Wed to Fri 5-7pm, $4 oysters, margaritas, spritz and wine" },
-  { name: "Bottomless", image: "/images/whatson-bottomless-pink.jpg", alt: "Bottomless lunch and dinner - $99 including a signature banquet and two-hour drinks package" },
-  { name: "Wagyu Wednesday", image: "/images/whatson-wagyu.jpg", alt: "Wagyu Wednesday - $33 Tajima MB4+ wagyu rump with fries and eschallot butter" },
-  { name: "Vino Vinyl Fridays", image: "/images/whatson-vinyl.jpg", alt: "Vino Vinyl Fridays at Elvina - drinks, tunes and food with music by Luke Tommy G" },
-  { name: "Wine Club", image: "/images/whatson-wine-club.jpg", alt: "Elvina Wine Club - monthly Thursday dinners with remarkable winemakers" },
-];
+import { Arrow } from "./icons";
+import { WHATS_ON_EVENTS } from "@/lib/config";
 
 export function WhatsOn({ eagerFirstPoster = false }: { eagerFirstPoster?: boolean }) {
   return (
     <section className="happenings">
       <div className="container">
         <span className="eyebrow">What&apos;s On</span>
-        <h2>Always something on.</h2>
+        <h2>What&apos;s on in Avalon Beach.</h2>
         <div className="whatson-grid">
-          {posters.map((p, index) => (
-            <figure key={p.name} className="whatson-poster">
-              <Image
-                src={p.image}
-                alt={p.alt}
-                width={1000}
-                height={1400}
-                sizes="(max-width: 820px) 100vw, 50vw"
-                loading={eagerFirstPoster && index === 0 ? "eager" : "lazy"}
-              />
-            </figure>
+          {WHATS_ON_EVENTS.map((event, index) => (
+            <article key={event.slug} id={event.slug} className="whatson-card">
+              <a
+                href={event.bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="whatson-poster"
+                aria-label={`Book ${event.name}`}
+              >
+                <Image
+                  src={event.image}
+                  alt={event.alt}
+                  width={1000}
+                  height={1400}
+                  sizes="(max-width: 820px) 100vw, 50vw"
+                  loading={eagerFirstPoster && index === 0 ? "eager" : "lazy"}
+                />
+              </a>
+              <div className="whatson-content">
+                <h3>{event.name}</h3>
+                <p>{event.description}</p>
+                <dl>
+                  <div><dt>When</dt><dd>{event.when}</dd></div>
+                  <div><dt>Price</dt><dd>{event.price}</dd></div>
+                </dl>
+                <a
+                  href={event.bookingUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-tan"
+                >
+                  Book This Offer <Arrow />
+                </a>
+              </div>
+            </article>
           ))}
         </div>
       </div>

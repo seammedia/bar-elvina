@@ -5,11 +5,12 @@ import { PageHeader } from "@/components/page-header";
 import { ContactForm } from "@/components/contact-form";
 import { IconPin, IconClock, IconMail, IconPhone } from "@/components/icons";
 import { BOOKING_URL } from "@/lib/config";
+import { TradingHours } from "@/components/trading-hours";
 
 export const metadata: Metadata = {
-  title: "Visit — Elvina",
+  title: "Visit Elvina | Avalon Beach Restaurant",
   description:
-    "Find Elvina in Avalon. Hours, location, and how to get in touch.",
+    "Find Elvina at Level One, 50 Old Barrenjoey Road, Avalon Beach NSW 2107. View trading hours, directions and contact details.",
 };
 
 export default function ContactPage() {
@@ -18,7 +19,7 @@ export default function ContactPage() {
       <Nav />
       <PageHeader
         eyebrow="Visit Us"
-        title="Drop in, book in, get in touch."
+        title="Visit Elvina in Avalon Beach."
         description="The fastest way to a table is the booking button. For everything else, we're a phone call or an email away."
       />
 
@@ -34,17 +35,12 @@ export default function ContactPage() {
                     <div className="text">
                       Level One,<br />
                       50 Old Barrenjoey Rd,<br />
-                      Avalon NSW 2107
+                      Avalon Beach NSW 2107
                     </div>
                   </div>
                   <div className="visit-row">
                     <span className="icon"><IconClock /></span>
-                    <div className="text">
-                      <div className="hour-line"><span>Wed-Thu</span><span>5pm - late</span></div>
-                      <div className="hour-line"><span>Fri</span><span>12pm - late</span></div>
-                      <div className="hour-line"><span>Sat</span><span>12pm - late</span></div>
-                      <div className="hour-line"><span>Sun-Tue</span><span>Closed</span></div>
-                    </div>
+                    <div className="text"><TradingHours /></div>
                   </div>
                   <div className="visit-row">
                     <span className="icon"><IconPhone /></span>
