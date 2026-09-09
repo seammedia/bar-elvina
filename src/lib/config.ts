@@ -10,13 +10,14 @@ export const GIFT_VOUCHER_URL = "https://app.squareup.com/gift/ML2RT53PZQJMW/ord
 // Events / function pack PDF. TODO: replace placeholder with Lucas's real pack.
 export const FUNCTION_PACK_URL = "/elvina-function-pack.pdf";
 
-// Menu PDFs embedded on the menu page (tabbed viewer).
+// Menu files embedded on the menu page (tabbed viewer).
 export const MENUS = [
-  { name: "A La Carte", desc: "Our full seasonal menu.", file: "/menus/a-la-carte.pdf" },
-  { name: "Drinks", desc: "Cocktails, wine, beer and non-alcoholic drinks.", file: "/menus/drinks.pdf" },
-  { name: "To Gather · $69", desc: "Our sharing menu for a relaxed gathering.", file: "/menus/set-menu-gather.pdf" },
-  { name: "To Share · $89", desc: "The fuller Elvina sharing experience.", file: "/menus/set-menu-share.pdf" },
+  { name: "Wine List", desc: "Our current wine list.", file: "/menus/wine-list.png" },
+  { name: "Menu", desc: "Our full seasonal menu.", file: "/menus/a-la-carte.pdf" },
   { name: "Kids Menu", desc: "For the little ones.", file: "/menus/kids-menu.pdf" },
+  { name: "$69 Set Menu", desc: "Our sharing menu for a relaxed gathering.", file: "/menus/set-menu-gather.pdf" },
+  { name: "$89 Set Menu", desc: "The fuller Elvina sharing experience.", file: "/menus/set-menu-share.pdf" },
+  { name: "Drinks", desc: "Cocktails, wine, beer and non-alcoholic drinks.", file: "/menus/drinks.pdf" },
 ];
 
 export const BUSINESS = {
@@ -116,7 +117,7 @@ export const BOTTOMLESS = {
 // All five now have dedicated photography supplied by Lucas (June 2026).
 export const ROOMS = [
   {
-    name: "The Foyer",
+    name: "The Dining Room",
     capacity: "Seats 25 · Stands 30",
     desc: "Our inside dining room. Warm, intimate, the heart of the venue.",
     image: "/images/room-foyer.jpg",
