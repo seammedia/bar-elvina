@@ -12,12 +12,13 @@ export const FUNCTION_PACK_URL = "/elvina-function-pack.pdf";
 
 // Menu files embedded on the menu page (tabbed viewer).
 export const MENUS = [
-  { name: "Wine List", desc: "Our current wine list.", file: "/menus/wine-list.png" },
+  { name: "Wine List", desc: "Our current wine list.", file: "/menus/wine-list.pdf" },
   { name: "Menu", desc: "Our full seasonal menu.", file: "/menus/a-la-carte.pdf" },
   { name: "Kids Menu", desc: "For the little ones.", file: "/menus/kids-menu.pdf" },
   { name: "$69 Set Menu", desc: "Our sharing menu for a relaxed gathering.", file: "/menus/set-menu-gather.pdf" },
   { name: "$89 Set Menu", desc: "The fuller Elvina sharing experience.", file: "/menus/set-menu-share.pdf" },
   { name: "Drinks", desc: "Cocktails, wine, beer and non-alcoholic drinks.", file: "/menus/drinks.pdf" },
+  { name: "Canapés", desc: "Our canapé selection for events and functions.", file: "/menus/canapes.pdf" },
 ];
 
 export const BUSINESS = {
