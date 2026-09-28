@@ -47,15 +47,15 @@ export default function WhatsOnPage() {
         ? { price: event.priceValue, priceCurrency: "AUD" }
         : {}),
     },
-    ...(event.schedule
+    ...(event.schedules
       ? {
-          eventSchedule: {
+          eventSchedule: event.schedules.map((schedule) => ({
             "@type": "Schedule",
             repeatFrequency: "P1W",
-            byDay: event.schedule.days.map((day) => `https://schema.org/${day}`),
-            startTime: event.schedule.start,
-            ...(event.schedule.end ? { endTime: event.schedule.end } : {}),
-          },
+            byDay: schedule.days.map((day) => `https://schema.org/${day}`),
+            startTime: schedule.start,
+            ...(schedule.end ? { endTime: schedule.end } : {}),
+          })),
         }
       : {}),
   }));

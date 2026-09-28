@@ -29,10 +29,11 @@ export const BUSINESS = {
   phoneTel: "+61289262340",
   instagram: "https://www.instagram.com/barelvina/",
   hours: {
-    wedThu: "5:00pm - late",
+    wedThu: "3:00pm - late",
     fri: "12:00pm - late",
     sat: "12:00pm - late",
-    sunMonTue: "Closed",
+    sun: "12:00pm - late",
+    monTue: "Closed",
   },
 };
 
@@ -40,10 +41,30 @@ export const TRADING_HOURS = [
   { days: "Wed-Thu", hours: BUSINESS.hours.wedThu },
   { days: "Fri", hours: BUSINESS.hours.fri },
   { days: "Sat", hours: BUSINESS.hours.sat },
-  { days: "Sun-Tue", hours: BUSINESS.hours.sunMonTue },
+  { days: "Sun", hours: BUSINESS.hours.sun },
+  { days: "Mon-Tue", hours: BUSINESS.hours.monTue },
 ];
 
-export const WHATS_ON_EVENTS = [
+export type EventSchedule = {
+  days: string[];
+  start: string;
+  end?: string;
+};
+
+export type WhatsOnEvent = {
+  slug: string;
+  name: string;
+  image: string;
+  alt: string;
+  description: string;
+  price: string;
+  priceValue?: number;
+  when: string;
+  bookingUrl: string;
+  schedules?: EventSchedule[];
+};
+
+export const WHATS_ON_EVENTS: WhatsOnEvent[] = [
   {
     slug: "aperitivo-time",
     name: "Aperitivo Time",
@@ -53,9 +74,12 @@ export const WHATS_ON_EVENTS = [
       "Ease into the evening with $4 oysters, $12 margaritas and spritzes, $7 Avalon Brewery beer and $10 vino classico.",
     price: "From $4",
     priceValue: 4,
-    when: "Wednesday-Friday, 5pm-7pm",
+    when: "Wed-Thu 3pm-7pm, Fri 5pm-7pm",
     bookingUrl: BOOKING_URL,
-    schedule: { days: ["Wednesday", "Thursday", "Friday"], start: "17:00", end: "19:00" },
+    schedules: [
+      { days: ["Wednesday", "Thursday"], start: "15:00", end: "19:00" },
+      { days: ["Friday"], start: "17:00", end: "19:00" },
+    ],
   },
   {
     slug: "bottomless",
@@ -80,7 +104,7 @@ export const WHATS_ON_EVENTS = [
     priceValue: 33,
     when: "Every Wednesday from 5pm",
     bookingUrl: "https://www.sevenrooms.com/xov8ekXe",
-    schedule: { days: ["Wednesday"], start: "17:00" },
+    schedules: [{ days: ["Wednesday"], start: "17:00" }],
   },
   {
     slug: "vino-vinyl-fridays",
@@ -92,7 +116,7 @@ export const WHATS_ON_EVENTS = [
     price: "À la carte food and drinks",
     when: "Every Friday from 5pm",
     bookingUrl: "https://www.sevenrooms.com/x1kaQXh3",
-    schedule: { days: ["Friday"], start: "17:00" },
+    schedules: [{ days: ["Friday"], start: "17:00" }],
   },
   {
     slug: "wine-club",
