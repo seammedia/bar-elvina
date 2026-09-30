@@ -11,14 +11,13 @@ export const metadata: Metadata = {
 };
 
 const includes = [
-  "Rosemary & confit garlic focaccia",
-  "Marinated Sicilian olives",
-  "White bean hummus, confit leek, paprika",
-  "Mediterranean dip, kalamata olives, peppers, anchovies",
-  "Mushroom & saffron arancini, parmesan",
-  "Rany's chargrilled spatchcock, roasted red pepper, guindillas & lime",
-  "Fries, pimiento aioli",
-  "Rocket, radicchio, pistachio, pomegranate, citrus vinaigrette",
+  "Chargrilled roast garlic bread",
+  "Marinated Tuscan olives",
+  "White bean dip, fried capers, herb oil",
+  "Chargrilled octopus gilda, Gordal olive, lemon",
+  "Chargrilled spatchcock, spring pea puree, salted lemon",
+  "Fries, oregano, feta",
+  "Red Coral & Yellow Wilton salad, white balsamic",
 ];
 
 const faqs = [
@@ -62,6 +61,7 @@ export default function BottomlessPage() {
                   <li key={i}>{i}</li>
                 ))}
               </ul>
+              <p>Add dessert of the day for $10 per person.</p>
               <a
                 href={BOOKING_URL}
                 target="_blank"
@@ -76,6 +76,24 @@ export default function BottomlessPage() {
               <img src="/images/food-bottomless.jpg" alt="A spread of plates and drinks at Elvina" />
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="section-pad-sm">
+        <div className="container">
+          <span className="eyebrow">The Menu</span>
+          <h2>Bottomless lunch and dinner.</h2>
+          <div className="menu-embed">
+            <iframe
+              src="/menus/bottomless.pdf#view=Fit&toolbar=0&navpanes=0"
+              title="Bottomless menu"
+              loading="lazy"
+            />
+          </div>
+          <p className="menu-dietaries">
+            A 10% service charge applies to groups of 8 or more, with a 10%
+            surcharge on Saturdays and Sundays and 15% on public holidays.
+          </p>
         </div>
       </section>
 
