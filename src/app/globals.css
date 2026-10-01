@@ -482,6 +482,13 @@ section {
   color: var(--off-white);
   border-color: var(--burnt-sienna);
 }
+.menu-download-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 20px 0;
+}
+.menu-mobile-pages { display: none; }
 .menu-embed {
   border: 1px solid var(--rule);
   background: var(--cream-2);
@@ -501,7 +508,12 @@ section {
   object-fit: contain;
 }
 @media (max-width: 600px) {
-  .menu-embed { height: 70vh; min-height: 420px; }
+  .menu-desktop-preview { display: none; }
+  .menu-mobile-pages { display: flex; flex-direction: column; gap: 20px; }
+  .menu-mobile-pages figure { margin: 0; }
+  .menu-mobile-pages img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); }
+  .menu-mobile-pages figcaption { text-align: center; padding-top: 8px; font-size: 12px; color: var(--muted); }
+  .menu-download-actions .btn { flex: 1 1 160px; text-align: center; }
   .menu-tab { padding: 12px 16px; font-size: 11px; letter-spacing: 0.12em; }
 }
 .menu-dietaries {

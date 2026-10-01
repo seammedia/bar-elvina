@@ -12,13 +12,67 @@ export const FUNCTION_PACK_URL = "/elvina-function-pack.pdf";
 
 // Menu files embedded on the menu page (tabbed viewer).
 export const MENUS = [
-  { name: "Wine List", desc: "Our current wine list.", file: "/menus/wine-list.pdf" },
-  { name: "Menu", desc: "Our full seasonal menu.", file: "/menus/a-la-carte.pdf" },
-  { name: "Kids Menu", desc: "For the little ones.", file: "/menus/kids-menu.pdf" },
-  { name: "$69 Set Menu", desc: "Our sharing menu for a relaxed gathering.", file: "/menus/set-menu-gather.pdf" },
-  { name: "$89 Set Menu", desc: "The fuller Elvina sharing experience.", file: "/menus/set-menu-share.pdf" },
-  { name: "Drinks", desc: "Cocktails, wine, beer and non-alcoholic drinks.", file: "/menus/drinks.pdf" },
-  { name: "Canapés", desc: "Our canapé selection for events and functions.", file: "/menus/canapes.pdf" },
+  {
+    "name": "Food Menu",
+    "desc": "Our full seasonal menu.",
+    "file": "/menus/a-la-carte.pdf",
+    "pages": [
+      "/menus/previews/2026-10-02/a-la-carte/page-1.jpg"
+    ]
+  },
+  {
+    "name": "Drinks",
+    "desc": "Cocktails, wine, beer and non-alcoholic drinks.",
+    "file": "/menus/drinks.pdf",
+    "pages": [
+      "/menus/previews/2026-10-02/drinks/page-1.jpg",
+      "/menus/previews/2026-10-02/drinks/page-2.jpg",
+      "/menus/previews/2026-10-02/drinks/page-3.jpg",
+      "/menus/previews/2026-10-02/drinks/page-4.jpg",
+      "/menus/previews/2026-10-02/drinks/page-5.jpg",
+      "/menus/previews/2026-10-02/drinks/page-6.jpg"
+    ]
+  },
+  {
+    "name": "Wine List",
+    "desc": "Our current wine list.",
+    "file": "/menus/wine-list.pdf",
+    "pages": [
+      "/menus/previews/2026-10-02/wine-list/page-1.jpg"
+    ]
+  },
+  {
+    "name": "Kids Menu",
+    "desc": "For the little ones.",
+    "file": "/menus/kids-menu.pdf",
+    "pages": [
+      "/menus/previews/2026-10-02/kids-menu/page-1.jpg"
+    ]
+  },
+  {
+    "name": "$69 Set Menu",
+    "desc": "Our sharing menu for a relaxed gathering.",
+    "file": "/menus/set-menu-gather.pdf",
+    "pages": [
+      "/menus/previews/2026-10-02/set-menu-gather/page-1.jpg"
+    ]
+  },
+  {
+    "name": "$89 Set Menu",
+    "desc": "The fuller Elvina sharing experience.",
+    "file": "/menus/set-menu-share.pdf",
+    "pages": [
+      "/menus/previews/2026-10-02/set-menu-share/page-1.jpg"
+    ]
+  },
+  {
+    "name": "Canapés",
+    "desc": "Our canapé selection for events and functions.",
+    "file": "/menus/canapes.pdf",
+    "pages": [
+      "/menus/previews/2026-10-02/canapes/page-1.jpg"
+    ]
+  }
 ];
 
 export const BUSINESS = {
