@@ -7,7 +7,7 @@ export const BOOKING_URL = "https://www.sevenrooms.com/reservations/barelvina";
 // Square gift voucher purchase page (supplied by Lucas, June 2026).
 export const GIFT_VOUCHER_URL = "https://app.squareup.com/gift/ML2RT53PZQJMW/order";
 
-// Events / function pack PDF. TODO: replace placeholder with Lucas's real pack.
+// Final function pack supplied by Lucas on 2 October 2026.
 export const FUNCTION_PACK_URL = "/elvina-function-pack.pdf";
 
 // Menu files embedded on the menu page (tabbed viewer).

@@ -4,7 +4,7 @@ import { Footer } from "@/components/footer";
 import { PageHeader } from "@/components/page-header";
 import { ContactForm } from "@/components/contact-form";
 import { IconMail, IconPhone, Arrow } from "@/components/icons";
-import { ROOMS, BUSINESS } from "@/lib/config";
+import { ROOMS, BUSINESS, FUNCTION_PACK_URL } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Avalon Wedding Venue & Private Dining | Elvina",
@@ -43,14 +43,15 @@ export default function FunctionsPage() {
               </h2>
               <p style={{ fontSize: 16, lineHeight: 1.7, color: "var(--burnt-sienna)", margin: "0 0 24px" }}>
                 Whatever you&apos;re marking, we&apos;ll tailor food, drinks and styling
-                to suit. Get in touch and we&apos;ll send our pack with spaces,
-                capacities and sample menus.
+                to suit. Download our function pack for spaces, capacities and
+                sample menus, then get in touch to plan your event.
               </p>
               <a
-                href={`mailto:${BUSINESS.email}?subject=${encodeURIComponent("Function Pack request")}&body=${encodeURIComponent("Hi Elvina,\n\nCould you please send through your function pack? A few details about my event:\n\nDate:\nNumber of guests:\nOccasion:\n\nThanks,")}`}
+                href={FUNCTION_PACK_URL}
+                download="Elvina-Function-Pack.pdf"
                 className="btn btn-tan btn-lg"
               >
-                Request Function Pack <Arrow />
+                Download Function Pack <Arrow />
               </a>
             </div>
             <div className="occasions">
