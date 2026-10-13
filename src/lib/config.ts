@@ -17,7 +17,7 @@ export const MENUS = [
     "desc": "Our full seasonal menu.",
     "file": "/menus/a-la-carte.pdf",
     "pages": [
-      "/menus/previews/2026-10-02/a-la-carte/page-1.jpg"
+      "/menus/previews/2026-10-13/a-la-carte/page-1.jpg"
     ]
   },
   {
@@ -25,12 +25,12 @@ export const MENUS = [
     "desc": "Cocktails, wine, beer and non-alcoholic drinks.",
     "file": "/menus/drinks.pdf",
     "pages": [
-      "/menus/previews/2026-10-02/drinks/page-1.jpg",
-      "/menus/previews/2026-10-02/drinks/page-2.jpg",
-      "/menus/previews/2026-10-02/drinks/page-3.jpg",
-      "/menus/previews/2026-10-02/drinks/page-4.jpg",
-      "/menus/previews/2026-10-02/drinks/page-5.jpg",
-      "/menus/previews/2026-10-02/drinks/page-6.jpg"
+      "/menus/previews/2026-10-13/drinks/page-1.jpg",
+      "/menus/previews/2026-10-13/drinks/page-2.jpg",
+      "/menus/previews/2026-10-13/drinks/page-3.jpg",
+      "/menus/previews/2026-10-13/drinks/page-4.jpg",
+      "/menus/previews/2026-10-13/drinks/page-5.jpg",
+      "/menus/previews/2026-10-13/drinks/page-6.jpg"
     ]
   },
   {
@@ -38,7 +38,7 @@ export const MENUS = [
     "desc": "Our current wine list.",
     "file": "/menus/wine-list.pdf",
     "pages": [
-      "/menus/previews/2026-10-02/wine-list/page-1.jpg"
+      "/menus/previews/2026-10-13/wine-list/page-1.jpg"
     ]
   },
   {
@@ -54,7 +54,7 @@ export const MENUS = [
     "desc": "Our sharing menu for a relaxed gathering.",
     "file": "/menus/set-menu-gather.pdf",
     "pages": [
-      "/menus/previews/2026-10-02/set-menu-gather/page-1.jpg"
+      "/menus/previews/2026-10-13/set-menu-gather/page-1.jpg"
     ]
   },
   {
@@ -62,7 +62,7 @@ export const MENUS = [
     "desc": "The fuller Elvina sharing experience.",
     "file": "/menus/set-menu-share.pdf",
     "pages": [
-      "/menus/previews/2026-10-02/set-menu-share/page-1.jpg"
+      "/menus/previews/2026-10-13/set-menu-share/page-1.jpg"
     ]
   },
   {
