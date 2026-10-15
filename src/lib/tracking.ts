@@ -32,3 +32,7 @@ export function trackBookClick(page: string) {
 export function trackContactClick(kind: "phone" | "email") {
   gtag()?.("event", kind === "phone" ? "phone_click" : "email_click");
 }
+
+export function trackPopup(action: "popup_view" | "popup_close" | "popup_book" | "popup_whats_on", id: string) {
+  gtag()?.("event", action, { popup_id: id });
+}

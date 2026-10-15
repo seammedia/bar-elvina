@@ -184,6 +184,28 @@ export const WHATS_ON_EVENTS: WhatsOnEvent[] = [
   },
 ];
 
+// Site-wide pop-up (Lucas, 16 Oct 2026: "trigger a pop up ... about new lunches hours, Fri/Sat/Sun 12pm.
+// Potentially a what's on pop up"). Change `id` whenever the message changes so returning visitors see it
+// again; set `enabled: false` to switch it off. Add `image` (a /public path) once Lucas's new photos arrive.
+export const POPUP = {
+  enabled: true,
+  id: "lunch-fri-sun-2026-10",
+  eyebrow: "Now open for lunch",
+  title: "Long lunches, Friday to Sunday",
+  body: "Doors open at 12pm every Friday, Saturday and Sunday. Long lunches, sun-drunk afternoons and an eclectic wine list, perched above Avalon Beach.",
+  image: "/images/venue-terrace.jpg" as string | null, // placeholder until Lucas's new photos arrive
+  imageAlt: "The terrace at Elvina, set for lunch",
+  // What's On items shown in the pop-up, by event slug, with the detail to show for each.
+  whatsOn: [
+    { slug: "aperitivo-time", detail: "when" },
+    { slug: "wagyu-wednesday", detail: "when" },
+    { slug: "vino-vinyl-fridays", detail: "when" },
+    { slug: "bottomless", detail: "price" },
+  ] as { slug: string; detail: "when" | "price" }[],
+  delayMs: 1200,
+  hideForDays: 7,
+};
+
 export const BOTTOMLESS = {
   price: "$99",
   duration: "2 hours",

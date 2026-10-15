@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { MobileActions } from "@/components/mobile-actions";
 import { GoogleTag } from "@/components/google-tag";
+import { SitePopup } from "@/components/site-popup";
 import { BUSINESS } from "@/lib/config";
 import "./globals.css";
 
@@ -65,6 +66,7 @@ export default function RootLayout({
         {children}
         <MobileActions />
         <GoogleTag />
+        <SitePopup />
       </body>
     </html>
   );
