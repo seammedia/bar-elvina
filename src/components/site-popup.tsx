@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BOOKING_URL, POPUP, WHATS_ON_EVENTS } from "@/lib/config";
+import { BOOKING_URL, POPUP } from "@/lib/config";
 import { trackPopup } from "@/lib/tracking";
 
 // Site-wide pop-up, like the Merci Group "Dunes" page Lucas pointed to: opens shortly after the page loads,
@@ -57,13 +57,6 @@ export function SitePopup() {
 
   if (!open) return null;
 
-  const events = POPUP.whatsOn
-    .map(({ slug, detail }) => {
-      const e = WHATS_ON_EVENTS.find((x) => x.slug === slug);
-      return e ? { name: e.name, detail: detail === "price" ? e.price : e.when } : null;
-    })
-    .filter(Boolean) as { name: string; detail: string }[];
-
   return (
     <div className="site-popup" onMouseDown={(e) => e.target === e.currentTarget && dismiss("popup_close")}>
       <div
@@ -82,15 +75,20 @@ export function SitePopup() {
         <div className="site-popup-body">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img className="site-popup-mermaid" src="/logos/elvina-mermaid-white.svg" alt="" aria-hidden="true" />
-          <span className="site-popup-eyebrow">{POPUP.eyebrow}</span>
+          {POPUP.eyebrow && <span className="site-popup-eyebrow">{POPUP.eyebrow}</span>}
           <h2 id="site-popup-title">{POPUP.title}</h2>
           <p>{POPUP.body}</p>
-          {events.length > 0 && (
-            <ul className="site-popup-events" aria-label="What's on">
-              {events.map((e) => (
-                <li key={e.name}>
-                  <span>{e.name}</span>
-                  <em>{e.detail}</em>
+          {POPUP.days.length > 0 && (
+            <ul className="site-popup-days" aria-label="What's on this week">
+              {POPUP.days.map((d) => (
+                <li key={d.day}>
+                  <span className="site-popup-day">{d.day}</span>
+                  <span className="site-popup-items">
+                    {d.items.map((item) => (
+                      <span key={item}>{item}</span>
+                    ))}
+                  </span>
+                  <em>{d.open}</em>
                 </li>
               ))}
             </ul>

@@ -189,19 +189,22 @@ export const WHATS_ON_EVENTS: WhatsOnEvent[] = [
 // again; set `enabled: false` to switch it off. Add `image` (a /public path) once Lucas's new photos arrive.
 export const POPUP = {
   enabled: true,
-  id: "lunch-fri-sun-2026-10",
-  eyebrow: "Now open for lunch",
+  // New id on 16 Oct (Lucas's changes) so visitors who closed the first version see this one.
+  id: "lunch-whats-on-2026-10-16",
+  eyebrow: "",
   title: "Long lunches, Friday to Sunday",
-  body: "Doors open at 12pm every Friday, Saturday and Sunday. Long lunches, sun-drunk afternoons and an eclectic wine list, perched above Avalon Beach.",
-  image: "/images/venue-terrace.jpg" as string | null, // placeholder until Lucas's new photos arrive
+  body: "Doors open at 12pm every Friday, Saturday and Sunday. Long lunches, sun-drunk afternoons and an eclectic wine list, perched above Avalon.",
+  // The terrace shot with the heater edited out (same photo as the homepage hero, resized).
+  image: "/images/popup-terrace.jpg" as string | null,
   imageAlt: "The terrace at Elvina, set for lunch",
-  // What's On items shown in the pop-up, by event slug, with the detail to show for each.
-  whatsOn: [
-    { slug: "aperitivo-time", detail: "when" },
-    { slug: "wagyu-wednesday", detail: "when" },
-    { slug: "vino-vinyl-fridays", detail: "when" },
-    { slug: "bottomless", detail: "price" },
-  ] as { slug: string; detail: "when" | "price" }[],
+  // Day by day, like Lucas's October What's On flyer (16 Oct email). Jazz moves to 6pm from the week of 19 Oct.
+  days: [
+    { day: "Wed", open: "Open from 3pm", items: ["Aperitivo 3-6pm", "Wagyu Wednesday"] },
+    { day: "Thu", open: "Open from 3pm", items: ["Aperitivo 3-6pm", "Live Jazz Night from 6pm"] },
+    { day: "Fri", open: "Open from 12pm", items: ["Aperitivo 3-6pm", "Vino Vinyl Fridays from 5pm"] },
+    { day: "Sat", open: "Open from 12pm", items: [] },
+    { day: "Sun", open: "Open from 12pm", items: ["Sunday Sessions, live music from 3pm"] },
+  ] as { day: string; open: string; items: string[] }[],
   delayMs: 1200,
   hideForDays: 7,
 };
