@@ -1,4 +1,7 @@
+"use client";
+
 import { BUSINESS } from "@/lib/config";
+import { ENQUIRY_FLAG } from "@/lib/tracking";
 
 type Props = {
   subjects?: string[];
@@ -11,12 +14,21 @@ export function ContactForm({
   defaultSubject = "Booking enquiry",
   eventFields = false,
 }: Props) {
+  // FormSubmit sends the visitor back to /thanks after it accepts the enquiry; the flag lets
+  // that page count the conversion once, only for a real submission.
+  const formName = eventFields ? "functions" : "contact";
   return (
     <form
       className="contact-form"
       action={`https://formsubmit.co/${BUSINESS.email}`}
       method="POST"
+      onSubmit={() => {
+        try {
+          sessionStorage.setItem(ENQUIRY_FLAG, formName);
+        } catch {}
+      }}
     >
+      <input type="hidden" name="_next" value={`https://elvina.com.au/thanks?form=${formName}`} />
       <div className="field-row">
         <div className="field">
           <label htmlFor="name">Name</label>
