@@ -7,6 +7,10 @@ export const GA4_ID = "G-05MV2W8KZ8";
 export const ENQUIRY_LABEL = "-kBMCOr5wJ0dEOnIwrlE"; // "Enquiry form - elvina.com.au (Seam)"
 export const BOOK_CLICK_LABEL = "OXWtCO35wJ0dEOnIwrlE"; // "Book click to SevenRooms - elvina.com.au (Seam)"
 
+// Meta pixel (dataset "Elvina website", in Lucas's "Elvina" business portfolio 2595833570869622,
+// the same portfolio as ad account 3050131985340789). Added 19 Oct 2026.
+export const META_PIXEL_ID = "1098603329479782";
+
 // Set when an enquiry form is submitted; read once on /thanks so the conversion only counts a
 // submission that FormSubmit accepted and redirected back, never a direct visit to /thanks.
 export const ENQUIRY_FLAG = "elvina_enquiry";
@@ -14,8 +18,11 @@ export const ENQUIRY_FLAG = "elvina_enquiry";
 type Gtag = (...args: unknown[]) => void;
 const gtag = (): Gtag | undefined =>
   typeof window !== "undefined" ? (window as unknown as { gtag?: Gtag }).gtag : undefined;
+const fbq = (): Gtag | undefined =>
+  typeof window !== "undefined" ? (window as unknown as { fbq?: Gtag }).fbq : undefined;
 
 export function trackEnquiry(form: string) {
+  fbq()?.("track", "Lead", { content_name: form });
   const g = gtag();
   if (!g) return;
   g("event", "generate_lead", { form });
@@ -23,6 +30,7 @@ export function trackEnquiry(form: string) {
 }
 
 export function trackBookClick(page: string) {
+  fbq()?.("trackCustom", "BookClick", { page });
   const g = gtag();
   if (!g) return;
   g("event", "book_click", { page });
@@ -31,6 +39,7 @@ export function trackBookClick(page: string) {
 
 export function trackContactClick(kind: "phone" | "email") {
   gtag()?.("event", kind === "phone" ? "phone_click" : "email_click");
+  fbq()?.("track", "Contact", { method: kind });
 }
 
 export function trackPopup(action: "popup_view" | "popup_close" | "popup_book" | "popup_whats_on", id: string) {
