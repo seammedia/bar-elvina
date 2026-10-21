@@ -210,9 +210,10 @@ export const POPUP = {
   title: "Long lunches, Friday to Sunday",
   body: "Doors open at 12pm every Friday, Saturday and Sunday. Long lunches, sun-drunk afternoons and an eclectic wine list, perched above Avalon.",
   // Lucas, 21 Oct: the terrace shot doubled up with the homepage hero behind it, and the 5 Aug shoot's food is
-  // the old menu. Lucas then picked this pasta shot (SEZ00584, 4 Oct shoot) over WhatsApp.
-  image: "/images/popup-pasta-2026-10.jpg" as string | null,
-  imageAlt: "Two plates of pasta on their way out of the Elvina kitchen",
+  // the old menu. Lucas then sent this drinks shot on WhatsApp (SEZ00584.jpg; the Drive file with the same name
+  // in the 4 Oct folder is a different photo).
+  image: "/images/popup-drinks-2026-10.jpg" as string | null,
+  imageAlt: "Spritzes and cocktails in the sun at Elvina",
   // Day by day, like Lucas's October What's On flyer (16 Oct email). Jazz moves to 6pm from the week of 19 Oct.
   days: [
     { day: "Wed", open: "Open from 3pm", items: ["Aperitivo 3-6pm", "Wagyu Wednesday"] },
