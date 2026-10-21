@@ -9,7 +9,7 @@ import { BOOKING_URL, BUSINESS, WHATS_ON_EVENTS } from "@/lib/config";
 export const metadata: Metadata = {
   title: "What's On in Avalon Beach | Elvina",
   description:
-    "Book Aperitivo Time, Wine Club dinners, $99 bottomless lunch and dinner, $33 Wagyu Wednesday and Vino Vinyl Fridays at Elvina in Avalon Beach.",
+    "Book Aperitivo Time, $99 bottomless lunch and dinner, $33 Wagyu Wednesday, Vino Vinyl Fridays and Sunday Sessions at Elvina in Avalon Beach.",
 };
 
 export default function WhatsOnPage() {

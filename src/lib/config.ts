@@ -171,16 +171,20 @@ export const WHATS_ON_EVENTS: WhatsOnEvent[] = [
     bookingUrl: "https://www.sevenrooms.com/x1kaQXh3",
     schedules: [{ days: ["Friday"], start: "17:00" }],
   },
+  // Margie, 21 Oct 2026: Wine Club poster off the page; Sunday Sessions follows Vino Vinyl. The grid is two
+  // across, so the week reads Wagyu (Wed) beside Live Jazz Night (Thu), then Vino Vinyl (Fri) beside Sunday.
+  // Live Jazz Night goes between Wagyu and Vino Vinyl once Margie's 50 x 70 poster file is in public/images.
   {
-    slug: "wine-club",
-    name: "Elvina Wine Club",
-    image: "/images/whatson-wine-club.jpg",
-    alt: "Elvina Wine Club dinners in Avalon Beach",
+    slug: "sunday-sessions",
+    name: "Sunday Sessions",
+    image: "/images/whatson-sunday-sessions-2026-10.jpg",
+    alt: "Sunday Sessions, long lunches and live music at Elvina in Avalon Beach",
     description:
-      "Monthly Thursday dinners with remarkable winemakers, good food and plenty to discover in the glass.",
-    price: "Pricing varies by dinner",
-    when: "Select Thursdays - see booking page for times",
-    bookingUrl: "https://www.sevenrooms.com/xCPuT68k",
+      "Long lunches and live music. Doors open at 12pm, with live music from 3pm.",
+    price: "À la carte food and drinks",
+    when: "Every Sunday from 12pm, live music from 3pm",
+    bookingUrl: BOOKING_URL,
+    schedules: [{ days: ["Sunday"], start: "12:00" }],
   },
 ];
 
@@ -194,9 +198,10 @@ export const POPUP = {
   eyebrow: "",
   title: "Long lunches, Friday to Sunday",
   body: "Doors open at 12pm every Friday, Saturday and Sunday. Long lunches, sun-drunk afternoons and an eclectic wine list, perched above Avalon.",
-  // The terrace shot with the heater edited out (same photo as the homepage hero, resized).
-  image: "/images/popup-terrace.jpg" as string | null,
-  imageAlt: "The terrace at Elvina, set for lunch",
+  // Lucas, 21 Oct: the terrace shot doubled up with the homepage hero behind it, so a lunch spread from
+  // his 5 Aug shoot instead.
+  image: "/images/popup-feast-2026-10.jpg" as string | null,
+  imageAlt: "A long lunch spread at Elvina",
   // Day by day, like Lucas's October What's On flyer (16 Oct email). Jazz moves to 6pm from the week of 19 Oct.
   days: [
     { day: "Wed", open: "Open from 3pm", items: ["Aperitivo 3-6pm", "Wagyu Wednesday"] },
