@@ -160,6 +160,18 @@ export const WHATS_ON_EVENTS: WhatsOnEvent[] = [
     schedules: [{ days: ["Wednesday"], start: "17:00" }],
   },
   {
+    slug: "live-jazz-night",
+    name: "Live Jazz Night",
+    image: "/images/whatson-jazz-2026-10.jpg",
+    alt: "Live Jazz Night with Craig Scott & Co at Elvina in Avalon Beach",
+    description:
+      "Live jazz upstairs with Craig Scott & Co, plus food and drinks from the kitchen and bar.",
+    price: "À la carte food and drinks",
+    when: "Every Thursday from 6pm",
+    bookingUrl: BOOKING_URL,
+    schedules: [{ days: ["Thursday"], start: "18:00" }],
+  },
+  {
     slug: "vino-vinyl-fridays",
     name: "Vino Vinyl Fridays",
     image: "/images/whatson-vinyl.jpg",
@@ -173,7 +185,6 @@ export const WHATS_ON_EVENTS: WhatsOnEvent[] = [
   },
   // Margie, 21 Oct 2026: Wine Club poster off the page; Sunday Sessions follows Vino Vinyl. The grid is two
   // across, so the week reads Wagyu (Wed) beside Live Jazz Night (Thu), then Vino Vinyl (Fri) beside Sunday.
-  // Live Jazz Night goes between Wagyu and Vino Vinyl once Margie's 50 x 70 poster file is in public/images.
   {
     slug: "sunday-sessions",
     name: "Sunday Sessions",
