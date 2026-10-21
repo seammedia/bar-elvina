@@ -28,6 +28,10 @@ export const metadata: Metadata = {
     locale: "en_AU",
     type: "website",
   },
+  // Meta domain verification for the "Elvina" business portfolio (2595833570869622), 22 Oct 2026.
+  verification: {
+    other: { "facebook-domain-verification": "ot0nvd6cuzal6x493ffsnkxkshthqg" },
+  },
 };
 
 export default function RootLayout({
