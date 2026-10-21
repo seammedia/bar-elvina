@@ -8,7 +8,7 @@ import { BOOKING_URL } from "@/lib/config";
 export const metadata: Metadata = {
   title: "Our Story | Elvina Avalon Beach",
   description:
-    "Elvina is a neighbourhood restaurant and wine bar in Avalon Village, Avalon Beach, inspired by the relaxed spirit of the coastal Mediterranean.",
+    "Elvina is a neighbourhood restaurant and bar in Avalon Village, Avalon Beach, inspired by the relaxed spirit of the coastal Mediterranean.",
 };
 
 const values = [
