@@ -168,7 +168,7 @@ export const WHATS_ON_EVENTS: WhatsOnEvent[] = [
       "Live jazz upstairs with Craig Scott & Co, plus food and drinks from the kitchen and bar.",
     price: "À la carte food and drinks",
     when: "Every Thursday from 6pm",
-    bookingUrl: BOOKING_URL,
+    bookingUrl: "https://www.sevenrooms.com/xtWtUeWJ",
     schedules: [{ days: ["Thursday"], start: "18:00" }],
   },
   {
@@ -194,7 +194,7 @@ export const WHATS_ON_EVENTS: WhatsOnEvent[] = [
       "Long lunches and live music. Doors open at 12pm, with live music from 3pm.",
     price: "À la carte food and drinks",
     when: "Every Sunday from 12pm, live music from 3pm",
-    bookingUrl: BOOKING_URL,
+    bookingUrl: "https://www.sevenrooms.com/xFxztivw",
     schedules: [{ days: ["Sunday"], start: "12:00" }],
   },
 ];
