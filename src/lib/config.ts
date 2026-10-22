@@ -122,10 +122,10 @@ export const WHATS_ON_EVENTS: WhatsOnEvent[] = [
   {
     slug: "aperitivo-time",
     name: "Aperitivo Time",
-    image: "/images/whatson-aperitivo-2026-09.jpg",
+    image: "/images/whatson-aperitivo-2026-10.jpg",
     alt: "Aperitivo Time at Elvina in Avalon Beach",
     description:
-      "Ease into the evening with $4 oysters, $12 margaritas and spritzes, $7 Avalon Brewery beer and $10 vino classico.",
+      "Ease into the evening with $4 oysters, $15 margaritas, $12 spritzes, $7 Avalon Brewery beer and $10 vino classico.",
     price: "From $4",
     priceValue: 4,
     when: "Wednesday-Friday, 3pm-6pm",
