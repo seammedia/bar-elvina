@@ -57,7 +57,7 @@ export function Footer() {
           <div />
         </div>
         <div className="foot-bottom">
-          <div>© 2026 Elvina. All rights reserved.</div>
+          <div>© 2026 Elvina. All rights reserved. Website by <a href="https://www.seammedia.com.au/">Seam Media</a></div>
           <div>Avalon Beach, NSW</div>
         </div>
       </div>
