@@ -29,7 +29,9 @@ export const metadata: Metadata = {
     type: "website",
   },
   // Meta domain verification for the "Elvina" business portfolio (2595833570869622), 22 Oct 2026.
+  // Google: Search Console property https://elvina.com.au/ for contact@seammedia.com.au, 28 Oct 2026.
   verification: {
+    google: "_8ZPSXbqmTgf_0T5U50JUoABUugnWtFSMCNHrT12BPU",
     other: { "facebook-domain-verification": "ot0nvd6cuzal6x493ffsnkxkshthqg" },
   },
 };

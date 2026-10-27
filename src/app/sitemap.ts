@@ -12,5 +12,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/bottomless`, lastModified: UPDATED, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/about`, lastModified: UPDATED, changeFrequency: "yearly", priority: 0.6 },
     { url: `${BASE}/contact`, lastModified: UPDATED, changeFrequency: "yearly", priority: 0.6 },
+    { url: `${BASE}/privacy`, lastModified: new Date("2026-10-28"), changeFrequency: "yearly", priority: 0.2 },
   ];
 }

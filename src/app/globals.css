@@ -939,6 +939,36 @@ section {
   font-size: 16px;
   color: var(--sundial-deep);
 }
+/* Privacy policy and other long-form legal text */
+.legal-prose {
+  max-width: 68ch;
+  margin: 0 auto;
+}
+.legal-prose h2 {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: clamp(20px, 2.4vw, 26px);
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 44px 0 14px;
+  color: var(--burnt-sienna);
+}
+.legal-prose h2:first-child { margin-top: 0; }
+.legal-prose p,
+.legal-prose li {
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--burnt-sienna);
+}
+.legal-prose p { margin: 0 0 16px; }
+.legal-prose ul { margin: 0 0 16px; padding-left: 1.2em; list-style-type: disc; }
+.legal-prose li { margin-bottom: 8px; }
+.legal-prose a {
+  color: var(--sundial-deep);
+  border-bottom: 1px solid currentColor;
+  overflow-wrap: anywhere;
+}
 .about-copy .link-tan {
   font-family: var(--mono);
   font-style: italic;
