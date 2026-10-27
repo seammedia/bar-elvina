@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { BOOKING_URL, POPUP } from "@/lib/config";
@@ -69,8 +70,14 @@ export function SitePopup() {
           Close
         </button>
         {POPUP.image && (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img className="site-popup-image" src={POPUP.image} alt={POPUP.imageAlt} />
+          <Image
+            className="site-popup-image"
+            src={POPUP.image}
+            alt={POPUP.imageAlt}
+            width={2000}
+            height={1333}
+            sizes="(max-width: 600px) 100vw, 440px"
+          />
         )}
         <div className="site-popup-body">
           {/* eslint-disable-next-line @next/next/no-img-element */}

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import { PageHeader } from "@/components/page-header";
@@ -92,7 +93,7 @@ export default function FunctionsPage() {
               <div key={room.name} className="room-card">
                 <div className="room-photo">
                   {room.image ? (
-                    <img src={room.image} alt={room.name} />
+                    <Image src={room.image} alt={room.name} fill sizes="(max-width: 600px) 100vw, (max-width: 980px) 50vw, 400px" />
                   ) : (
                     <div className="room-photo-placeholder">
                       <span className="placeholder-label">PHOTOGRAPHY</span>

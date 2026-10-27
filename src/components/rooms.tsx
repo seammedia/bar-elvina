@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ROOMS } from "@/lib/config";
 
 export function Rooms() {
@@ -18,7 +19,7 @@ export function Rooms() {
             <div key={room.name} className="room-card">
               <div className="room-photo">
                 {room.image ? (
-                  <img src={room.image} alt={room.name} />
+                  <Image src={room.image} alt={room.name} fill sizes="(max-width: 600px) 100vw, (max-width: 980px) 50vw, 400px" />
                 ) : (
                   <div className="room-photo-placeholder">
                     <span className="placeholder-label">PHOTOGRAPHY</span>
