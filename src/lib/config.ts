@@ -204,11 +204,20 @@ export const WHATS_ON_EVENTS: WhatsOnEvent[] = [
 // again; set `enabled: false` to switch it off. Add `image` (a /public path) once Lucas's new photos arrive.
 export const POPUP = {
   enabled: true,
-  // New id on 16 Oct (Lucas's changes) so visitors who closed the first version see this one.
-  id: "lunch-whats-on-2026-10-16",
+  // Lucas, 4 Nov 2026: "revise the pop up ... do better with current offers". Leads with the White Party,
+  // then every current offer. The feature block hides itself after `until`.
+  id: "whats-on-white-party-2026-11-04",
   eyebrow: "",
-  title: "Long lunches, Friday to Sunday",
-  body: "Doors open at 12pm every Friday, Saturday and Sunday. Long lunches, sun-drunk afternoons and an eclectic wine list, perched above Avalon.",
+  title: "What's on at Elvina",
+  body: "",
+  feature: {
+    label: "New Year's Eve",
+    title: "White Party",
+    text: "Thursday 31 December from 6pm. White dress-up, best attire prize, two DJs including a surprise guest, a Margarita on arrival and a sparkling tower at midnight. $20 online, $25 on the door.",
+    href: "https://www.sevenrooms.com/xjgGhFsa",
+    cta: "Get Tickets",
+    until: "2027-01-01T02:00:00+11:00",
+  },
   // Lucas, 21 Oct: the terrace shot doubled up with the homepage hero behind it, and the 5 Aug shoot's food is
   // the old menu. Lucas then sent this drinks shot on WhatsApp (SEZ00584.jpg; the Drive file with the same name
   // in the 4 Oct folder is a different photo).
@@ -216,11 +225,12 @@ export const POPUP = {
   imageAlt: "Spritzes and cocktails in the sun at Elvina",
   // Day by day, like Lucas's October What's On flyer (16 Oct email). Jazz moves to 6pm from the week of 19 Oct.
   days: [
-    { day: "Wed", open: "Open from 3pm", items: ["Aperitivo 3-6pm", "Wagyu Wednesday"] },
-    { day: "Thu", open: "Open from 3pm", items: ["Aperitivo 3-6pm", "Live Jazz Night from 6pm"] },
-    { day: "Fri", open: "Open from 12pm", items: ["Aperitivo 3-6pm", "Vino Vinyl Fridays from 5pm"] },
-    { day: "Sat", open: "Open from 12pm", items: [] },
-    { day: "Sun", open: "Open from 12pm", items: ["Sunday Sessions, live music from 3pm"] },
+    { day: "Wed", open: "From 3pm", items: ["Aperitivo 3-6pm", "Wagyu Wednesday, $33"] },
+    { day: "Thu", open: "From 3pm", items: ["Aperitivo 3-6pm", "Live Jazz Night from 6pm"] },
+    { day: "Fri", open: "From 12pm", items: ["Aperitivo 3-6pm", "Vino Vinyl Fridays from 5pm"] },
+    { day: "Sat", open: "From 12pm", items: ["Long lunches"] },
+    { day: "Sun", open: "From 12pm", items: ["Sunday Sessions, live music from 3pm"] },
+    { day: "Daily", open: "", items: ["Bottomless, $99pp"] },
   ] as { day: string; open: string; items: string[] }[],
   delayMs: 1200,
   hideForDays: 7,
