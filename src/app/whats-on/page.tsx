@@ -71,7 +71,7 @@ export default function WhatsOnPage() {
       <Nav />
       <PageHeader
         eyebrow="What's On"
-        title="A reason for every night in Avalon Beach."
+        title="A reason for every day in Avalon Beach."
         description="Explore the details, check the price and book each Elvina offer directly."
       />
       <WhatsOn eagerFirstPoster />
