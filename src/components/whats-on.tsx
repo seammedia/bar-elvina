@@ -42,6 +42,11 @@ export function WhatsOn({ eagerFirstPoster = false }: { eagerFirstPoster?: boole
                 >
                   Book This Offer <Arrow />
                 </a>
+                {event.slug === "live-jazz-night" && (
+                  <a href="/live-jazz" className="btn btn-dark" style={{ marginTop: 8 }}>
+                    More about Jazz Night
+                  </a>
+                )}
               </div>
             </article>
           ))}

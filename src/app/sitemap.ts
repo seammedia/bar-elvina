@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/`, lastModified: UPDATED, changeFrequency: "weekly", priority: 1 },
     { url: `${BASE}/menu`, lastModified: UPDATED, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/whats-on`, lastModified: UPDATED, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE}/live-jazz`, lastModified: new Date("2026-11-04"), changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE}/functions`, lastModified: UPDATED, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/bottomless`, lastModified: UPDATED, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/about`, lastModified: UPDATED, changeFrequency: "yearly", priority: 0.6 },
