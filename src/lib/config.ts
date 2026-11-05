@@ -38,7 +38,7 @@ export const MENUS = [
     "desc": "Our current wine list.",
     "file": "/menus/wine-list.pdf",
     "pages": [
-      "/menus/previews/2026-10-13/wine-list/page-1.jpg"
+      "/menus/previews/2026-11-05/wine-list/page-1.jpg"
     ]
   },
   {
