@@ -8,6 +8,7 @@ import { BOOKING_URL, BOTTOMLESS } from "@/lib/config";
 export const metadata: Metadata = {
   title: "Bottomless Lunch Northern Beaches | Elvina",
   description: `${BOTTOMLESS.description} ${BOTTOMLESS.price} per person at Elvina in Avalon Beach.`,
+  alternates: { canonical: "/bottomless" },
 };
 
 const includes = [

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Our Story | Elvina Avalon Beach",
   description:
     "Elvina is a neighbourhood restaurant and bar in Avalon Village, Avalon Beach, inspired by the relaxed spirit of the coastal Mediterranean.",
+  alternates: { canonical: "/about" },
 };
 
 const values = [

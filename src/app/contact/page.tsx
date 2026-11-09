@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Visit Elvina | Avalon Beach Restaurant",
   description:
     "Find Elvina at Level One, 50 Old Barrenjoey Road, Avalon Beach NSW 2107. View trading hours, directions and contact details.",
+  alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {

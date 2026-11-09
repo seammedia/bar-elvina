@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "What's On in Avalon Beach | Elvina",
   description:
     "Book Aperitivo Time, $99 bottomless lunch and dinner, $33 Wagyu Wednesday, Live Jazz Night, Vino Vinyl Fridays and Sunday Sessions at Elvina in Avalon Beach.",
+  alternates: { canonical: "/whats-on" },
 };
 
 export default function WhatsOnPage() {

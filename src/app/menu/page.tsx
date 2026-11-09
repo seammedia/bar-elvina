@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Menu | Avalon Beach Restaurant | Elvina",
   description:
     "Explore Elvina's seasonal coastal Mediterranean menu, sharing plates and eclectic wine list in Avalon Beach, Sydney's Northern Beaches.",
+  alternates: { canonical: "/menu" },
 };
 
 export default function MenuPage() {

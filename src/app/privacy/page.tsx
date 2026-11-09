@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Privacy Policy | Elvina",
   description:
     "How Elvina in Avalon Beach collects, uses and looks after your personal information, including cookies, analytics and advertising.",
+  alternates: { canonical: "/privacy" },
 };
 
 function External({ href, children }: { href: string; children: React.ReactNode }) {

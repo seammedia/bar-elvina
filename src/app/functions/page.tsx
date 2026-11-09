@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Avalon Wedding Venue & Private Dining | Elvina",
   description:
     "Plan weddings, private dining, corporate events and long lunches at Elvina in Avalon Beach on Sydney's Northern Beaches. Explore five distinct spaces and enquire online.",
+  alternates: { canonical: "/functions" },
 };
 
 const occasions = [
