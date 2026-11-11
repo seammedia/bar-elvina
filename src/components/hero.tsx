@@ -19,7 +19,7 @@ export function Hero() {
             <h1><span className="hero-location">Avalon Beach restaurant &amp; bar</span>Inviting.<br />Breezy.<br />Sun-soaked.</h1>
             <p>
               A coastal Mediterranean kitchen and bar in Avalon Village. Long
-              lunches, sun-drunk afternoons and dancing evenings, all with an
+              lunches, sun-drunk afternoons and alfresco evenings, all with an
               eclectic wine list.
             </p>
             <div className="hero-ctas">
