@@ -186,9 +186,9 @@ export const WHATS_ON_EVENTS: WhatsOnEvent[] = [
     slug: "live-jazz-night",
     name: "Live Jazz Night",
     image: "/images/whatson-jazz-2026-11.jpg",
-    alt: "Live Jazz Night with Craig Scott & Jim Pennell at Elvina in Avalon Beach",
+    alt: "Live Jazz Night at Elvina in Avalon Beach",
     description:
-      "Live jazz upstairs with Craig Scott & Jim Pennell, plus food and drinks from the kitchen and bar.",
+      "Live jazz upstairs every Thursday, plus food and drinks from the kitchen and bar.",
     price: "À la carte food and drinks",
     when: "Every Thursday from 6pm",
     bookingUrl: "https://www.sevenrooms.com/xtWtUeWJ",
