@@ -91,6 +91,29 @@ export const BUSINESS = {
   },
 };
 
+// Christmas and New Year hours (Lucas, WhatsApp 11 Nov 2026 12:24 pm, same as his 4 Nov email and the
+// Business Profile special hours). Shown under the regular hours until `until`.
+export const HOLIDAY_HOURS = {
+  title: "Christmas & New Year",
+  until: "2027-01-04T00:00:00+11:00",
+  lines: [
+    { days: "Mon 21 Dec", hours: "Closed" },
+    { days: "Tue 22 Dec", hours: "3:00pm - late" },
+    { days: "Wed 23 Dec", hours: "3:00pm - late" },
+    { days: "Thu 24 Dec", hours: "12:00pm - 5:00pm" },
+    { days: "Fri 25 Dec", hours: "3:00pm - late" },
+    { days: "Sat 26 Dec", hours: "12:00pm - midnight" },
+    { days: "Sun 27 Dec", hours: "12:00pm - 8:00pm" },
+    { days: "Mon 28 Dec", hours: "Closed" },
+    { days: "Tue 29 Dec", hours: "3:00pm - late" },
+    { days: "Wed 30 Dec", hours: "3:00pm - late" },
+    { days: "Thu 31 Dec", hours: "3:00pm - 1:00am" },
+    { days: "Fri 1 Jan", hours: "3:00pm - late" },
+    { days: "Sat 2 Jan", hours: "12:00pm - midnight" },
+    { days: "Sun 3 Jan", hours: "12:00pm - 8:00pm" },
+  ],
+};
+
 export const TRADING_HOURS = [
   { days: "Wed-Thu", hours: BUSINESS.hours.wedThu },
   { days: "Fri", hours: BUSINESS.hours.fri },
@@ -204,20 +227,31 @@ export const WHATS_ON_EVENTS: WhatsOnEvent[] = [
 // again; set `enabled: false` to switch it off. Add `image` (a /public path) once Lucas's new photos arrive.
 export const POPUP = {
   enabled: true,
-  // Lucas, 4 Nov 2026: "revise the pop up ... do better with current offers". Leads with the White Party,
-  // then every current offer. The feature block hides itself after `until`.
-  id: "whats-on-white-party-2026-11-04",
+  // Lucas, 4 Nov 2026: "revise the pop up ... do better with current offers". Leads with the one-off events,
+  // then every current offer. Each feature block hides itself after its `until`.
+  // 11 Nov: Rosé Magnum Long Lunch added (Lucas's email 12:12 pm, link xcjTaubr; SevenRooms books Sun 13 Dec).
+  id: "whats-on-rose-lunch-2026-11-11",
   eyebrow: "",
   title: "What's on at Elvina",
   body: "",
-  feature: {
-    label: "New Year's Eve",
-    title: "White Party",
-    text: "Thursday 31 December from 6pm. White dress-up, best attire prize, two DJs including a surprise guest, a Margarita on arrival and a sparkling tower at midnight. $20 online, $25 on the door.",
-    href: "https://www.sevenrooms.com/xjgGhFsa",
-    cta: "Get Tickets",
-    until: "2027-01-01T02:00:00+11:00",
-  },
+  features: [
+    {
+      label: "Sunday 13 December",
+      title: "Rosé Magnum Long Lunch",
+      text: "Provence rosé poured from magnums, featuring M de Minuty and Whispering Angel. From 1pm, $149 per person.",
+      href: "https://www.sevenrooms.com/xcjTaubr",
+      cta: "Book a Table",
+      until: "2026-12-13T16:00:00+11:00",
+    },
+    {
+      label: "New Year's Eve",
+      title: "White Party",
+      text: "Thursday 31 December from 6pm. White dress-up, best attire prize, two DJs including a surprise guest, a Margarita on arrival and a sparkling tower at midnight. $20 online, $25 on the door.",
+      href: "https://www.sevenrooms.com/xjgGhFsa",
+      cta: "Get Tickets",
+      until: "2027-01-01T02:00:00+11:00",
+    },
+  ] as { label: string; title: string; text: string; href: string; cta: string; until: string }[],
   // Lucas, 21 Oct: the terrace shot doubled up with the homepage hero behind it, and the 5 Aug shoot's food is
   // the old menu. Lucas then sent this drinks shot on WhatsApp (SEZ00584.jpg; the Drive file with the same name
   // in the 4 Oct folder is a different photo).
@@ -227,7 +261,7 @@ export const POPUP = {
   days: [
     { day: "Wed", open: "From 3pm", items: ["Aperitivo 3-6pm", "Wagyu Wednesday, $33"] },
     { day: "Thu", open: "From 3pm", items: ["Aperitivo 3-6pm", "Live Jazz Night from 6pm"] },
-    { day: "Fri", open: "From 12pm", items: ["Aperitivo 3-6pm", "Vino Vinyl Fridays from 5pm"] },
+    { day: "Fri", open: "From 12pm", items: ["French Fridays, 12-6pm", "Aperitivo 3-6pm", "Vino Vinyl Fridays from 5pm"] },
     { day: "Sat", open: "From 12pm", items: ["Long lunches"] },
     { day: "Sun", open: "From 12pm", items: ["Sunday Sessions, live music from 3pm"] },
     { day: "Daily", open: "", items: ["Bottomless, $99pp"] },

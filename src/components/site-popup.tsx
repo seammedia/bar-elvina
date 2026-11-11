@@ -83,22 +83,24 @@ export function SitePopup() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img className="site-popup-mermaid" src="/logos/elvina-mermaid-white.svg" alt="" aria-hidden="true" />
           {POPUP.eyebrow && <span className="site-popup-eyebrow">{POPUP.eyebrow}</span>}
-          {POPUP.feature && Date.now() < new Date(POPUP.feature.until).getTime() && (
-            <div className="site-popup-feature">
-              <span className="site-popup-feature-label">{POPUP.feature.label}</span>
-              <h3>{POPUP.feature.title}</h3>
-              <p>{POPUP.feature.text}</p>
-              <a
-                href={POPUP.feature.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn site-popup-book"
-                onClick={() => dismiss("popup_book")}
-              >
-                {POPUP.feature.cta}
-              </a>
-            </div>
-          )}
+          {POPUP.features
+            .filter((f) => Date.now() < new Date(f.until).getTime())
+            .map((f) => (
+              <div className="site-popup-feature" key={f.title}>
+                <span className="site-popup-feature-label">{f.label}</span>
+                <h3>{f.title}</h3>
+                <p>{f.text}</p>
+                <a
+                  href={f.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn site-popup-book"
+                  onClick={() => dismiss("popup_book")}
+                >
+                  {f.cta}
+                </a>
+              </div>
+            ))}
           <h2 id="site-popup-title">{POPUP.title}</h2>
           {POPUP.body && <p>{POPUP.body}</p>}
           {POPUP.days.length > 0 && (

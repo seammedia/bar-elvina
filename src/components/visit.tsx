@@ -21,7 +21,7 @@ export function Visit() {
               </div>
               <div className="visit-row">
                 <span className="icon"><IconClock /></span>
-                <div className="text"><TradingHours /></div>
+                <div className="text"><TradingHours holidays /></div>
               </div>
               <div className="visit-row">
                 <span className="icon"><IconPhone /></span>

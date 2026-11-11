@@ -1980,3 +1980,7 @@ footer {
   .site-popup-panel:has(.site-popup-feature) .site-popup-days li { grid-template-columns: 50px 1fr auto; }
   .site-popup-days em { font-size: 11px; }
 }
+
+/* Christmas and New Year hours under the regular hours (11 Nov 2026) */
+.hour-line.hour-line-heading { margin-top: 14px; font-weight: 600; }
+.visit-row .text .hour-line-heading ~ .hour-line span:first-child { min-width: 100px; }
