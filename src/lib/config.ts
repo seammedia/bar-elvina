@@ -92,7 +92,7 @@ export const BUSINESS = {
 };
 
 // Christmas and New Year hours (Lucas, WhatsApp 11 Nov 2026 12:24 pm, same as his 4 Nov email and the
-// Business Profile special hours). Shown under the regular hours until `until`.
+// Business Profile special hours; 24 Dec changed to closed, Lucas WhatsApp 13 Nov 5:28 pm). Shown under the regular hours until `until`.
 export const HOLIDAY_HOURS = {
   title: "Christmas & New Year",
   until: "2027-01-04T00:00:00+11:00",
@@ -100,7 +100,7 @@ export const HOLIDAY_HOURS = {
     { days: "Mon 21 Dec", hours: "Closed" },
     { days: "Tue 22 Dec", hours: "3:00pm - late" },
     { days: "Wed 23 Dec", hours: "3:00pm - late" },
-    { days: "Thu 24 Dec", hours: "12:00pm - 5:00pm" },
+    { days: "Thu 24 Dec", hours: "Closed" },
     { days: "Fri 25 Dec", hours: "3:00pm - late" },
     { days: "Sat 26 Dec", hours: "12:00pm - midnight" },
     { days: "Sun 27 Dec", hours: "12:00pm - 8:00pm" },
