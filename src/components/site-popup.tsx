@@ -58,17 +58,22 @@ export function SitePopup() {
 
   if (!open) return null;
 
+  // The close button sits on the dialog, outside the scrolling panel, so it never scrolls away on a phone
+  // (Lucas, 18 Nov 2026: "the pop up is hard to close on mobile"). onClick, not onMouseDown, because iOS
+  // doesn't send mouse events to a plain div unless it is clickable (cursor: pointer in the CSS).
   return (
-    <div className="site-popup" onMouseDown={(e) => e.target === e.currentTarget && dismiss("popup_close")}>
-      <div
-        className={`site-popup-panel${POPUP.image ? " has-image" : ""}`}
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="site-popup-title"
-      >
-        <button ref={closeRef} type="button" className="site-popup-close" onClick={() => dismiss("popup_close")}>
-          Close
+    <div className="site-popup" onClick={(e) => e.target === e.currentTarget && dismiss("popup_close")}>
+      <div className="site-popup-dialog" role="dialog" aria-modal="true" aria-labelledby="site-popup-title">
+        <button
+          ref={closeRef}
+          type="button"
+          className="site-popup-close"
+          aria-label="Close"
+          onClick={() => dismiss("popup_close")}
+        >
+          <span aria-hidden="true">&times;</span>
         </button>
+        <div className={`site-popup-panel${POPUP.image ? " has-image" : ""}`}>
         {POPUP.image && (
           <Image
             className="site-popup-image"
@@ -132,6 +137,7 @@ export function SitePopup() {
               What&apos;s On
             </Link>
           </div>
+        </div>
         </div>
       </div>
     </div>

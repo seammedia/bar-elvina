@@ -1815,13 +1815,25 @@ footer {
   padding: 16px;
   background: rgba(77, 32, 27, 0.55);
   animation: site-popup-fade 0.35s ease;
+  cursor: pointer; /* iOS only sends taps to a plain div when it looks clickable (backdrop tap to close) */
 }
+/* The dialog holds the close button outside the scrolling panel, so it stays put while the content scrolls. */
+.site-popup-dialog {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  cursor: auto;
+}
+.site-popup-dialog:has(.site-popup-panel.has-image) { max-width: 880px; }
+.site-popup-dialog:has(.site-popup-panel.has-image .site-popup-feature) { max-width: 980px; }
 .site-popup-panel {
   position: relative;
   width: 100%;
   max-width: 560px;
   max-height: calc(100vh - 32px);
+  max-height: calc(100dvh - 32px); /* the visible screen on phones, not counting the browser bars */
   overflow: auto;
+  overscroll-behavior: contain;
   background: var(--sundial);
   color: var(--off-white);
   text-align: center;
@@ -1845,21 +1857,27 @@ footer {
 }
 .site-popup-close {
   position: absolute;
-  top: 14px;
-  right: 16px;
-  z-index: 1;
-  background: none;
-  border: 0;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1.5px solid var(--off-white);
+  border-radius: 50%;
+  background: rgba(43, 19, 16, 0.85);
   color: var(--off-white);
-  font-family: var(--mono);
-  font-style: italic;
-  font-size: 13px;
+  font-family: var(--body);
+  font-size: 28px;
+  line-height: 1;
   cursor: pointer;
-  padding: 4px 10px;
-  border-radius: 99px;
-  background: rgba(77, 32, 27, 0.55);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
-.site-popup-close:hover { text-decoration: underline; }
+.site-popup-close:hover { background: rgba(43, 19, 16, 1); }
+.site-popup-close:focus-visible { outline: 2px solid var(--off-white); outline-offset: 2px; }
 .site-popup-mermaid {
   width: 76px;
   height: auto;
