@@ -7,8 +7,8 @@ export function Together() {
       <div className="container">
         <div className="promo promo-wide">
           <Image
-            src="/images/drink-spritz.jpg"
-            alt="A spritz at Elvina in Avalon Beach"
+            src="/images/food-bottomless-spatchcock-2026-11.jpg"
+            alt="Chargrilled spatchcock on spring pea puree, part of the Bottomless banquet at Elvina"
             fill
             sizes="(max-width: 600px) 100vw, 1240px"
             className="promo-img"
