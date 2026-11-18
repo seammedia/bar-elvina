@@ -10,19 +10,20 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://elvina.com.au"),
   title: "Elvina | Avalon Beach Restaurant & Bar",
   description:
-    "A coastal Mediterranean restaurant and bar in Avalon Beach on Sydney's Northern Beaches. Book dining, bottomless lunch, weddings and private events.",
+    "A coastal Mediterranean restaurant and bar in Avalon Beach on Sydney's Northern Beaches. Book dining, bottomless lunch and dinner, weddings and private events.",
   keywords: [
     "restaurant Avalon Beach",
     "Avalon Beach restaurant",
     "Northern Beaches bar",
     "bottomless lunch Northern Beaches",
+    "bottomless dinner Northern Beaches",
     "wedding venue Avalon",
     "private dining Northern Beaches",
   ],
   openGraph: {
     title: "Elvina | Avalon Beach Restaurant & Bar",
     description:
-      "Coastal Mediterranean dining, wine, bottomless lunches and private events in Avalon Beach.",
+      "Coastal Mediterranean dining, wine, bottomless lunch and dinner, and private events in Avalon Beach.",
     url: "https://elvina.com.au",
     siteName: "Elvina",
     locale: "en_AU",

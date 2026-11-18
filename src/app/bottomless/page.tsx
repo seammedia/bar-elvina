@@ -6,8 +6,8 @@ import { Arrow } from "@/components/icons";
 import { BOOKING_URL, BOTTOMLESS } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "Bottomless Lunch Northern Beaches | Elvina",
-  description: `${BOTTOMLESS.description} ${BOTTOMLESS.price} per person at Elvina in Avalon Beach.`,
+  title: "Bottomless Lunch & Dinner Northern Beaches | Elvina",
+  description: `Bottomless lunch and dinner at Elvina in Avalon Beach. ${BOTTOMLESS.description} ${BOTTOMLESS.price} per person.`,
   alternates: { canonical: "/bottomless" },
 };
 
@@ -42,7 +42,7 @@ export default function BottomlessPage() {
       <Nav />
       <PageHeader
         eyebrow="Bottomless"
-        title={`Bottomless lunch in Avalon Beach. ${BOTTOMLESS.price} per person.`}
+        title={`Bottomless lunch and dinner in Avalon Beach. ${BOTTOMLESS.price} per person.`}
         description={BOTTOMLESS.description}
       />
 

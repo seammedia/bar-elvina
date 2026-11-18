@@ -14,7 +14,7 @@ export function Together() {
             className="promo-img"
           />
           <div className="promo-content">
-            <span className="eyebrow">Bottomless Lunch, Northern Beaches</span>
+            <span className="eyebrow">Bottomless Lunch &amp; Dinner, Northern Beaches</span>
             <h3>Two hours.<br />{BOTTOMLESS.price} pp.</h3>
             <p className="promo-desc">{BOTTOMLESS.description}</p>
             <a href="/bottomless" className="btn">Explore Bottomless</a>
