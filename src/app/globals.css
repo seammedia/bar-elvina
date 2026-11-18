@@ -1997,7 +1997,53 @@ footer {
   .site-popup-days li { grid-template-columns: 36px 1fr auto; gap: 8px; }
   .site-popup-panel:has(.site-popup-feature) .site-popup-days li { grid-template-columns: 50px 1fr auto; }
   .site-popup-days em { font-size: 11px; }
+  /* Phones (Lucas, 18 Nov): a bottom sheet that fits the screen without scrolling, with the close controls in
+     thumb reach. The day-by-day list is left to the What's On page. */
+  .site-popup { align-items: flex-end; padding: 0; }
+  .site-popup-dialog { max-width: none; animation: site-popup-up 0.35s ease; }
+  .site-popup-dialog:has(.site-popup-panel.has-image),
+  .site-popup-dialog:has(.site-popup-panel.has-image .site-popup-feature) { max-width: none; }
+  .site-popup-panel { max-width: none; max-height: 88vh; max-height: 88dvh; border-radius: 18px 18px 0 0; padding-bottom: env(safe-area-inset-bottom); }
+  .site-popup-panel.has-image { max-width: none; }
+  .site-popup-image { display: none; }
+  .site-popup-panel:has(.site-popup-feature) .site-popup-body { padding-top: 22px; }
+  .site-popup-days { display: none; }
+  .site-popup-close { top: 12px; right: 12px; }
 }
+.site-popup-dismiss {
+  display: block;
+  margin: 14px auto 0;
+  padding: 10px 16px;
+  min-height: 44px;
+  border: 0;
+  background: none;
+  color: var(--off-white);
+  font-family: var(--body);
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  cursor: pointer;
+}
+/* On phones the close bar sticks to the bottom of the sheet, so it is always in thumb reach even when the
+   sheet scrolls on a short screen. */
+@media (max-width: 720px) {
+  .site-popup-dismiss {
+    position: sticky;
+    bottom: 0;
+    width: calc(100% + 40px);
+    margin: 10px -20px 0;
+    padding: 14px 16px calc(14px + env(safe-area-inset-bottom));
+    background: var(--sundial);
+    border-top: 1px solid rgba(253, 250, 240, 0.45);
+  }
+  .site-popup-panel { padding-bottom: 0; }
+  .site-popup-panel .site-popup-body:has(.site-popup-dismiss) { padding-bottom: 0; }
+  .site-popup-feature p { font-size: 13.5px; line-height: 1.4; }
+}
+@keyframes site-popup-up { from { transform: translateY(40px); opacity: 0; } to { transform: none; opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .site-popup-dialog { animation: none !important; } }
 
 /* Christmas and New Year hours under the regular hours (11 Nov 2026) */
 .hour-line.hour-line-heading { margin-top: 14px; font-weight: 600; }

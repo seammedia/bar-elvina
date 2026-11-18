@@ -137,6 +137,10 @@ export function SitePopup() {
               What&apos;s On
             </Link>
           </div>
+          {/* Second way out at the bottom, where a thumb reaches on a phone (Lucas, 18 Nov: the X sits too high). */}
+          <button type="button" className="site-popup-dismiss" onClick={() => dismiss("popup_close")}>
+            No thanks, close
+          </button>
         </div>
         </div>
       </div>
